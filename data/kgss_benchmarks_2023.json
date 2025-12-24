@@ -1,0 +1,77 @@
+{
+  "source": "KGSS 2021, 2023 (from playwright-mcp/data1.md, data2.md)",
+  "year": 2023,
+  "analyzable_variables": [
+    "SATFIN",
+    "CONFINAN",
+    "CONLEGIS",
+    "PARTYLR",
+    "NORTHWHO",
+    "UNIFI",
+    "KRPROUD"
+  ],
+  "unavailable_variables": [
+    "TRUST",
+    "FAIR",
+    "HELPFUL"
+  ],
+  "distributions": {
+    "SATFIN": {
+      "1": 3.4,
+      "2": 25.3,
+      "3": 43.1,
+      "4": 23.2,
+      "5": 4.7
+    },
+    "TRUST": {},
+    "FAIR": {},
+    "HELPFUL": {},
+    "CONFINAN": {
+      "1": 5.7,
+      "2": 64.8,
+      "3": 28.6
+    },
+    "CONLEGIS": {
+      "1": 5.0,
+      "2": 27.5,
+      "3": 63.8
+    },
+    "PARTYLR": {
+      "0": 0.2,
+      "1": 0.7,
+      "2": 2.6,
+      "3": 5.4,
+      "4": 5.7,
+      "5": 26.1,
+      "6": 18.5,
+      "7": 14.7,
+      "8": 13.8,
+      "9": 3.3,
+      "10": 1.8
+    },
+    "NORTHWHO": {
+      "1": 7.2,
+      "2": 20.7,
+      "3": 44.1,
+      "4": 26.2
+    },
+    "UNIFI": {
+      "1": 9.8,
+      "2": 41.0,
+      "3": 37.1,
+      "4": 11.5
+    },
+    "KRPROUD": {
+      "1": 23.1,
+      "2": 64.8,
+      "3": 11.4,
+      "4": 0.4
+    }
+  },
+  "notes": {
+    "TRUST": "2023년 데이터 없음 - 분석 제외",
+    "FAIR": "2023년 데이터 없음 - 분석 제외",
+    "HELPFUL": "2023년 데이터 없음 - 분석 제외",
+    "KRPROUD": "data2.md 기준 사용 (data1.md와 차이 있음)"
+  }
+}
