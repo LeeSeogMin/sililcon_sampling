@@ -1,0 +1,75 @@
+{
+  "source": "KGSS cumulative tables summarized in data/kggs.md",
+  "year": 2023,
+  "analyzable_variables": [
+    "SATFIN",
+    "CONFINAN",
+    "CONLEGIS",
+    "PARTYLR",
+    "NORTHWHO",
+    "UNIFI",
+    "KRPROUD"
+  ],
+  "unavailable_variables": [
+    "TRUST",
+    "FAIR",
+    "HELPFUL"
+  ],
+  "distributions": {
+    "SATFIN": {
+      "1": 3.4,
+      "2": 25.3,
+      "3": 43.1,
+      "4": 23.2,
+      "5": 4.7
+    },
+    "TRUST": {},
+    "FAIR": {},
+    "HELPFUL": {},
+    "CONFINAN": {
+      "1": 8.65,
+      "2": 8.65,
+      "3": 65.4,
+      "4": 8.25,
+      "5": 8.25
+    },
+    "CONLEGIS": {
+      "1": 2.5,
+      "2": 2.5,
+      "3": 27.5,
+      "4": 31.9,
+      "5": 31.9
+    },
+    "PARTYLR": {
+      "1": 3.6,
+      "2": 24.8,
+      "3": 37.2,
+      "4": 26.5,
+      "5": 4.5
+    },
+    "NORTHWHO": {
+      "1": 7.2,
+      "2": 20.7,
+      "3": 44.1,
+      "4": 26.2
+    },
+    "UNIFI": {
+      "1": 9.8,
+      "2": 41.0,
+      "3": 37.1,
+      "4": 11.5
+    },
+    "KRPROUD": {
+      "1": 18.5,
+      "2": 66.7,
+      "3": 13.8,
+      "4": 0.2
+    }
+  },
+  "notes": {
+    "missing_codes_excluded": "-8 (DK/NA) and -1 (not applicable) excluded; percentages are valid-response.",
+    "party_lr_scale": "2023 distribution uses 1-5 scale per data/kggs.md.",
+    "confinan_conlegis_recoding": "Original 4-point trust items recoded to 3-point (3+4 -> 3).",
+    "trust_recoding": "Expanded 1-3 to 1-5 by equal split: 1->1/2, 2->3, 3->4/5"
+  }
+}

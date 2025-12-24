@@ -85,8 +85,10 @@ async def fetch_response(
     valid_values: List[int],
     semaphore: asyncio.Semaphore,
     max_retries: int = 3,
-) -> int:
+) -> Dict[str, Any]:
     default_value = sorted(valid_values)[len(valid_values) // 2]
+    last_error: str | None = None
+    last_content: str = ""
 
     for attempt in range(1, max_retries + 1):
         try:
@@ -108,17 +110,47 @@ async def fetch_response(
                 response = await client.chat.completions.create(**params)
 
             content = (response.choices[0].message.content or "").strip()
+            last_content = content
             parsed = parse_first_int(content)
             if parsed is None or parsed not in set(valid_values):
-                return default_value
-            return parsed
+                return {
+                    "answer": default_value,
+                    "raw": content,
+                    "parsed": parsed,
+                    "used_default": True,
+                    "error": "invalid_response",
+                    "attempts": attempt,
+                }
+            return {
+                "answer": parsed,
+                "raw": content,
+                "parsed": parsed,
+                "used_default": False,
+                "error": None,
+                "attempts": attempt,
+            }
 
-        except Exception:
+        except Exception as exc:
+            last_error = f"{type(exc).__name__}: {exc}"
             if attempt >= max_retries:
-                return default_value
+                return {
+                    "answer": default_value,
+                    "raw": last_content,
+                    "parsed": None,
+                    "used_default": True,
+                    "error": last_error,
+                    "attempts": attempt,
+                }
             await asyncio.sleep(2 ** (attempt - 1))
 
-    return default_value
+    return {
+        "answer": default_value,
+        "raw": last_content,
+        "parsed": None,
+        "used_default": True,
+        "error": last_error,
+        "attempts": max_retries,
+    }
 
 
 def compute_metrics(benchmark: Benchmark, variable: str, responses: List[int]) -> Dict[str, Any]:
@@ -187,9 +219,10 @@ async def run(args: argparse.Namespace) -> int:
             tasks.append(fetch_response(client, args.model, args.temperature, prompt, valid_values, semaphore))
 
         responses = await asyncio.gather(*tasks)
-        metrics[variable] = compute_metrics(benchmark, variable, responses)
+        answers = [r["answer"] for r in responses]
+        metrics[variable] = compute_metrics(benchmark, variable, answers)
 
-        for persona, answer in zip(personas, responses):
+        for persona, response in zip(personas, responses):
             rows.append(
                 {
                     "persona_id": persona.get("persona_id"),
@@ -199,7 +232,12 @@ async def run(args: argparse.Namespace) -> int:
                     "region": persona.get("region"),
                     "occupation": persona.get("occupation"),
                     "variable": variable,
-                    "response": int(answer),
+                    "response": int(response["answer"]),
+                    "response_raw": response["raw"],
+                    "response_parsed": response["parsed"],
+                    "response_used_default": response["used_default"],
+                    "response_error": response["error"],
+                    "response_attempts": response["attempts"],
                 }
             )
 
@@ -214,6 +252,9 @@ async def run(args: argparse.Namespace) -> int:
 
     csv_path = os.path.join(out_dir, "persona_responses.csv")
     df_wide.to_csv(csv_path, index=False, encoding="utf-8-sig")
+
+    long_csv_path = os.path.join(out_dir, "persona_responses_long.csv")
+    df_long.to_csv(long_csv_path, index=False, encoding="utf-8-sig")
 
     run_config = {
         "timestamp_utc": utc_timestamp(),
@@ -247,6 +288,7 @@ async def run(args: argparse.Namespace) -> int:
 
     print(f"✅ Saved: {out_dir}")
     print(f"  - {csv_path}")
+    print(f"  - {long_csv_path}")
     return 0
 
 
@@ -268,4 +310,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
