@@ -47,6 +47,8 @@ outputs/
 output/
 results/
 papers/
+ms-word
+temp/
 
 # OS
 .DS_Store

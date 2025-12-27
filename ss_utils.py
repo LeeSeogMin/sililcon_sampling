@@ -125,3 +125,73 @@ def observed_distribution(values: Iterable[int], categories: Sequence[int]) -> D
             counts[int(v)] += 1
     return counts
 
+
+@dataclass(frozen=True)
+class NcpCredentials:
+    access_key_id: str
+    secret_key: str
+
+
+def load_ncp_credentials() -> NcpCredentials | None:
+    """
+    NCP API Gateway 인증키를 환경변수에서 로드.
+
+    - NCP_ACCESS_KEY_ID -> X-NCP-APIGW-API-KEY-ID
+    - NCP_SECRET_KEY -> X-NCP-APIGW-API-KEY
+
+    둘 중 하나라도 없으면 None을 반환(선택 설정).
+    """
+    access_key_id = (os.getenv("NCP_ACCESS_KEY_ID") or "").strip()
+    secret_key = (os.getenv("NCP_SECRET_KEY") or "").strip()
+    if not access_key_id or not secret_key:
+        return None
+    return NcpCredentials(access_key_id=access_key_id, secret_key=secret_key)
+
+
+def ncp_api_gateway_headers(creds: NcpCredentials | None = None) -> Dict[str, str]:
+    """
+    https://api.ncloud-docs.com/docs/common-ncpapi 기준 API Gateway 인증 헤더 생성.
+    """
+    resolved = creds or load_ncp_credentials()
+    if not resolved:
+        raise RuntimeError(
+            "NCP credentials missing. Set NCP_ACCESS_KEY_ID and NCP_SECRET_KEY in .env (see .env.example)."
+        )
+    return {
+        "X-NCP-APIGW-API-KEY-ID": resolved.access_key_id,
+        "X-NCP-APIGW-API-KEY": resolved.secret_key,
+    }
+
+
+def load_clova_studio_api_key() -> str | None:
+    """
+    CLOVA Studio 콘솔에서 발급한 API Key.
+
+    참고: 실제 헤더 이름은 엔드포인트/문서에 따라 다를 수 있으나,
+    일반적으로 X-NCP-CLOVASTUDIO-API-KEY를 사용한다.
+    """
+    value = (os.getenv("CLOVA_STUDIO_API_KEY") or "").strip()
+    return value or None
+
+
+def clova_studio_headers(
+    *,
+    include_content_type: bool = True,
+) -> Dict[str, str]:
+    """
+    CLOVA Studio 호출에 사용할 인증 헤더를 구성.
+
+    공통 요청 헤더(문서 기준):
+    - Authorization: Bearer <CLOVA_STUDIO_API_KEY>
+    - Content-Type: application/json
+    """
+    api_key = load_clova_studio_api_key()
+    if not api_key:
+        raise RuntimeError(
+            "CLOVA Studio API key missing. Set CLOVA_STUDIO_API_KEY in .env (see .env.example)."
+        )
+
+    headers: Dict[str, str] = {"Authorization": f"Bearer {api_key}"}
+    if include_content_type:
+        headers["Content-Type"] = "application/json"
+    return headers

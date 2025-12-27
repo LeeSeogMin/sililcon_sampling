@@ -95,9 +95,12 @@ pip install -r requirements.txt
 
 ### 2. Setup API Key
 
-Create `.env` file (never commit this):
+Create `.env` file (never commit this) based on `.env.example`:
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
+NCP_ACCESS_KEY_ID=your_ncp_access_key_id_here
+NCP_SECRET_KEY=your_ncp_secret_key_here
+CLOVA_STUDIO_API_KEY=your_clova_studio_api_key_here
 ```
 
 ### 3. Run Experiments
@@ -114,6 +117,13 @@ python code/03_gpt5_comparison.py
 
 # Step 4: Statistical analysis
 python code/04_statistical_analysis.py
+```
+
+### (Optional) CLOVA Studio Smoke Test
+
+If you set `CLOVA_STUDIO_API_KEY` and `CLOVA_STUDIO_MODEL` in `.env`, you can run:
+```bash
+python code/00_clova_smoke_test.py --prompt "안녕하세요. 한 문장으로 답해줘."
 ```
 
 ### 4. View Results
