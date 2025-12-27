@@ -49,6 +49,7 @@ results/
 papers/
 ms-word
 temp/
+docs/
 
 # OS
 .DS_Store
