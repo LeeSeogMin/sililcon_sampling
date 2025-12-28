@@ -43,6 +43,7 @@ outputs/
 
 # MS Word conversion tools (not needed)
 ms-word/
+docs/
 
 # Partial/checkpoint files (included completed results only)
 *_partial.json
