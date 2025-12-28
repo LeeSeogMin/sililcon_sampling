@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Large Language Models (LLMs) are increasingly explored as tools for simulating human survey responses, yet their ability to replicate culturally-specific distributions remains underexamined. We introduce **Silicon Sampling**, a systematic framework for evaluating LLM-generated survey responses against population benchmarks using Jensen-Shannon (JS) divergence and Kolmogorov-Smirnov (KS) tests. Using the Korean General Social Survey (KGSS) 2023 as our benchmark, we compare responses from GPT-4o-mini, GPT-5.2, and CLOVA HCX-007 (a Korean indigenous LLM) across six culturally-sensitive variables including political orientation, national pride, and inter-Korean relations. Our key finding is that CLOVA HCX-007 significantly outperforms GPT models on Korean-specific variables, achieving 73.3% lower JS divergence on average and statistically non-significant KS test results on two variables (KRPROUD: p=0.196, UNIFI: p=0.973). We also demonstrate that model advancement (GPT-4o-mini → GPT-5.2) improves cultural alignment by 22.6%, while indigenous LLM design provides even greater enhancement (73.3% improvement). Additionally, stratified persona analysis reveals that while LLMs capture demographic-attitude correlations (e.g., age-based political orientation), population weighting does not improve accuracy due to stereotype amplification effects. These results suggest that culturally-contextualized LLMs may contribute to improved alignment in survey simulation for non-Western contexts, though researchers should be cautious about elaborate demographic stratification.
+Large Language Models (LLMs) are increasingly explored as tools for simulating human survey responses, yet their ability to replicate culturally-specific distributions remains underexamined. We present a **Silicon Sampling framework**—a systematic methodology for evaluating LLM-generated survey responses against population benchmarks using Jensen-Shannon (JS) divergence and Kolmogorov-Smirnov (KS) tests. Using the Korean General Social Survey (KGSS) 2023 as our benchmark, we compare responses from GPT-5.2 and CLOVA HCX-007 (a Korean indigenous LLM) across six culturally-sensitive variables including political orientation, national pride, institutional trust, and inter-Korean relations. Results show **no clear evidence for indigenous LLM superiority**: while CLOVA achieves 26.5% lower average JS divergence than GPT-5.2, this advantage is driven primarily by GPT-5.2's poor performance on unification attitudes (UNIFI). CLOVA outperforms GPT-5.2 on only 3/6 variables, while GPT-5.2 substantially outperforms CLOVA on political orientation (PARTYLR). KS tests reject benchmark equality for all variables from both models at α=0.05, highlighting that neither model achieves distributional equivalence. Additionally, stratified persona analysis reveals that while LLMs capture demographic-attitude correlations (e.g., age-based political orientation), the effectiveness of population weighting varies by variable: it may worsen accuracy for stereotype-prone variables (like political orientation) due to amplification effects, while improving accuracy for variables with more moderate demographic associations. These results suggest that culturally-contextualized LLMs may contribute to improved alignment in survey simulation for non-Western contexts, though researchers should be cautious about elaborate demographic stratification.
 
 **Keywords**: Large Language Models, Survey Simulation, Cultural Bias, Indigenous AI, Silicon Sampling, KGSS
 
@@ -10,19 +10,11 @@ Large Language Models (LLMs) are increasingly explored as tools for simulating h
 
 ## 1. Introduction
 
-Survey research faces persistent challenges of cost, time, and representativeness. The emergence of capable Large Language Models (LLMs) has sparked interest in using AI to simulate human survey responses—a concept we term "Silicon Sampling." Initial studies using GPT-3.5/4 on U.S.-centric surveys showed promising distribution alignment. However, a critical question remains: **Can LLMs accurately replicate culturally-specific response distributions, particularly for non-Western populations?**
+Survey research faces persistent challenges of cost, time, and representativeness. The emergence of capable Large Language Models (LLMs) has sparked interest in using AI to simulate human survey responses—a concept termed "Silicon Sampling" (Argyle et al., 2023). Initial studies using GPT-3.5/4 on U.S.-centric surveys showed promising distribution alignment. However, a critical question remains: **Can LLMs accurately replicate culturally-specific response distributions, particularly for non-Western populations?**
 
-This question is significant for two reasons. First, most foundation models are trained predominantly on English-language, Western-centric data, potentially embedding cultural biases that distort non-Western perspective simulation. Second, the rapid development of indigenous LLMs—models developed within specific cultural contexts using local language data—offers a natural experiment to test whether cultural proximity in training improves survey simulation accuracy.
+This question matters because most foundation models are trained predominantly on English-language, Western-centric data, potentially embedding cultural biases that distort non-Western perspective simulation. Meanwhile, the rapid development of indigenous LLMs—models developed within specific cultural contexts using local language data—offers a natural experiment to test whether cultural proximity in training improves survey simulation accuracy.
 
-We address this gap by introducing a systematic evaluation framework and conducting a comparative study across three model generations and cultural origins. Our contributions are:
-
-1. **Silicon Sampling Framework**: A reproducible methodology for LLM-based survey simulation with standardized metrics (JS divergence, KS tests) and persona-based prompting.
-
-2. **Cultural Alignment Evidence**: Empirical demonstration that Korean indigenous LLM (CLOVA HCX-007) achieves significantly better distribution alignment than GPT models on Korean cultural variables, with successful statistical non-significance on two variables (KRPROUD: p=0.196, UNIFI: p=0.973).
-
-3. **Model Advancement Effect**: Evidence that newer model versions (GPT-5.2) consistently improve cultural alignment over predecessors (GPT-4o-mini) by 22.6%, suggesting that continued LLM development enhances silicon sampling feasibility.
-
-The remainder of this paper is organized as follows: Section 2 reviews related work on LLM survey simulation and cultural bias. Section 3 describes our methodology. Section 4 presents results as ablation studies across sampling parameters, reasoning strategies, and model types. Section 5 discusses implications and limitations.
+We address this gap by presenting a systematic Silicon Sampling framework—a reproducible methodology for LLM-based survey simulation with standardized metrics (JS divergence, KS tests) and persona-based prompting. Through comparative study across models of different cultural origins, we find **mixed evidence** regarding whether Korean indigenous LLM (CLOVA HCX-007) achieves better distribution alignment than GPT-5.2 on Korean cultural variables—performance varies substantially by variable type.
 
 ---
 
@@ -30,17 +22,17 @@ The remainder of this paper is organized as follows: Section 2 reviews related w
 
 ### 2.1 LLM-Based Survey Simulation
 
-Recent work has explored using LLMs to simulate survey responses. Argyle et al. (2023) demonstrated "silicon sampling" using GPT-3 to replicate American National Election Studies distributions. Kim and Lee (2024) extended this to Korean contexts but relied on single-model evaluations. These studies establish feasibility but lack systematic cross-model comparisons and statistical validation frameworks.
+Recent work has explored using LLMs to simulate survey responses. Argyle et al. (2023) demonstrated "silicon sampling" using GPT-3 to replicate American National Election Studies distributions. These studies establish feasibility but lack systematic cross-model comparisons and statistical validation frameworks, particularly for non-Western contexts.
 
 ### 2.2 Cultural Bias in Language Models
 
-LLMs exhibit measurable cultural biases reflecting their training data distributions. Cao et al. (2023) showed GPT models systematically favor Western cultural norms in value judgments. Naous et al. (2023) demonstrated Arabic cultural misalignment in multilingual models. However, few studies examine whether indigenous LLMs—trained on culturally-specific corpora—mitigate these biases in survey contexts.
+LLMs exhibit measurable cultural biases reflecting their training data distributions. Cao et al. (2023) showed GPT models systematically favor Western cultural norms in value judgments. Naous et al. (2024) demonstrated Arabic cultural misalignment in multilingual models. However, few studies examine whether indigenous LLMs—trained on culturally-specific corpora—mitigate these biases in survey contexts.
 
 ### 2.3 Indigenous LLMs and Cultural Contextualization
 
 The development of indigenous LLMs (e.g., CLOVA in Korea, Baidu ERNIE in China) offers natural experiments in cultural alignment. These models incorporate local language data, cultural knowledge, and regional fine-tuning. Early evaluations suggest improved performance on culturally-specific tasks, but systematic survey simulation comparisons remain absent.
 
-**Our Contribution**: We provide the first systematic comparison of indigenous versus global LLMs on culturally-sensitive survey simulation, using standardized metrics and statistical validation.
+This study provides a systematic comparison of indigenous versus global LLMs on culturally-sensitive survey simulation, using standardized metrics and statistical validation.
 
 ---
 
@@ -57,7 +49,7 @@ Our framework consists of four components:
 
 ### 3.2 Benchmark: KGSS 2023
 
-We use the Korean General Social Survey (KGSS) 2023, a nationally representative survey (n≈1,500) conducted by Sungkyunkwan University Survey Research Center. We selected six variables capturing culturally-sensitive domains:
+We use the Korean General Social Survey (KGSS) 2023, a nationally representative survey (n≈1,500) conducted by Sungkyunkwan University Survey Research Center. We selected seven variables capturing culturally-sensitive domains:
 
 | Variable | Description | Scale |
 |----------|-------------|-------|
@@ -67,30 +59,27 @@ We use the Korean General Social Survey (KGSS) 2023, a nationally representative
 | NORTHWHO | Perception of North Korea | 1-4 |
 | UNIFI | Support for unification | 1-4 |
 | PARTYLR | Political left-right orientation | 1-5 |
+| SATFIN | Satisfaction with household finances | 1-5 |
 
 These variables were selected for their cultural sensitivity and relevance to Korean social attitudes, particularly inter-Korean relations (NORTHWHO, UNIFI), political orientation (PARTYLR), and institutional trust (CONFINAN, CONLEGIS).
 
 ### 3.3 Models Compared
 
-- **GPT-4o-mini**: OpenAI's efficient model (API identifier: `gpt-4o-mini-2024-07-18`, accessed September 2024)
-- **GPT-5.2**: OpenAI model (API identifier: `gpt-5.2`, accessed December 2024)†
-- **CLOVA HCX-007**: Naver's Korean indigenous LLM with reasoning capabilities (API identifier: `HCX-007`, accessed December 2024)
+- **GPT-5.2**: OpenAI model (API identifier: `gpt-5.2`, accessed December 2025)†
+- **CLOVA HCX-007**: Naver's Korean indigenous LLM with reasoning capabilities (API identifier: `HCX-007`, accessed December 2025)
 
 †Note: "GPT-5.2" refers to the model identifier used in our API calls. As model naming conventions and availability may vary, we report the exact API identifier used for reproducibility. All experiments used the OpenAI Chat Completions API with the specified identifiers.
 
 ### 3.4 Experimental Design
 
-We conducted five ablation studies:
+We conducted four ablation studies:
 
 | Ablation | Factors Tested | Variables |
 |----------|---------------|-----------|
 | A: Sampling Parameters | Temperature (0.3, 0.7, 1.0, 1.2) | CONFINAN |
 | B: Reasoning Strategy | Chain-of-Thought vs. Direct | CONFINAN |
 | C: Prompt Language | Korean vs. English | CONFINAN |
-| D: Model Advancement | GPT-4o-mini vs. GPT-5.2 | 4 core variables* |
-| E: Indigenous vs. Global | CLOVA HCX-007 vs. GPT-5.2 | 6 variables |
-
-*Ablation D focused on four politically and culturally sensitive variables (SATFIN, PARTYLR, NORTHWHO, UNIFI) to examine model advancement effects on the most challenging items. Ablation E expanded to all six variables for comprehensive indigenous LLM evaluation.
+| D: Indigenous vs. Global | CLOVA HCX-007 vs. GPT-5.2 | 6 core variables |
 
 Each condition generated n=100 responses using consistent persona prompts describing a representative Korean adult.
 
@@ -117,7 +106,7 @@ Temperature variation showed minimal impact on distribution accuracy:
 | 1.0 | 0.085 | Increased variance |
 | 1.2 | 0.091 | Excessive randomness |
 
-**Finding**: Temperature 0.7 provides optimal balance. Variations within 0.3-1.0 produce <15% JS difference, suggesting robustness to reasonable parameter choices.
+Temperature 0.7 provides optimal balance between response diversity and consistency. Variations within 0.3-1.0 produce less than 15% JS difference, suggesting robustness to reasonable parameter choices.
 
 ### 4.2 Ablation B: Reasoning Strategy
 
@@ -128,7 +117,7 @@ Chain-of-Thought (CoT) prompting improved accuracy:
 | Direct response | 0.089 | Baseline |
 | CoT prompting | 0.072 | 19.1% reduction |
 
-**Finding**: CoT showed improvement on CONFINAN (19.1% JS reduction). This suggests that explicit reasoning may encourage more deliberate response patterns, though generalization to other variables requires further investigation.
+CoT prompting reduced JS divergence by 19.1% on CONFINAN. This indicates that explicit reasoning may encourage more deliberate response patterns, though generalization to other variables requires further investigation.
 
 ### 4.3 Ablation C: Prompt Language
 
@@ -139,52 +128,40 @@ Korean-language prompts outperformed English:
 | English prompt | 0.095 | Baseline |
 | Korean prompt | 0.079 | 16.8% reduction |
 
-**Finding**: Native language prompting activates culturally-appropriate response patterns even in multilingual models.
+Native language prompting activates culturally-appropriate response patterns even in multilingual models.
 
-### 4.4 Ablation D: Model Advancement (GPT-4o-mini → GPT-5.2)
+### 4.4 Ablation D: Indigenous vs. Global LLM
 
-Model advancement consistently improved cultural alignment:
-
-| Variable | GPT-4o-mini JS | GPT-5.2 JS | Improvement |
-|----------|----------------|------------|-------------|
-| SATFIN | 0.398 | 0.312 | **21.6%** |
-| PARTYLR | 0.585 | 0.467 | **20.2%** |
-| NORTHWHO | 0.456 | 0.259 | **43.3%** |
-| UNIFI | 0.312 | 0.287 | **8.0%** |
-| **Average** | **0.438** | **0.331** | **22.6%** |
-
-**Finding**: GPT-5.2 shows consistent improvement over GPT-4o-mini across all four tested variables, with an average 22.6% reduction in JS divergence. This suggests that LLM advancement enhances silicon sampling feasibility, though absolute accuracy remains limited (best JS=0.259 still above "acceptable" threshold).
-
-### 4.5 Ablation E: Indigenous vs. Global LLM
-
-CLOVA HCX-007 substantially outperformed GPT-5.2:
+CLOVA HCX-007 showed mixed performance relative to GPT-5.2:
 
 | Variable | GPT-5.2 JS | CLOVA JS | Improvement | CLOVA Better |
 |----------|------------|----------|-------------|--------------|
-| CONFINAN | 0.098 | 0.086 | 12.2% | ✓ |
-| CONLEGIS | 0.361 | 0.050 | 86.1% | ✓ |
-| KRPROUD | 0.141 | 0.023 | 83.7% | ✓ |
-| NORTHWHO | 0.377 | 0.084 | 77.7% | ✓ |
-| UNIFI | 0.047 | 0.016 | 66.0% | ✓ |
-| PARTYLR | 0.189 | 0.065 | 65.6% | ✓ |
-| **Average** | **0.202** | **0.054** | **73.3%** | **6/6** |
+| CONFINAN | 0.062 | 0.062 | -0.2% | ✗ |
+| CONLEGIS | 0.134 | 0.083 | 38.5% | ✓ |
+| KRPROUD | 0.113 | 0.134 | -18.9% | ✗ |
+| NORTHWHO | 0.125 | 0.084 | 32.6% | ✓ |
+| UNIFI | 0.267 | 0.115 | 56.9% | ✓ |
+| PARTYLR | 0.038 | 0.065 | -70.7% | ✗ |
+| **Average** | **0.123** | **0.090** | **26.5%** | **3/6** |
 
-*Note: GPT-5.2 JS values differ from Section 4.4 due to independent sampling runs (n=100 each). This variation reflects inherent stochasticity in LLM generation and highlights the importance of comparing models within the same experimental run rather than across runs.*
+*Note: GPT-5.2 values are computed from the GPT rerun saved in `results/gpt52_experiment/metrics.json`, while CLOVA values use the saved CLOVA response sets in `results/clova_experiment/*/clova_results.json`.*
+
+**Interpretation**: The results show no clear indigenous LLM advantage. CLOVA outperforms GPT-5.2 on only 3/6 variables—essentially a tie. The 26.5% average improvement is heavily influenced by GPT-5.2's catastrophic failure on UNIFI (JS=0.267, with 100% responses concentrated on a single option). Excluding UNIFI, the average difference shrinks to approximately 9%. Notably, GPT-5.2 substantially outperforms CLOVA on PARTYLR (political orientation), a key cultural variable, suggesting that indigenous training does not guarantee superiority across all culturally-sensitive domains.
 
 #### Statistical Validation (KS Tests)
 
-| Variable | GPT-5.2 p-value | CLOVA p-value | Successful Replication |
-|----------|-----------------|---------------|----------------------|
-| CONFINAN | <0.001 | <0.001 | Neither |
-| CONLEGIS | <0.001 | <0.001 | Neither |
-| KRPROUD | 0.056 | **0.196** | **CLOVA only** |
-| NORTHWHO | <0.001 | <0.001 | Neither |
-| UNIFI | <0.001 | **0.973** | **CLOVA only** |
-| PARTYLR | <0.001 | <0.001 | Neither |
+KS tests reject benchmark equality for all CLOVA variables at α=0.05:
 
-**Key Finding**: CLOVA achieved statistically non-significant KS results on two variables (KRPROUD: p=0.196, UNIFI: p=0.973), indicating that we failed to detect statistically significant differences from the benchmark distributions. These represent the only instances across all model-variable combinations where the null hypothesis of distribution equality could not be rejected.
+| Variable | CLOVA p-value |
+|----------|---------------|
+| CONFINAN | 0.010 |
+| CONLEGIS | 5.43e-09 |
+| KRPROUD | 6.75e-20 |
+| NORTHWHO | 2.45e-05 |
+| UNIFI | 4.41e-10 |
+| PARTYLR | 1.55e-05 |
 
-### 4.6 Stratified Persona Analysis
+### 4.5 Stratified Persona Analysis
 
 To address the limitation of uniform persona prompts, we conducted a supplementary experiment using stratified demographic sampling. We created 20 demographic cells (2 genders × 5 age groups × 2 regions) weighted according to KGSS 2023 population proportions.
 
@@ -214,62 +191,30 @@ This age-based political orientation pattern aligns with established findings in
 | PARTYLR | **0.027** | 0.038 | Simple |
 | SATFIN | 0.031 | **0.026** | Weighted |
 
-**Key Finding**: The optimal aggregation method varies by variable:
-- **PARTYLR**: Simple aggregation outperformed weighted (JS 0.027 vs. 0.038). The weighted distribution over-represented conservative responses (48.9% vs. benchmark 26.5%) due to the high weight of 60+ respondents (34%) who responded nearly uniformly conservative.
-- **SATFIN**: Weighted aggregation outperformed simple (JS 0.026 vs. 0.031). The model showed more moderate demographic patterns for financial satisfaction, allowing population weighting to improve accuracy.
+The optimal aggregation method varies by variable:
+- **PARTYLR**: Simple aggregation outperformed weighted (JS 0.027 vs. 0.038). The weighted distribution over-represented conservative responses (48.9% vs. benchmark 26.5%) due to the high weight of 60+ respondents (34%) who responded nearly uniformly conservative. This variable exhibits strong stereotype amplification: LLM-generated responses show exaggerated age-based political polarization.
+- **SATFIN**: Weighted aggregation outperformed simple (JS 0.026 vs. 0.031). Unlike political orientation, financial satisfaction shows weaker demographic stereotyping in LLM responses—older age groups did not respond uniformly, preserving within-group variation closer to population reality. This allows population weighting to improve accuracy rather than amplify distortions.
 
-**Interpretation**: Whether population weighting improves accuracy depends on the variable's demographic sensitivity. For highly stereotype-prone variables like political orientation, LLMs amplify demographic patterns beyond population-realistic levels, making simple aggregation preferable. For variables with more moderate demographic associations, population weighting can improve aggregate accuracy.
+Whether population weighting improves accuracy depends on the variable's demographic sensitivity. For highly stereotype-prone variables like political orientation, LLMs amplify demographic patterns beyond population-realistic levels, making simple aggregation preferable. For variables with more moderate demographic associations, population weighting can improve aggregate accuracy.
 
-### 4.7 Supplementary Statistical Analyses
+### 4.6 Supplementary Statistical Analyses
 
 To address potential statistical concerns, we conducted additional analyses on the CLOVA results.
 
 #### Bootstrap 95% Confidence Intervals for JS Divergence
 
-| Variable | JS Mean | 95% CI | SE |
+<!-- AUTO:BOOTSTRAP_JS_TABLE_START -->
+| Variable | JS Point | 95% CI | Bootstrap SD |
 |----------|---------|--------|-----|
-| CONFINAN | 0.130 | [0.082, 0.185] | 0.026 |
-| CONLEGIS | 0.075 | [0.046, 0.110] | 0.017 |
-| KRPROUD | 0.038 | [0.014, 0.076] | 0.015 |
-| NORTHWHO | 0.127 | [0.088, 0.176] | 0.023 |
-| UNIFI | 0.067 | [0.011, 0.151] | 0.037 |
-| PARTYLR | 0.098 | [0.061, 0.142] | 0.022 |
+| CONFINAN | 0.062 | [0.062, 0.069] | 0.002 |
+| CONLEGIS | 0.083 | [0.052, 0.120] | 0.017 |
+| KRPROUD | 0.134 | [0.094, 0.189] | 0.024 |
+| NORTHWHO | 0.084 | [0.061, 0.123] | 0.016 |
+| UNIFI | 0.115 | [0.081, 0.167] | 0.022 |
+| PARTYLR | 0.065 | [0.041, 0.103] | 0.016 |
+<!-- AUTO:BOOTSTRAP_JS_TABLE_END -->
 
-KRPROUD shows the narrowest confidence interval (SE=0.015), reflecting the closest alignment with benchmark distribution.
-
-#### Effect Sizes (Cramér's V)
-
-| Variable | Cramér's V | Interpretation |
-|----------|------------|----------------|
-| CONFINAN | 0.600 | Large |
-| CONLEGIS | 0.359 | Medium |
-| KRPROUD | 0.194 | Small |
-| NORTHWHO | 0.402 | Medium |
-| UNIFI | 0.263 | Small |
-| PARTYLR | 0.326 | Medium |
-
-Two variables (KRPROUD, UNIFI) show small effect sizes, indicating close alignment with benchmark distributions. These are the same variables that achieved non-significant KS test results.
-
-#### FDR-Corrected p-values (Benjamini-Hochberg)
-
-After applying multiple comparison correction across all 12 tests (6 variables × 2 models):
-- **GPT-5.2 KRPROUD**: p=0.056 → 0.061 (becomes non-significant after correction)
-
-All other results remained statistically significant after FDR correction.
-
-#### Post-hoc Power Analysis
-
-| Effect Size | Cohen's w | Power (n=100) |
-|-------------|-----------|---------------|
-| Small | 0.1 | 11.57% |
-| Medium | 0.3 | 71.13% |
-| Large | 0.5 | 99.33% |
-
-With n=100, our study had adequate power (>70%) to detect medium-to-large effects but insufficient power (11.57%) to detect small effects. This limitation suggests that non-significant KS results should be interpreted as absence of evidence for large differences rather than evidence of distribution equivalence.
-
-#### TOST Equivalence Test
-
-We applied Two One-Sided Tests (TOST) with equivalence margin δ=0.10 to assess practical equivalence. While no variable achieved statistical non-significance in KS tests, several CLOVA variables (CONLEGIS JS=0.059, PARTYLR JS=0.065) showed JS divergence values approaching acceptable thresholds, suggesting meaningful similarity despite statistical detectability of differences.
+Bootstrap uncertainty is modest for CONFINAN (narrow CI) and larger for variables with more response mass spread across categories (e.g., KRPROUD), reflecting greater sampling variability with n=100.
 
 ---
 
@@ -277,36 +222,23 @@ We applied Two One-Sided Tests (TOST) with equivalence margin δ=0.10 to assess 
 
 ### 5.1 Indigenous LLM Association
 
-Our results demonstrate a substantial association between indigenous LLM design and improved cultural alignment in survey simulation. CLOVA HCX-007 showed closer alignment with benchmark distributions than GPT-5.2 on all 6 variables (100%), with an average JS divergence reduction of 73.3%. CLOVA's non-significant KS results on KRPROUD (p=0.196) and UNIFI (p=0.973)—while not proving distribution equivalence—suggest that culturally-contextualized training may be associated with closer approximation of authentic response distributions.
+Our results demonstrate **no clear evidence for indigenous LLM superiority** in distributional alignment. While CLOVA HCX-007 achieved 26.5% lower average JS divergence than GPT-5.2, this advantage is heavily driven by GPT-5.2's catastrophic failure on unification attitudes (UNIFI), where 100% of responses concentrated on a single option. CLOVA outperformed GPT-5.2 on only 3/6 variables—essentially a statistical tie. Critically, GPT-5.2 substantially outperformed CLOVA on political orientation (PARTYLR) by 71%, suggesting that indigenous training does not guarantee superiority across all culturally-sensitive domains. KS tests reject benchmark equality for all variables from both models at α=0.05, indicating that neither achieves distributional equivalence.
 
-This observed association may stem from two factors: (1) training on Korean-language web data reflecting local discourse patterns, and (2) fine-tuning on culturally-appropriate response norms.
+The variable-dependent performance pattern suggests that the relationship between model origin and cultural alignment is more complex than a simple indigenous advantage hypothesis. Possible explanations include: (1) variable-specific training data availability—GPT may have better coverage of Korean political discourse than inter-Korean relations topics; (2) differential sensitivity to prompt framing across variable domains; and (3) inherent model biases that manifest differently across attitudinal dimensions.
 
-### 5.2 Model Advancement Effect
-
-The consistent improvement from GPT-4o-mini to GPT-5.2 (22.6% average JS reduction) supports the hypothesis that LLM advancement enhances silicon sampling feasibility. GPT-5.2's improved reasoning capabilities appear to generate more contextually appropriate responses, particularly for complex political variables like NORTHWHO (43.3% improvement).
-
-However, even GPT-5.2's best result (JS=0.259) remains above acceptable thresholds, indicating that model advancement alone is insufficient. The combination of model advancement AND indigenous design (CLOVA) yields substantially greater benefits, suggesting complementary mechanisms at work.
-
-### 5.3 Demographic Representation and Weighting
+### 5.2 Demographic Representation and Weighting
 
 Our stratified persona analysis revealed that CLOVA correctly captures demographic-attitude correlations (e.g., age-based political orientation differences). However, population weighting did not improve aggregate accuracy—simple averaging outperformed weighted aggregation for PARTYLR.
 
 This counter-intuitive finding suggests that while LLMs internalize demographic stereotypes, they may amplify these patterns beyond population-realistic levels. The 60+ age group responded nearly uniformly conservative (90-100% choosing "다소 보수적"), whereas real populations show more within-group variation. This "stereotype amplification" effect has implications for survey simulation:
 
-1. **Calibration May Be Needed**: Raw LLM demographic responses may require post-hoc calibration to match population variance
-2. **Simple Averaging May Suffice**: For exploratory silicon sampling, uniform persona prompts may yield comparable or better results than elaborate stratification
+First, raw LLM demographic responses may require post-hoc calibration to match population variance—potential approaches include response redistribution based on known within-group variance from pilot surveys, or temperature adjustment per demographic cell to increase response diversity. Second, for exploratory silicon sampling, uniform persona prompts may yield comparable or better results than elaborate stratification. Third, researchers could apply "stereotype dampening" by blending demographic-specific responses with uniform-persona responses to reduce over-polarization.
 
-### 5.4 Implications for Survey Research
+### 5.3 Implications for Survey Research
 
-Our framework and findings suggest:
+These results have practical implications for survey research. First, **model selection should be variable-specific** rather than assuming indigenous LLMs are universally superior—researchers should pilot-test multiple models on their target variables before committing to a single model. Second, JS divergence and KS tests provide complementary validation metrics, while temperature and prompting variations have smaller effects than model choice. Third, full replication remains difficult: even when JS divergence is reduced, distributional differences remain detectable by KS tests across all tested variables. Fourth, population weighting may not improve accuracy if LLMs amplify demographic stereotypes.
 
-1. **Model Selection Matters**: Indigenous LLMs should be preferred for culturally-specific survey simulation
-2. **Validation is Essential**: JS divergence and KS tests provide complementary validation metrics
-3. **Parameters are Secondary**: Temperature and prompting variations have smaller effects than model choice
-4. **Full Replication Remains Difficult**: Even CLOVA achieved statistical non-significance on only 2/6 variables
-5. **Demographic Stratification Has Limits**: Population weighting may not improve accuracy if LLMs amplify demographic stereotypes
-
-### 5.5 Threats to Validity
+### 5.4 Threats to Validity
 
 **Internal Validity**:
 - *Single Experimental Run*: Each condition was run once (n=100) without repeated trials, limiting our ability to assess result stability beyond bootstrap estimates.
@@ -322,38 +254,61 @@ Our framework and findings suggest:
 
 **Statistical Conclusion Validity**:
 - *Statistical Power*: With n=100 samples per condition, statistical power is approximately 71% for medium effects (w=0.3) but only 12% for small effects (w=0.1), potentially missing subtle distribution differences.
-- *Multiple Comparisons*: We applied Benjamini-Hochberg FDR correction; key results (CLOVA KRPROUD and UNIFI non-significance) remain robust after correction.
-- *Effect Sizes*: Cramér's V effect sizes range from small (0.19-0.26) to large (0.60), providing context for practical significance beyond statistical testing.
+- *Multiple Comparisons*: Multiple testing can inflate false positives; results should be interpreted with correction and replication in mind.
 
 ---
 
 ## 6. Conclusion
 
-This study introduced Silicon Sampling, a systematic framework for evaluating LLM-based survey simulation, and showed that indigenous LLMs are associated with closer alignment to benchmark distributions on culturally-sensitive variables. Our key contributions are:
+This study presented a systematic Silicon Sampling framework for evaluating LLM-based survey simulation, and found **no clear evidence for indigenous LLM superiority** on culturally-sensitive variables.
 
-1. CLOVA HCX-007 showed 73.3% lower JS divergence than GPT-5.2 on Korean cultural variables and statistically non-significant differences from benchmark on two variables (KRPROUD: p=0.196, UNIFI: p=0.973)
+Comparing CLOVA HCX-007 and GPT-5.2 on six Korean cultural variables, we found variable-dependent performance: CLOVA outperformed GPT-5.2 on only 3/6 variables, while GPT-5.2 substantially outperformed CLOVA on political orientation. The 26.5% average JS improvement for CLOVA was heavily driven by GPT-5.2's catastrophic failure on a single variable (UNIFI). KS tests rejected benchmark equality for all variables from both models, indicating that neither achieves distributional equivalence. These findings suggest that the relationship between model origin and cultural alignment is more complex than a simple indigenous advantage hypothesis—**model selection should be variable-specific** rather than assuming indigenous LLMs are universally superior.
 
-2. Model advancement (GPT-4o-mini → GPT-5.2) was associated with improved cultural alignment by 22.6%, suggesting that continued LLM development may enhance silicon sampling feasibility
+Stratified demographic sampling revealed that LLMs correctly capture demographic-attitude correlations but may amplify stereotypical patterns, suggesting that simple averaging may be preferable to population weighting for exploratory silicon sampling.
 
-3. Indigenous LLM design may contribute to improved alignment in survey simulation for non-Western contexts
-
-4. Stratified demographic sampling revealed that LLMs correctly capture demographic-attitude correlations but may amplify stereotypical patterns, suggesting that simple averaging may be preferable to population weighting for exploratory silicon sampling
-
-These findings suggest that the future of AI-assisted survey research may benefit not only from model scale improvements, but also from cultural contextualization and purpose-built indigenous models. However, researchers should be cautious about applying elaborate demographic stratification without calibration, as LLMs may amplify demographic stereotypes beyond population-realistic levels. Future work should extend this framework to other cultural contexts and explore calibration methods to mitigate stereotype amplification in demographically-stratified sampling.
+Future work should extend this framework to other cultural contexts, investigate why performance varies dramatically across variable types, and explore calibration methods to mitigate both model-specific failures and stereotype amplification in demographically-stratified sampling.
 
 ---
 
 ## References
 
-Argyle, L. P., et al. (2023). Out of one, many: Using language models to simulate human samples. *Political Analysis*, 31(3), 337-351.
+Aher, G. V., Arriaga, R. I., & Kalai, A. T. (2023). Using large language models to simulate multiple humans and replicate human subject studies. *Proceedings of the 40th International Conference on Machine Learning*, 337-371.
 
-Cao, Y., et al. (2023). Assessing cross-cultural alignment between ChatGPT and human societies. *arXiv preprint arXiv:2303.17466*.
+Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J. R., Rytting, C., & Wingate, D. (2023). Out of one, many: Using language models to simulate human samples. *Political Analysis*, 31(3), 337-351. DOI: https://doi.org/10.1017/pan.2023.2
 
-Kim, J., & Lee, S. (2024). Silicon sampling for Korean survey research. *Korean Journal of Survey Research*, 25(1), 45-67.
+Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency*, 610-623. DOI: https://doi.org/10.1145/3442188.3445922
 
-Naous, T., et al. (2023). Having beer after prayer? Measuring cultural bias in large language models. *arXiv preprint arXiv:2305.14456*.
+Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. *Advances in Neural Information Processing Systems*, 33, 1877-1901.
 
-Sungkyunkwan University Survey Research Center. (2023). *Korean General Social Survey 2023 Codebook*.
+Cao, Y., Zhou, L., Lee, S., Cabello, L., Chen, M., & Hershcovich, D. (2023). Assessing cross-cultural alignment between ChatGPT and human societies: An empirical study. *Proceedings of the First Workshop on Cross-Cultural Considerations in NLP (C3NLP)*. DOI: https://doi.org/10.18653/v1/2023.c3nlp-1.7
+
+Dillon, D., Tandon, N., Gu, Y., & Gray, K. (2023). Can AI language models replace human participants? *Trends in Cognitive Sciences*, 27(7), 597-600. DOI: https://doi.org/10.1016/j.tics.2023.04.008
+
+Durmus, E., Nguyen, K., Liao, T. I., Schiefer, N., Askell, A., Bakhtin, A., ... & Ganguli, D. (2024). Towards measuring the representation of subjective global opinions in language models. *arXiv preprint arXiv:2306.16388*.
+
+Hartmann, J., Schwenzow, J., & Witte, M. (2023). The political ideology of conversational AI: Converging evidence on ChatGPT's pro-environmental, left-libertarian orientation. *SSRN Electronic Journal*. DOI: https://doi.org/10.2139/ssrn.4316084
+
+Horton, J. J. (2023). Large language models as simulated economic agents: What can we learn from homo silicus? *NBER Working Paper*, (w31122). DOI: https://doi.org/10.3386/w31122
+
+Kim, B., Kim, H., Lee, S. W., Lee, G., Kwak, D., Jeon, D. H., ... & Sung, N. (2021). What changes can large-scale language models bring? Intensive study on HyperCLOVA: Billions-scale Korean generative pretrained transformers. *Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing*. DOI: https://doi.org/10.18653/v1/2021.emnlp-main.274
+
+Lin, J. (1991). Divergence measures based on the Shannon entropy. *IEEE Transactions on Information Theory*, 37(1), 145-151. DOI: https://doi.org/10.1109/18.61115
+
+Motoki, F., Neto, V. P., & Rodrigues, V. (2023). More human than human: Measuring ChatGPT political bias. *Public Choice*, 198(1), 3-23. DOI: https://doi.org/10.1007/s11127-023-01097-2
+
+Naous, T., Ryan, M. J., Ritter, A., & Xu, W. (2024). Having beer after prayer? Measuring cultural bias in large language models. *Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)*. DOI: https://doi.org/10.18653/v1/2024.acl-long.862
+
+Ornstein, J. T., Blasingame, E. N., & Truscott, J. S. (2024). How to train your stochastic parrot: Large language models for political texts. *Political Science Research and Methods*, 13(2), 264-281. DOI: https://doi.org/10.1017/psrm.2024.64
+
+Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative agents: Interactive simulacra of human behavior. *Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology*, 1-22. DOI: https://doi.org/10.1145/3586183.3606763
+
+Santurkar, S., Durmus, E., Ladhak, F., Lee, C., Liang, P., & Hashimoto, T. (2023). Whose opinions do language models reflect? *arXiv preprint arXiv:2303.17548*.
+
+Sungkyunkwan University Survey Research Center. (2023). *Korean General Social Survey 2023 Codebook*. Available from Korean Social Science Data Archive (KOSSDA). https://kossda.snu.ac.kr
+
+Touvron, H., Martin, L., Stone, K., Albert, P., Almahairi, A., Babaei, Y., ... & Scialom, T. (2023). Llama 2: Open foundation and fine-tuned chat models. *arXiv preprint arXiv:2307.09288*.
+
+Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., ... & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems*, 35, 24824-24837.
 
 ---
 
@@ -361,9 +316,8 @@ Sungkyunkwan University Survey Research Center. (2023). *Korean General Social S
 
 | Item | Specification |
 |------|---------------|
-| GPT-4o-mini | API identifier: `gpt-4o-mini-2024-07-18`, accessed Sep 2024 |
-| GPT-5.2 | API identifier: `gpt-5.2`, accessed Dec 2024 |
-| CLOVA HCX-007 | API identifier: `HCX-007`, accessed Dec 2024 |
+| GPT-5.2 | API identifier: `gpt-5.2`, accessed Dec 2025 |
+| CLOVA HCX-007 | API identifier: `HCX-007`, accessed Dec 2025 |
 | API Endpoints | OpenAI Chat Completions API, CLOVA Studio Chat Completions v3 |
 | Samples per condition | n=100 |
 | Temperature | 0.7 (default) |
@@ -457,6 +411,7 @@ Model responses were parsed using the following rules:
 | NORTHWHO | 귀하는 북한이 우리에게 어떤 대상이라고 생각하십니까? | 1=지원대상, 2=협력대상, 3=경계대상, 4=적대대상 |
 | UNIFI | 귀하는 남북통일이 어느 정도 필요하다고 생각하십니까? | 1=매우 필요하다, 2=다소 필요하다, 3=별로 필요하지 않다, 4=전혀 필요하지 않다 |
 | PARTYLR | 귀하는 자신이 정치적으로 어느 정도 진보적 또는 보수적이라고 생각하십니까? | 1=매우 진보적, 2=다소 진보적, 3=중도, 4=다소 보수적, 5=매우 보수적 |
+| SATFIN | 귀하 댁의 전반적인 가계 경제 상태에 대해 어느 정도 만족하십니까? | 1=매우 만족, 2=다소 만족, 3=보통, 4=다소 불만족, 5=매우 불만족 |
 
 ---
 
@@ -491,4 +446,4 @@ Population weights derived from KGSS 2023 marginal distributions:
 
 Note: "진보" = progressive (responses 1-2), "보수" = conservative (responses 4-5), "Mixed" = substantial variation.
 
-Full code and detailed results available at: [repository URL to be added]
+Full code and detailed results available at: https://github.com/LeeSeogMin/silicon_sampling
