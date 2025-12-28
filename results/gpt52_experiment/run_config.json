@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "20251228_005936",
+  "model": "gpt-5.2",
+  "temperature": 0.7,
+  "n_samples": 100,
+  "variables": [
+    "PARTYLR",
+    "NORTHWHO",
+    "UNIFI",
+    "CONFINAN",
+    "CONLEGIS",
+    "KRPROUD"
+  ],
+  "paths": {
+    "personas": "outputs/personas/personas_100.json",
+    "benchmark": "data/kgss_benchmarks_2023.json",
+    "variables_config": "config/kgss_variables_2023.json",
+    "out_dir": "results/gpt52_experiment"
+  },
+  "concurrency": 20
+}

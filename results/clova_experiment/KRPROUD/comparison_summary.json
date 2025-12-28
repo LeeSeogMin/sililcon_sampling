@@ -1,0 +1,37 @@
+{
+  "timestamp": "20251227_141750",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "KRPROUD"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "KRPROUD": {
+      "clova_hcx007": {
+        "js_divergence": 0.13380504662024745,
+        "distribution": {
+          "1": 5.0,
+          "2": 33.0,
+          "3": 62.0,
+          "4": 0.0
+        }
+      },
+      "gpt_5_2": {
+        "js_divergence": 0.14093561224235118,
+        "distribution": {
+          "1": 0.0,
+          "2": 100.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0
+        }
+      },
+      "delta": 0.007130565622103735,
+      "clova_better": true
+    }
+  }
+}

@@ -1,0 +1,1030 @@
+{
+  "timestamp": "20251227_143034",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "CONLEGIS"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "results": [
+    {
+      "variable": "CONLEGIS",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 100,
+      "distribution": {
+        "1": 0.0,
+        "2": 66.0,
+        "3": 34.0
+      },
+      "js_divergence": 0.08250313891684816,
+      "responses": [
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 3,
+          "raw": "3  \n\n(20대 남성의 특성상 사회 문제에 대한 비판적 인식이 높고, 전문직으로서의 현실적 경험과 수도권 거주로 인한 정책 영향력 체감 등이 부정적 평가를 이끌 것으로 추정됩니다.)",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P002",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n20대는 일반적으로 정치 참여 의식이 높고 사회 문제에 민감합니다. 그러나 최근 몇 년간 국회에서 발생한 갈등과 비효율적인 법안 처리 등으로 인해 이 세대에서는 정치권과 국회에 대한 실망감이 큰 경향이 있습니다. 실제 여론조사에서도 20대의 국회 신뢰도는 다른 연령대에 비해 낮은 것으로 나타나며, 이는 정책 추진 과정에서의 소통 부족 및 청년층 이슈 해결 지연과도 관련이 있을 수 있습니다. 따라서 본 응답자의 경우 \"거의/전혀 신뢰하지 않는다\"(3점)고 답했을 가능성이 높습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P003",
+          "answer": 3,
+          "raw": "3  \n\n젊은 세대는 일반적으로 정치 시스템에 회의적이며, 경제적 어려움과 사회적 문제 해결 부재에 대한 실망감으로 인해 낮은 신뢰를 보이는 경향이 있습니다. 호남권의 정치적 성향 변화나 개인적 경험이 일부 긍정적 영향을 줄 수 있으나, 전반적으로는 부정적 인식이 우세합니다. 또한 사무직 종사자로서 체감하는 정책 효과 미흡 역시 신뢰 저하 요인으로 작용했을 것으로 보입니다. 따라서 가장 가능성 높은 답안은 **3**입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P004",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P005",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P006",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P007",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P008",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P009",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P010",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P011",
+          "answer": 3,
+          "raw": "답변: 3  \n\n(20대 여성의 경우 사회경제적 문제로 인해 정치 참여 및 국회 활동에 대한 체감 효과가 낮아 부정적 인식이 높으며, 판매직 종사자로서 노동환경 개선 미흡 등으로 인한 불만이 국회 신뢰 저하로 이어질 가능성 반영)",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P012",
+          "answer": 3,
+          "raw": "3  \n\n젊은 세대의 정치 참여 증가에도 불구하고, 과거 사례 및 사회적 분위기에 따른 국회의 리더십에 대한 불신이 높다는 점을 반영했습니다. 또한 호남권의 특수성을 배제하더라도 일반적으로 젊은 층의 부정적 인식이 두드러진다는 통계적 추론을 적용하였습니다. 따라서 가장 낮은 신뢰도 등급인 '3'을 선택합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P013",
+          "answer": 3,
+          "raw": "답변: 3  \n*설명: 20대 여성의 경우 사회 문제에 관심이 많고, 온라인 활동 등을 통해 정보를 접하며 국회나 정치인에 대한 실망감을 표출하는 경우가 많습니다. 또한 전문직 종사자로서 현실적인 정책 변화에 대한 기대치가 높아 기존 정치권의 대응 미흡을 체감할 가능성도 있습니다. 이러한 배경을 고려해 낮은 신뢰도(3)로 추정됩니다.*  \n\n단순화된 답변: **3**",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P014",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P015",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P016",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P017",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P018",
+          "answer": 3,
+          "raw": "답변: 3  \n(한국 사회 전반적으로 국회의 신뢰도가 낮다는 점을 고려하였으며, 사용자의 관리직 경력 및 사회적 관점에서 비판적 시각을 가졌을 가능성을 반영했습니다.)  \n\n\\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P019",
+          "answer": 2,
+          "raw": "답변: 2  \n\n**설명:**  \n조건상의 인물(영남권 30대 남성, 대졸, 관리직)은 일반적으로 보수 성향이 강하고 현실적 관점을 가질 가능성이 높다. 국회의 역할과 한계에 대한 이해도가 높아 지나친 낙관(1점)이나 과도한 불신(3점)보다는 **현실적 평가(2점)**를 할 확률이 높다. 또한, 관리직 경력자로서 정책 실행 과정에서의 국회와 행정부의 협력 관계를 경험하며 \"보통\" 수준의 신뢰를 형성할 수 있다. 단, 최근 정치 상황에 따른 변동성은 배제된 단순 추정치이다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P020",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P021",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P022",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P023",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P024",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P025",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P026",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P027",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n사용자의 특성(30대 여성, 대졸, 수도권, 전문직)을 고려했을 때, 정치 참여와 사회 문제에 대한 관심이 상대적으로 높을 것으로 예상됩니다. 그러나 최근 한국의 정치 상황(국회 내 갈등, 비효율성 등)과 전문직 종사자로서 체감하는 정책에 대한 실망감이 결합되어 **낮은 신뢰도(3)**를 보일 가능성이 높습니다. 다만, 개인적 경험이나 가치관에 따라 결과는 다를 수 있습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P028",
+          "answer": 3,
+          "raw": "답변: 3  \n*이유: 30대 여성의 경우 사회적 문제에 대한 관심이 높고, 최근 정치적 상황에 대한 부정적 인식이 강합니다. 또한 수도권 거주 및 전문직 특성상 정보 접근성이 높아 국회 운영에 대한 비판적 시각이 형성되기 쉽습니다.*  \n\n단순화된 사고 과정 요약:  \n1. 대상 그룹 분석 → 30대 여성 + 전문직 + 수도권 → 정치 관심도 ↑, 정보 접근성 ↑  \n2. 최근 정치 환경 → 젊은 층의 국회 신뢰도 ↓ (청년 문제 해결 미흡 등)  \n3. 결론 도출 → 부정적 평가 우세 예상 → **3** 선택  \n\nAnswer: \\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P029",
+          "answer": 3,
+          "raw": "3  \n\n한국 사회에서 30대 대졸 여성의 경우, 정치적 체제에 대한 불신과 실생활 문제의 미흡한 반영 등으로 인해 국회 신뢰도가 상대적으로 낮을 것으로 추정됩니다. 특히 전문직으로서의 경험과 호남 지역의 정치적 맥락이 복합적으로 작용하며, 구조적 변화에 대한 요구와 현실 간의 괴리가 크게 느껴질 수 있습니다. 따라서 가장 높은 비율로 나타나는 '거의/전혀 신뢰하지 않음'(3점) 응답이 적절하다고 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P030",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P031",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P032",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P033",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P034",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P035",
+          "answer": 2,
+          "raw": "2  \n\n관리직으로서의 경험과 사회적 맥락을 고려했을 때, 국회의 효율성과 의사결정 과정에 대한 회의감이 반영되었으나, 완전한 불신 단계까지는 아닌 것으로 가정하여 **\"보통\"(2)**을 선택했습니다. 최근 통계상 낮은 신뢰도와 달리, 일부 정책 실행력 또는 협상 과정에서의 전문성 등 긍정적인 면모에도 주목할 여지가 있다고 판단됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P036",
+          "answer": 3,
+          "raw": "답변:\n3  \n\n일반적으로 40대 이상 고학력·수도권 거주 관리직 남성은 정치 시스템에 대한 체감 실망도가 높고, 국회 구성원의 정책 실행 역량 및 윤리성에 대한 기대치가 낮아 부정적 평가 경향이 있습니다. 실제 언론 보도에서도 해당 계층 대상 조사 시 국회 신뢰도가 하위권에 머무르는 추세이므로 최하점(3) 선택이 타당합니다. 단 특정 이슈 발생 시기에는 일시적 변동 가능성 있으나 기본 성향 반영 시 동일 결과 예상됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P037",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명:**  \n영남권 40대 남성의 경우, 전통적인 보수 성향이 있으나 최근 정치 갈등 및 비효율성에 대한 피로감이 높다. 대졸·사무직으로서 정보 접근성과 현실적 판단력으로 인해 국회 리더십에 대한 비판적 시각이 형성되기 쉽다. 사회 전반에 걸친 정치 불신의 흐름 속에서 '거의/전혀 신뢰하지 않음'(3점) 응답 비율이 상대적으로 높을 것으로 추정된다.  \n\n단, 이는 평균적 경향성을 반영하며 개별 차이는 존재한다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P038",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P039",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P040",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P041",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P042",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P043",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 특성(영남권 거주, 40대 여성, 자영업자)과 사회적 맥락을 종합했습니다.  \n- **정치적 배경**: 영남권은 전통적으로 보수 성향이 강하나, 최근 정부와 국회에 대한 전반적 불신이 높습니다.  \n- **경제적 요인**: 자영업자로서 경제적 어려움 시 국회 역할에 대한 기대가 낮을 수 있습니다.  \n- **사회적 분위기**: 최근 여론조사와 미디어에서 국회의 비효율성·부정적 사례가 강조되며, 이에 공감할 가능성이 큽니다.  \n\n이러한 요소를 종합해 볼 때, **\"거의/전혀 신뢰하지 않음\"(3)**이라는 응답이 가장 자연스러워 보입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P044",
+          "answer": 3,
+          "raw": "3  \n\n(설명: 일반적으로 한국 사회에서 국회의원에 대한 신뢰도가 낮으며, 특히 교육을 받은 전문직 종사자나 수도권 거주자의 경우 정치 시스템에 대한 비판적 시각이 강할 것으로 추정됩니다. 따라서 '거의/전혀 신뢰하지 않음'(3)을 선택한 것입니다.)",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P045",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 특성(40대·여성·고졸 이하·영남권·서비스직)을 고려할 때, 일반적으로 정치적 이슈에 대한 민감도는 개인적 경험 및 사회적 분위기에 영향을 받습니다. 영남권의 전통적인 지지 성향과는 별개로, **경제적 부담**(서비스직 소득 한계 등)과 **정치 불신 확대 추세**가 겹치며, 국회 구성원들의 행보에 회의적이기 쉽습니다. 또한 저학력층의 경우 직접적인 정책 혜택 체감이 어려워 비판적 시각이 강화될 가능성이 큽니다. 따라서 **\"거의/전혀 신뢰하지 않음\"(3)** 선택이 가장 적절하다고 판단됩니다. 단, 지역별 특수 정국 이슈 발생 시 변동 가능성 있음.  \n\n**단어 수**: 199  \n**답변 형식 준수 여부**: ✔️ (숫자 단독 + 설명 생략 요청 시 답변은 \"3\")",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P046",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P047",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P048",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P049",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P050",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n40대 서비스직 여성의 경우, 경제 및 사회적 영향에 민감하며 현장 경험을 통해 정책의 실질적 효과를 체감합니다. 최근 정치적 갈등과 입법 성과 부진 등으로 인한 일반적인 국회 불신이 반영되었으며, 특히 경제적·사회적 약자의 입장을 대변하는 정책에 대한 실망감이 커 **\"거의/전혀 신뢰하지 않음\"(3)**으로 추정됩니다. 이는 인구통계학적 특성과 사회적 맥락을 종합한 결과입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P051",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명:**  \n주어진 조건은 40대 여성, 대학원 이상 학력, 수도권 거주, 관리직 종사자로 설정되었습니다. 국회의 리더십 신뢰도에 대한 일반적인 여론은 낮은 편이며, 특히 고학력과 관리직 경력은 정치인의 성과 기반 평가와 현실적 시각을 강화시킬 것으로 보입니다. 이로 인해 국회의 리더십에 대한 부정적 인식이 높아 **3**(거의/전혀 신뢰하지 않음)을 선택한 것입니다.  \n\n단순화된 이유 요약:  \n1. **평균적 신뢰도 하락 추세**: 사회적 논란 증가로 전반적 신뢰 저하.  \n2. **고학력·관리직 영향**: 성과 중심 평가 + 조직 운영 경험으로 인한 현실 감각 → 부정적 평가 우세.  \n\n결과: \\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P052",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P053",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P054",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P055",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P056",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P057",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 프로필(50대 남성, 기능직, 수도권 거주, 고졸 이하)을 고려할 때, 경제적·사회적 피로감과 함께 정치적 무관심 또는 회의주의적 태도를 보일 가능성이 큽니다. 최근 몇 년간의 국회 논란(비리 의혹, 대립적 정치 문화 등)과 개인의 일상적 경험(고용 안정성 문제, 복지 체감 저하 등)이 결합되며 **신뢰하지 않는 경향**(3점)이 두드러질 것으로 추정됩니다. 다만, 모든 경우에 해당하지는 않으며 평균적으론 3점을 선택했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P058",
+          "answer": 3,
+          "raw": "3\n\n사용자가 제공한 정보에 따르면, 50대 남성 자영업자로서는 경제적 영향 및 정책 변화에 민감하며, 국회의 비효율성에 대한 부정적 인식이 클 것으로 예상됨. 최근 여론조사와 정치적 분위기로 보아 부정적 평가가 우세하므로 **3**으로 답변.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P059",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n주어진 조건(50대 남성, 대졸, 수도권 거주, 관리직)을 고려할 때, 사회적 경험이 풍부하고 정치·사회 문제에 대한 관심이 높은 계층일 가능성이 큽니다. 최근 한국 사회의 정치적 갈등 및 국회 운영 방식(예: 당파적 대립, 정책 지연 등)에 대한 부정적 인식이 확산되어 있는 상황에서, 이와 유사한 경험을 직장 내 리더십 평가에 투영시킬 수 있습니다. 이로 인해 국회의원들의 의사결정 과정이나 책임감에 대한 회의적 시각이 강해져 **3**(거의/전혀 신뢰하지 않음)을 선택했을 것으로 추정됩니다. 단, 개인 차이는 존재하며 통계적 근거는 없습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P060",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P061",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P062",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P063",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P064",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P065",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n주어진 특성(50대 여성, 고졸 이하, 충청/강원 거주, 기능직)을 가진 집단은 일반적으로 사회경제적 지위가 낮아 정부 및 정치 기관에 대한 체감도가 낮을 가능성이 있습니다. 또한, 기능직 종사자의 경우 근로 조건 개선 등 실용적 정책을 중요시하며, 국회와 같은 제도권 정치에 대한 회의감이 클 수 있습니다. 여러 조사에서도 저소득층·저학력층의 국회 신뢰도가 비교적 낮은 경향을 보이므로 **3**(신뢰하지 않음)을 선택했습니다. 다만 개인의 경험과 가치관에 따라 결과는 달라질 수 있음을 유념합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P066",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n수도권 50대 대졸 사무직 여성으로서 사회 경험과 정보 습득 기회가 많아 정치 현실에 대한 비판적 인식이 형성되었을 가능성이 큽니다. 최근 국회에서 발생하는 갈등, 정책 지연 등으로 인한 국민적 피로감과 낮은 신뢰도 트렌드를 반영하여 **\"거의/전혀 신뢰하지 않음\"(3)**을 선택했습니다. 이는 통계상 다수의 성인이 정치권을 불신한다는 조사 결과와 유사합니다. 다만 개인의 성격이나 경험에 따라 달라질 수 있으나, 주어진 조건에서는 중도·보수적 태도로 추정되었습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P067",
+          "answer": 2,
+          "raw": "답변:\n2  \n\n**설명:**  \n사용자의 특성(50대 여성, 관리직, 대졸, 수도권 거주)을 고려했을 때, 국회의 신뢰도에 대해 **평균적 평가(2)**를 할 가능성이 높습니다.  \n관리직 경력에서 정책 실행 과정의 복잡성을 이해하고 있으나, 정치적 갈등이나 비효율성에 대한 피로감으로 인해 극단적 신뢰 또는 불신보다 중립적 입장을 취하기 쉽습니다. 또한, 대졸 학력과 정보 접근성으로 인해 맹목적인 신뢰보다는 현실적 시각을 가질 것으로 예상됩니다. 따라서 **보통(2)** 수준의 신뢰도가 가장 타당하다고 판단됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P068",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P069",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P070",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P071",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P072",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P073",
+          "answer": 3,
+          "raw": "답변: 3  \n\n고령층의 농업 종사자로서, 국회의 정책 결정 과정 및 실행 능력에 대한 실망감이나 현 정치 체계의 비효율성에 대한 인식이 강할 수 있습니다. 또한 수도권 내 농촌 지역 주민으로서 중앙 정치와 일상 생활 간의 괴리감을 느끼며, 정부나 국회보다는 지역사회 중심의 문제 해결 방식을 선호할 가능성이 큽니다. 이러한 요인들이 결합되어 비교적 낮은 신뢰도로 나타날 것으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P074",
+          "answer": 3,
+          "raw": "답변: 3  \n\n고령층의 농업 종사자로서 정부 및 정치권에 대한 신뢰도가 낮을 것으로 추정됩니다. 지역 현안(농업 지원 부족, 인프라 미비 등) 해결 지연과 정치적 갈등 노출 빈도로 인해 실망감이 누적되어 \"거의/전혀 신뢰하지 않음\"(3점)으로 응답했을 가능성이 높습니다. 다만 개인별 편차가 존재하므로 이는 통계적 추론임을 유의합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P075",
+          "answer": 3,
+          "raw": "3  \n사용자의 특성과 통계를 종합하면, 60대 이상 고연령층과 대졸 학력의 경우 국회의원 신뢰도가 낮은 경향이 있습니다. 호남권의 정치적 성향보다는 해당 연령대와 학력대의 일반적 패턴이 강하게 작용하며, 은퇴 계층으로서 사회 문제에 대한 관심 증가와 실망감이 반영되어 가장 낮은 신뢰 수준인 '3'으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P076",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P077",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P078",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P079",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P080",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P081",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P082",
+          "answer": 3,
+          "raw": "답변: 3  \n설명: 60대 이상 남성, 고졸 이하, 충청/강원 거주 자영업자의 특성 상 정치 참여도와 국회 신뢰도가 낮을 것으로 추정됩니다. 통계적으로 고령층 및 저소득층에서 국회 신뢰도가 하위권에 속하는 경향이 있으며, 경제적 이해관계가 큰 자영업자로서 정책 실행력에 대한 실망감이 영향을 미칠 수 있습니다. 이에 따라 \"거의/전혀 신뢰하지 않음\"(3점)으로 응답합니다.  \n\n**최종 답변**: \\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P083",
+          "answer": 3,
+          "raw": "답변:\n3  \n\n설명:  \n60대 이상 고령층의 경우, 정치적 피로감과 현 정부 및 의회에 대한 부정적 인식이 강한 경향이 있습니다. 특히 사회 문제 해결 미흡(연금·의료·복지), 세대 간 형평성 논란, 정책 지연 등으로 인해 신뢰도가 낮아지기 쉽습니다. 또한 대졸 이상 학력은 정보 접근성과 비판적 사고를 높이는 반면, 기존 체제에 대한 회의감을 강화시킬 수 있어 **낮은 신뢰**(3점)를 선택할 가능성이 큽니다. 다만 개인 경험과 성향에 따라 변동 가능성 있으나, 일반적 추세 반영 시 **3**이 타당합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P084",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n사용자의 특성은 **60대 이상 남성**, **고졸 이하 학력**, **충청/강원 거주**, **자영업자**입니다. 이러한 집단군에서는 일반적으로 정치적 보수 성향과 함께 정부와 국회에 대한 회의론이 강한 경향이 있습니다.  \n- **연령 및 학력**: 전통 미디어(신문·TV) 의존도가 높고, 오랜 사회 경험을 바탕으로 한 현실적 판단 기반이 형성되어 있습니다. 이는 국회의 비효율성 또는 부정부패 사례에 민감하게 반응하며 **신뢰 저하**로 이어질 수 있습니다.  \n- **거주 지역(충청/강원)**: 수도권 대비 개발 격차와 지역 소외감, 자영업 중심의 경제 구조에서 규제나 지원 부족 등에 대한 불만이 누적되기 쉽습니다. 이로 인해 국회 차원의 실질적 해결책 미흡을 경험하며 **비신뢰 경향** 강화됩니다.  \n- **직업(자영업)**: 코로나19 등 위기 시 직접적 타격 경험과 복잡한 세제·규제로 인한 스트레스 누적이 큽니다. 국회 차원의 지원 정책 미비로 체감될 때 **불신이 심화**됩니다.  \n\n따라서 \"국회 신뢰도\"는 **낮은 수준**(3점)으로 평가되는 경우가 많습니다. 다만 일부 개인적 예외는 있으나, 전체 데이터 상 해당 군집군의 평균적 응답 패턴을 반영하여 **3**을 선택합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P085",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P086",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P087",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P088",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n60대 이상 고령층의 경우 대체로 정치 시스템에 대한 회의감이 상대적으로 높습니다. 특히 수도권 거주·대학원 이상 학력의 은퇴자인 경우 사회 문제에 관심이 많고 언론 노출 빈도가 높아 국회 구성원에 대한 부정적 인식을 형성했을 가능성이 큽니다. 또한 최근 국정 운영 방식 및 입법 활동에 대한 대내외적 비판 확대 역시 영향을 미쳤을 것으로 추정됩니다. 따라서 **\"거의/전혀 신뢰하지 않음\"(3)**이 가장 타당한 선택지로 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P089",
+          "answer": 3,
+          "raw": "답변: 3  \n(설명: 60대 이상 고령층의 경우 사회적 변화에 적응하기 어려운 경우가 많아 정부 및 정치권에 대한 불신감이 상대적으로 높습니다. 또한, 고졸 이하의 학력에서는 정보 접근성이 낮아 언론 보도 등을 통해 부정적 인식을 형성하기 쉽고, 수도권 거주자의 경우 생활 밀착형 현안(복지·연금 등)에서 정부의 미흡함을 체감하며 신뢰를 잃기 쉽습니다.)  \n\n단순화된 답변: **3**",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P090",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n주어진 프로필(충청/강원 거주, 자영업, 고졸 이하, 60대 이상 여성)을 바탕으로 분석한 결과:  \n1. **연령 & 교육수준**: 사회적 네트워크나 전통 매체를 주로 접하며, 정치적 문제에 대해 비판적 시각이 형성될 가능성이 높음.  \n2. **직업(자영업)**: 코로나19 등의 외부 충격 시 정부 지원 부족 경험 → 국회·정부에 대한 불신 증가.  \n3. **지역 특성**: 보수 성향이 강하나, 최근 경제 악화 추세 속에서 국회 역할 부재 인식 → 신뢰 하락.  \n\n이러한 요소들이 결합되어 \"국회 신뢰도 ↓\"로 이어질 것으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P091",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P092",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P093",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P094",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P095",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P096",
+          "answer": 3,
+          "raw": "답변:\n3  \n\n고령층 및 지역사회 특성 상 정치적 회의감이 클 가능성, 은퇴 후 체제 비판 경향, 단순화된 신뢰도 평가를 고려해 가장 낮은 점수 부여합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P097",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명:**  \n응답자가 60대 이상, 영남권 거주, 자영업자로 경제적·정치적 환경에 민감할 가능성이 높습니다. 고령층의 정치 불신 경향이 있으며, 특히 경제 상황 악화 시 국회 신뢰도가 낮아지기 쉽습니다. 영남권은 전통적 보수 성향이지만, 현재 정부의 경제 정책 등에 대한 부정적 인식이 있다면 신뢰도 하락으로 이어질 수 있습니다. 이러한 요소를 종합하여 **\"거의/전혀 신뢰하지 않음\"(3)** 으로 추정했습니다.  \n\n단, 이는 통계적 경향을 반영한 것이며 개별 사례와는 차이가 있을 수 있습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P098",
+          "answer": 3,
+          "raw": "3  \n\n고령층의 정치 불신 경향이 두드러지며, 특히 고학력·수도권 거주자의 경우 정보 접근성과 비판적 사고로 인해 국회 리더십에 부정적 인식이 강할 것으로 추정됩니다. 최근 정치 상황에서도 비리와 대립 구도 심화 등으로 인한 실망감이 반영된 선택으로 보입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P099",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P100",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        }
+      ]
+    }
+  ]
+}

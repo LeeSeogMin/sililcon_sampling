@@ -1,0 +1,178 @@
+{
+  "PARTYLR": {
+    "variable": "PARTYLR",
+    "n": 100,
+    "categories": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "observed_counts": {
+      "1": 0,
+      "2": 0,
+      "3": 70,
+      "4": 22,
+      "5": 8
+    },
+    "observed_pct": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 70.0,
+      "4": 22.0,
+      "5": 8.0
+    },
+    "benchmark_pct": {
+      "1": 3.6,
+      "2": 24.8,
+      "3": 37.2,
+      "4": 26.5,
+      "5": 4.5
+    },
+    "js_divergence_ln": 0.12879801460330642,
+    "js_distance_ln": 0.35888440284206613
+  },
+  "NORTHWHO": {
+    "variable": "NORTHWHO",
+    "n": 100,
+    "categories": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "observed_counts": {
+      "1": 0,
+      "2": 8,
+      "3": 91,
+      "4": 1
+    },
+    "observed_pct": {
+      "1": 0.0,
+      "2": 8.0,
+      "3": 91.0,
+      "4": 1.0
+    },
+    "benchmark_pct": {
+      "1": 7.2,
+      "2": 20.7,
+      "3": 44.1,
+      "4": 26.2
+    },
+    "js_divergence_ln": 0.1549435958018805,
+    "js_distance_ln": 0.39362875377934536
+  },
+  "UNIFI": {
+    "variable": "UNIFI",
+    "n": 100,
+    "categories": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "observed_counts": {
+      "1": 4,
+      "2": 71,
+      "3": 25,
+      "4": 0
+    },
+    "observed_pct": {
+      "1": 4.0,
+      "2": 71.0,
+      "3": 25.0,
+      "4": 0.0
+    },
+    "benchmark_pct": {
+      "1": 9.8,
+      "2": 41.0,
+      "3": 37.1,
+      "4": 11.5
+    },
+    "js_divergence_ln": 0.07257414527229512,
+    "js_distance_ln": 0.26939588948663473
+  },
+  "CONFINAN": {
+    "variable": "CONFINAN",
+    "n": 100,
+    "categories": [
+      1,
+      2,
+      3
+    ],
+    "observed_counts": {
+      "1": 9,
+      "2": 91,
+      "3": 0
+    },
+    "observed_pct": {
+      "1": 9.0,
+      "2": 91.0,
+      "3": 0.0
+    },
+    "benchmark_pct": {
+      "1": 17.3,
+      "2": 65.4,
+      "3": 20.3
+    },
+    "js_divergence_ln": 0.08659602246042465,
+    "js_distance_ln": 0.29427202119879603
+  },
+  "CONLEGIS": {
+    "variable": "CONLEGIS",
+    "n": 100,
+    "categories": [
+      1,
+      2,
+      3
+    ],
+    "observed_counts": {
+      "1": 6,
+      "2": 85,
+      "3": 9
+    },
+    "observed_pct": {
+      "1": 6.0,
+      "2": 85.0,
+      "3": 9.0
+    },
+    "benchmark_pct": {
+      "1": 5.0,
+      "2": 27.5,
+      "3": 63.8
+    },
+    "js_divergence_ln": 0.19654618353583675,
+    "js_distance_ln": 0.4433352947102641
+  },
+  "KRPROUD": {
+    "variable": "KRPROUD",
+    "n": 100,
+    "categories": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "observed_counts": {
+      "1": 1,
+      "2": 83,
+      "3": 16,
+      "4": 0
+    },
+    "observed_pct": {
+      "1": 1.0,
+      "2": 83.0,
+      "3": 16.0,
+      "4": 0.0
+    },
+    "benchmark_pct": {
+      "1": 18.5,
+      "2": 66.7,
+      "3": 13.8,
+      "4": 0.2
+    },
+    "js_divergence_ln": 0.053543641115083335,
+    "js_distance_ln": 0.2313949893906161
+  }
+}

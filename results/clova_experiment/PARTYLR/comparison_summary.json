@@ -1,0 +1,41 @@
+{
+  "timestamp": "20251227_164346",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "medium",
+    "variables": [
+      "PARTYLR"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "PARTYLR": {
+      "clova_hcx007": {
+        "js_divergence": 0.06525181475609976,
+        "distribution": {
+          "1": 0.0,
+          "2": 30.0,
+          "3": 13.0,
+          "4": 46.0,
+          "5": 11.0
+        }
+      },
+      "gpt_5_2": {
+        "js_divergence": 0.189,
+        "distribution": {
+          "1": 0.0,
+          "2": 1.0,
+          "3": 92.0,
+          "4": 7.0,
+          "5": 0.0
+        },
+        "note": "Re-experiment with corrected 1-5 scale (original used 0-10 scale incorrectly)"
+      },
+      "delta": 0.12374818524390024,
+      "clova_better": true,
+      "improvement_pct": 65.5
+    }
+  },
+  "scale_correction_note": "GPT-5.2 originally responded with 0-10 scale values (5,6,7,8). Re-experiment on 2024-12-27 with enhanced prompt forced correct 1-5 scale responses, revealing strong central tendency bias (92% chose '중도')."
+}

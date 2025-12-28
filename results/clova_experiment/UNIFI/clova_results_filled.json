@@ -1,0 +1,1514 @@
+{
+  "timestamp": "20251227_220258",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "medium",
+    "variables": [
+      "UNIFI"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "results": [
+    {
+      "variable": "UNIFI",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 100,
+      "distribution": {
+        "1": 5.0,
+        "2": 48.0,
+        "3": 44.0,
+        "4": 3.0
+      },
+      "js_divergence": 0.020148563936492343,
+      "responses": [
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        2,
+        4,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        4,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        4,
+        2,
+        3,
+        3,
+        1,
+        3,
+        2,
+        3,
+        1,
+        1,
+        2,
+        3,
+        3,
+        3,
+        1,
+        1,
+        2
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 2,
+          "raw": "답변: **2**  \n(20대가 통일 문제에 대해 현실적·경제적 측면을 고려하여 유보적이지만, 교육 수준과 전문직 특성상 역사적·사회적 필요성은 일정 부분 인정할 가능성을 반영함)  \n\n단계별 설명:  \n1. **연령/성별**: 20대 남성의 경우 통일보다 현 체제 유지나 점진적 협력을 선호한다는 통계 경향 존재.  \n2. **교육수준**: 대학 교육을 통해 통일의 역사적 당위성은 학습했으나 실생활 영향력 평가가 병행됨.  \n3. **거주지역(수도권)**: 직접적 경제 부담(통일 비용) 우려가 상대적으로 클 수 있음.  \n4. **직업(전문직)**: 사회 시스템 변화에 민감하므로 장기적 통합 이익 가능성에도 주목할 여지 보유.  \n5. 종합: 완전한 부정(3,4점)보다는 조건부 필요성(2점)으로 절충.  \n\n추가 근거: 최근 조사에 따르면 2030세대의 약 40%가 \"통일보다는 평화적 공존\"을 우선시하나, 이는 절대적 반대(4점)와는 구분됨. 따라서 \"다소 필요하다\"(2점)로 해석.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P002",
+          "answer": 3,
+          "raw": "답변:  \n**3**\n\n젊은 세대의 경우 통일보다 경제·실용적 문제를 우선시하는 경향이 있으며, 통일 비용과 사회통합 어려움 등을 우려합니다. 또한 수도권 대졸 사무직 특성상 글로벌 감각과 개방적 사고로 현 체제 유지나 점진적 협력을 선호할 수 있습니다. 다만 역사·민족적 측면에서 완전한 단절에는 부정적이므로 극단적 불필요(4점) 대신 **별로 필요하지 않다(3점)**를 선택할 것으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P003",
+          "answer": 2,
+          "raw": "답변 (숫자만):  \n**2**\n\n---\n\n### 이유 요약 (간략화):  \n1. **프로필 분석**:  \n   - **20대 남성**, **호남권 거주**, **사무직** → 사회 문제에 대한 정보는 다양하나 경제적/현실적 측면을 고려할 가능성 높음.  \n   - **대졸** → 역사/정치적 맥락 이해도가 높아 극단적 입장(1 또는 4)보다 신중한 태도 예상.  \n\n2. **세대적 경향**:  \n   - 최근 연구에 따르면 2030세대는 통일보다는 **교류 확대**를 우선시하는 경우가 많고, 경제 부담 등으로 **회의적 시각**이 일부 있음.  \n\n3. **균형적 선택**:  \n   - 완전한 반대(4점)는 드물며, 강한 지지(1점) 역시 제한적. **실용적 관점**(경제적 비용 등)을 고려해 **\"다소 필요하다\"(2)**로 추정됨.  \n\n※ 주의: 개인 차이로 인해 절대적이지 않으며, 참고용으로만 활용됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214800",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P004",
+          "answer": 2,
+          "raw": "답변: 2  \n(젊은 세대의 경제적 부담 인식과 역사적 의미 간의 균형을 고려해 '다소 필요하다'는 중립적 입장을 취함)  \n\n단, 위 답변은 가상의 시나리오 기반 추론임. 실제 응답자의 개인적 견해와는 차이가 있을 수 있음.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214810",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P005",
+          "answer": 3,
+          "raw": "답변:  \n3  \n\n**설명**:  \n20대 남성은 일반적으로 경제적 안정 및 개인적인 삶의 질 향상을 우선시하는 경향이 있습니다. 또한 영남권의 보수적 정치 성향과 사무직의 실용적 사고방식은 통일 문제를 당면 과제보다는 장기적·추상적 이슈로 인식시킬 수 있습니다. 다만 대졸자로서 교육 수준이 높아 역사적 의미는 인지하더라도, 현 시점에서의 구체적 이익 부재와 비용 부담 우려로 **\"별로 필요하지 않다\"(3)**를 선택할 가능성이 높습니다. 이는 최근 여론조사에서 젊은 세대의 통일 필요성 감소 추세와도 부합합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214823",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P006",
+          "answer": 2,
+          "raw": "답변: 2  \n근거: 20대 남성의 경우 통일에 대한 관심이 비교적 낮고 실용적 관점을 중시하는 경향이 있습니다. 하지만 역사적·인도적 측면에서 부분적 필요성은 인정하므로 **\"다소 필요하다\"(2)** 로 추정됩니다. 단, 영남권의 지역적 특성과 학업 스트레스 등으로 인해 3 또는 4로도 변동 가능합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214833",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P007",
+          "answer": 2,
+          "raw": "2  \n(젊은 세대로서 경제적 부담 등의 현실적 고민을 하며, 완전한 통합보다는 점진적 협력 확대 등 부분적 접근을 선호할 가능성을 고려해 '다소 필요하다'고 판단했습니다.)  \n\n단계별 설명:  \n1. **연령/성별/직업 영향**: 20대 청년층은 통일에 따른 경제적 부담을 의식하며 실용적 관점을 가질 가능성 있음.  \n2. **교육수준**: 대학 교육을 통해 역사적 의미는 이해하나, 현실적 실현 가능성에 회의적 시각 형성될 수 있음.  \n3. **수도권 거주 특성**: 안보보다 사회경제적 파급효과 중심으로 사고하기 쉬움. 예) 북한 인프라 투자 비용 부담 인지.  \n4. **균형점 도출**: 완전 반대(4)나 절대적 찬성(1) 대신, 점진적 협력 강화 방향(2)으로 기울어짐.  \n\n⚠️ 주의: 이는 일반화된 가설이며, 개별 사례와는 차이가 있을 수 있음.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214845",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P008",
+          "answer": 2,
+          "raw": "2  \n젊은 세대이자 사무직으로서 경제적 부담과 현실적 접근을 고려하면서도, 역사적·사회적 통합 측면에서 일정 수준 필요성을 인정하는 경향이 반영됨. 호남권의 진보적 성향과 평화 의제도 영향 미침. 다만 강한 확신보다는 절충적 태도를 취함.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214854",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P009",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n20대 남성의 경우, 통일보다 현 사회의 실질적 문제 해결을 우선시하는 경향이 있으며, 경제적 부담이나 문화적 차이에 대한 우려가 큽니다. 최근 조사에 따르면 젊은 층은 통일의 당위성보다 현실적 이익을 중시하므로 **3**(별도로 필요하지 않음)이 적절한 응답입니다. 단, 개인의 경험/가치관에 따라 차이가 있을 수 있으나, 제공된 정보 기반 분석 결과입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214904",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P010",
+          "answer": 2,
+          "raw": "답변: **2**  \n(젊은 세대 중에서도 통일에 대한 관심이 상대적으로 낮으나, 교육 수준과 지역적 특성 상 평화 및 협력 필요성은 일부 인지하고 있을 것으로 추정됨.)  \n\n단계별 설명:  \n1. **연령(20대)** → 통일보다 실용적 이슈 우세 가능성 ↑  \n2. **성별/교육/직업(여성, 대졸, 사무직)** → 합리적 관점에서 비용·혜택 분석 가능성  \n3. **거주지역(호남권)** → 평균 대비 진보적 성향 강하나, 경제적 부담 의식 존재  \n4. **종합 평가** → \"평화적 공존\"(현상유지)과 \"장기적 통일 기대\" 사이에서 **균형적 입장**(2점).  \n\n근거: 최근 설문조사에선 2030세대 약 40%가 \"통일 불필요\", 30% 내외가 \"조건부 찬성\". 호남권도 전국 평균보다 약간 높은 편이지만 절대 다수 의견은 아님.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P011",
+          "answer": 3,
+          "raw": "답변:  \n3  \n\n**설명:**  \n설문에 주어진 조건은 **20대 여성, 고졸 이하 학력, 수도권 거주, 판매직 종사자**입니다. 최근 조사에 따르면, 20대 청년층의 상당수는 통일 문제에 대해 상대적으로 낮은 관심을 보이며, 경제적 부담이나 실생활과의 거리감 등을 이유로 필요성에 회의적입니다. 특히 판매직 등 현업 종사자의 경우 즉각적인 생계 문제와의 연관성이 낮아 통일의 필요성을 크게 느끼지 않을 가능성이 있습니다. 이에 따라 \"별로 필요하지 않다\"(3점)라는 응답이 가장 타당하다고 판단됩니다. 다만 일부 응답자들은 역사적·민족적 관점에서 소극적 필요성을 인정할 수 있으나, 전반적으로는 부정적인 경향이 우세합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P012",
+          "answer": 3,
+          "raw": "답변: 3  \n\n젊은 세대로서 경제적 부담과 현실 문제에 집중하며, 통일의 시급성에 대한 체감이 낮을 수 있습니다. 다만, 호남 지역의 상대적으로 진보적 성향이 약간의 긍정적 인식을 유지시킬 가능성을 고려해 **3**으로 결정했습니다. 그러나 무관심이 강한 계층이므로 최종적으로는 **별도로 필요하지 않다**는 입장을 반영하였습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214915",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P013",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명**: 20대 여성의 경우 경제적 부담 및 개인주의 성향 등으로 인해 통일의 필요성을 상대적으로 낮게 평가하는 경향이 있습니다. 또한 대졸/전문직이지만 현 시점에서의 사회적·경제적 현실을 고려할 때 즉각적 통일보다 점진적 협력을 선호하며, 이는 '별로 필요하지 않다'(3점)에 가까운 응답을 유도합니다. 다만 완전한 부정(4점)보다는 일부 가능성을 열어두는 경우가 많아 3점으로 추정됩니다.  \n\n\\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214932",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P014",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명**: 20대 여성의 특성상 통일에 대한 관심이 상대적으로 낮을 수 있으며, 경제적 부담 등 현실적 문제로 인해 필요성이 낮게 평가될 가능성이 있습니다. 또한 단순노무 직군의 경우 즉각적인 생계와 관련된 이슈에 민감하여 장기적 관점보다 현 상황에 집중할 수 있으므로, **별도로 필요하지 않다**(3)를 선택할 것으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214944",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P015",
+          "answer": 2,
+          "raw": "답변: 2  \n**설명:** 호남 지역은 전통적으로 진보적 성향으로 통일 문제에 비교적 긍정적이며, 대학생은 교육을 통해 통일의 필요성을 인지하고 있으나 경제적 부담 등 현실적 고민을 함께 합니다. 이러한 복합적 요소를 반영해 **'다소 필요하다'(2)** 로 평가했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_214959",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P016",
+          "answer": 3,
+          "raw": "답변: 3  \n**근거:**  \n1. **경제적 부담 우려**: 단순노무 종사자로서 경제적 어려움이 예상되며, 통일 시 추가 비용 발생 가능성에 부담을 느낄 수 있음.  \n2. **실용적 우선순위**: 현 시점에선 생계·일자리 안정이 더 중요하므로 통일의 당위성이 낮게 인식됨.  \n3. **젊은 세대의 특성**: 조사에 따르면 20대는 통일보다 실생활 문제에 관심을 두는 경향이 있으며, 이는 학력과 소득 수준이 낮을수록 심화됨.  \n4. **감정적 요인 제한**: 분단 장기화로 인해 실향민 감소 및 사회적 유대 약화로 정서적 동기 부여가 줄어들었을 가능성.  \n\n결론: **별도의 필요성 없음(3)**. 완전한 부정(4)보다는 일부 인정하나 미미한 비중으로 판단.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215016",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P017",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n20대는 일반적으로 통일보다는 실용적 접근(평화 공존 등)을 선호한다는 조사 결과가 있으나, 여전히 역사적·인도적 차원에서 **\"다소 필요하다\"(2)**고 보는 시각이 우세합니다. 단, 세대별 차이와 개인차가 크므로 절대적이지는 않습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P018",
+          "answer": 2,
+          "raw": "2  \n**설명:**  \n호남 지역은 역사적으로 진보 성향 및 통일에 대한 긍정적 인식이 상대적으로 높은 편이지만, 최근 경제적 부담 등 현실적 문제로 인해 통일에 대한 긍정적 의견이 약화되고 있음. 관리직으로서 경제적·사회적 영향력을 고려했을 때 **\"다소 필요하다\"(2)**가 가장 타당한 선택으로 보임.  \n\n(단순화된 핵심 요인: 지역 정서 + 직업적 현실 감각 반영)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P019",
+          "answer": 3,
+          "raw": "답변: 3  \n관리직 및 영남권 특성상 경제적 실용성과 안보 안정을 중시하는 경향으로 인해 통일의 즉각적 필요성에 회의적일 가능성이 높다. 단, 대졸 계층이므로 장기적 관점에서의 가치 인식 차이 발생 시 **2**로도 변동 가능하다. 현 시점에서는 중도적 비관론 우세 추정.  \n\n\\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P020",
+          "answer": 3,
+          "raw": "답변:  \n3  \n\n**설명:**  \n조건상 30대 남성은 일반적으로 경제적 안정 및 현실적 문제에 관심이 높습니다. 통일 시 발생할 수 있는 경제적 부담, 사회적 혼란 등을 우려하여 **'별도로 필요하지 않다'(3)** 선택을 할 가능성이 높다고 판단됩니다. 다만, 이는 일반적인 경향일 뿐 개인차는 존재합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215027",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P021",
+          "answer": 2,
+          "raw": "답변: 2  \n*해설:* 30대 남성의 경우, 통일에 대한 관심은 있으나 현실적 어려움(경제적 부담 등)을 고려하여 부분적 필요성을 인정하는 경우가 많습니다. 전문직 종사자로서 국가적 이익과 개인적 비용을 균형 있게 평가하며, 강한 찬성(1)보다는 중도적 입장(2)을 취할 가능성이 높습니다.*  \n\n*(최종 답변는 위 해설과 관계없이 요청된 대로 숫자만으로 제공됩니다.)*  \n\n**답변:** 2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215039",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P022",
+          "answer": 3,
+          "raw": "답변: 3  \n영남권 거주 및 서비스직 종사자의 사회적 환경과 30대 남성의 통일에 대한 일반적 인식을 고려할 때, 경제적 부담이나 현실적 어려움을 이유로 **별로 필요하지 않다**는 중도적 견해를 가질 가능성을 반영했습니다. 단, 보수적 정치 성향이나 세대별 차이가 강한 변수이므로 절대적이지는 않습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215052",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P023",
+          "answer": 3,
+          "raw": "답변:\n3  \n\n**설명:**  \n사용자의 특성(30대 남성, 대졸, 수도권 거주, 관리직)을 고려할 때, 통일에 대한 실용적이고 현실적인 접근이 강할 것으로 예상됩니다. 최근 연구에 따르면 청년층·고학력층은 경제적 부담 및 문화적 차이 등으로 인해 통일의 시급성에 회의적이며, 점진적 접근이나 현 체제 유지를 선호하는 경향이 있습니다. 이에 따라 **\"별로 필요하지 않다\"(3)**로 추정했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215104",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P024",
+          "answer": 2,
+          "raw": "답변:  \n**2**\n\n---\n\n### 설명:\n주어진 조건(30대 남성, 대졸, 전문직, 충청/강원 거주)을 종합하여 분석한 결과, **'다소 필요하다'(2)** 로 판단했습니다.  \n- **교육 및 전문직**: 학문적·사회적 관점에서 통일의 상징적 의미와 평화 유지를 중요하게 여길 가능성이 있습니다.  \n- **연령대와 지역**: 2030 세대는 통일보다 현실적 이익을 우선시하는 경향이 있지만, 전문직 계층에서는 역사적 책임감이나 장기적 관점에서의 균형을 고려할 수 있습니다.  \n- **균형적 접근**: 극단적 입장(1 또는 4)보다는 점진적 협력 단계로서 통일을 지지할 가능성이 높아 보입니다.  \n\n다만 개인의 경험과 가치관에 따라 차이가 있을 수 있음을 전제로 합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215117",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P025",
+          "answer": 3,
+          "raw": "답변 (숫자만):  \n3  \n\n**설명:**  \n30대 남성 대졸 사무직이면서 영남권에 거주하는 경우, 경제적 부담 및 현 체제 유지 관점에서 **통일 필요성을 '별로 필요하지 않다'고 인식**할 가능성이 높습니다. 일반적으로 해당 계층은 실용적·안보 중심의 접근을 선호하며, 통일에 따른 사회적 비용과 불확실성을 우려합니다. 따라서 척도에서 **'3(별로 필요하지 않다)'**이 적합하다고 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P026",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 프로필(30대·여성·고졸 이하·수도권·자영업)을 고려할 때, **경제적 안정**과 **현실에 밀접한 문제**를 중요시하는 관점에서 분석했습니다.  \n통일 논의가 단기적 경제 부담이나 불확실성으로 인식될 수 있으며, 자영업자의 경우 사업 환경 변화에 대한 우려가 클 것으로 추정됩니다.  \n젊은 층의 통일에 대한 회의적 시각과 개인적 삶의 우선순위를 반영해 \"별도로 필요하지 않다\"(3점)로 판단했습니다. 다만, 완전한 부정은 아닌 중간 정도의 유보적 태도를 나타냅니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P027",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명**: 조사 대상자가 대졸 및 전문직 종사자로서 사회적·경제적 현실에 민감하며, 통일의 장기적 이점보다 단기적 부담(비용, 사회적 갈등 등)을 우선시하는 경향이 반영됨. 또한 수도권 거주자로 생활권 내 직접적 위협이 낮아 통일의 긴급성을 상대적으로 낮게 평가했을 것으로 추정됩니다. 다만 개인별 가치관에 따라 차이가 있을 수 있음.  \n\n\\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215126",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P028",
+          "answer": 2,
+          "raw": "답변: 2  \n전문직 종사자의 경우, 합리적인 판단과 장기적 관점을 바탕으로 한 중도적 입장을 취할 가능성이 높습니다. 남북통일은 경제·사회적 부담이 크지만, 잠재적 이익(평화 정착, 시장 확대 등)을 고려하면 '다소 필요하다'는 균형 잡힌 선택지로 보입니다. 다만 개인 경험이나 이념 성향에 따라 변동될 수 있으나, 제공된 조건 기반이라면 2번이 적절합니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215137",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P029",
+          "answer": 2,
+          "raw": "답변: **2**  \n호남권의 정치적 성향(진보적), 대졸 및 전문직으로서의 합리적 접근 등을 고려할 때, 통일 자체보다는 점진적 협력 또는 교류 확대 방향을 선호할 가능성이 높아 보입니다. 그러나 완전한 부정(3,4)보다는 부분적 필요성 인정 차원에서 **'다소 필요하다'(2)** 로 추정됩니다. 단, 실제 응답은 개인의 가치관에 따라 크게 달라질 수 있습니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215148",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P030",
+          "answer": 2,
+          "raw": "답변: 2  \n\n---  \n**설명:**  \n30대 여성으로서 교육 수준이 높고 수도권에서 사무직으로 일한다는 점을 고려했을 때, **경제적·사회적 안정성**과 **장기적 발전 가능성** 측면에서 통일의 긍정적 효과를 인식하면서도, 단기적 비용(재정 부담, 사회 갈등 등)에 대한 현실적 고민도 있을 것으로 보입니다. 이에 따라 **균형적인 입장**(‘다소 필요하다’)을 취할 가능성이 높습니다. 또한, 최근 청년층 사이에서 통일 이슈보다는 개인적 삶의 질 향상에 초점을 두는 경향이 있으나, 해당 응답자의 학력과 직업을 감안하면 역사적·사회적 책임감 측면에서도 일부 공감대를 형성할 수 있습니다. 따라서 **2점**이 타당합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215159",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P031",
+          "answer": 3,
+          "raw": "답변: 3  \n설명: 30대 전문직 여성이 영남권에 거주하며, 현실적·경제적 측면을 고려할 때 통일의 즉각적 필요성은 낮다고 판단할 수 있습니다. 보수적 성향 및 현 분단 상태 유지 선호 경향을 반영했습니다.  \n\n(최종 답변: **3**)",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215212",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P032",
+          "answer": 2,
+          "raw": "답변: **2**  \n관리직 경력자인 대졸 여성으로서 현실적 관점에서 통일의 장단점을 균형 있게 고려하며, 호남권의 상대적으로 진보적 성향과 한반도 평화 중요성을 인정하면서도 급진적 추진보다 점진적 접근을 선호할 것으로 추정됩니다. 따라서 \"다소 필요하다\"(2)로 응답합니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215227",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P033",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n사용자의 특성(30대, 여성, 대졸, 충청/강원 거주, 사무직)과 최근 사회 경향을 고려했습니다.  \n젊은 세대는 통일 시 경제적 부담을 우려하거나 실용적 관점에서 접근하는 경향이 있습니다. 또한 여성의 경우 인도주의적 관점이 반영될 수 있으나, 현재 조사 결과에 따르면 20~30대 중 상당수가 \"별도의 필요성이 낮다\"라고 응답합니다. 따라서 **3**(별로 필요하지 않다)이 가장 적절한 선택지로 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P034",
+          "answer": 3,
+          "raw": "답변:\n  \n3  \n\n**설명:**  \n사용자가 **관리직** 및 **수도권 대졸**로서 경제적·실용적 측면을 중시하며, 최근 여론조사 트렌드상 통일에 대한 열망이 감소하는 점을 고려했습니다. 또한 역사적 당위성과 별개로 현 체제 유지를 선호할 가능성을 반영하여 **\"별로 필요하지 않다(3)\"**로 추정했습니다. 다만 강한 부정(4) 대신 부분적 필요성은 인정함으로써 중도적 태도를 취했다고 가정했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P035",
+          "answer": 2,
+          "raw": "답변:  \n**2**\n\n관리직 및 수도권 거주자로서 경제적·사회적 영향을 종합적으로 고려합니다. 통일 시 단기적 비용 증가와 체제 통합 어려움 등이 있으나 장기적 평화 구축과 시장 확대 가능성 등도 존재하므로, **\"다소 필요하다\"**(2점)로 평가했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P036",
+          "answer": 2,
+          "raw": "답변: 2  \n\n관리직 종사자로서 경제적·사회적 안정 추구 성향, 수도권 거주민으로서의 국가 차원 관점, 대졸 학력의 합리적 분석을 종합하면 **장기적 이익 인식**과 **현실적 장애 요인** 사이에서 **균형적 입장**을 취할 가능성이 높습니다.  \n통일의 잠재적 혜택(평화 정착, 시장 확대 등)에는 공감하나 급격한 추진 리스크를 경계하며 단계적 접근을 선호하는 경향이 있어, 절대적 필요성(1)보다는 유보적 수용태세(2)를 선택할 확률이 우세합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215239",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P037",
+          "answer": 3,
+          "raw": "답변: 3  \n\n근거 요약:  \n- **연령/성별**: 40대 남성은 전통적 안보의식과 현대적 실용주의 사이에서 균형을 가질 가능성 있음.  \n- **교육/직업**: 고등 교육과 사무직 특성 상 경제적·사회적 영향 분석 능력이 높아 단기적 비용 대비 장기적 이익 논리에 민감할 것으로 추정됨.  \n- **지역**: 영남권의 상대적으로 보수적 성향은 급격한 통일 추진보다 점진적 협력 선호 가능성 있으나, 이는 정치 성향과는 별개임.  \n- **사회 트렌드**: 최근 조사에선 청년층 중심으로 통일 필요성 감소 추세 뚜렷하나, 동세대 내에서도 대북 정책 관심도는 계층별 차이 존재함.  \n\n결론적으로, 현시점에서 즉각적 통일보다 현상 유지나 부분적 협력을 우선시하는 중도적 견해가 우세할 것으로 판단되어 **\"3\"(별로 필요하지 않다)** 선택. 단, 역사적 정당성과 인도적 차원의 필요성을 완전히 배제하지는 않을 것이므로 극단적 불필요성(4점)보다는 한 단계 낮은 점수 부여.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215253",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P038",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n40대 남성의 경우 일반적으로 역사적 책임감과 민족적 단결을 강조하며 통일의 필요성을 인정하지만, 동시에 경제적 부담 등 현실적 문제에 민감할 수 있습니다. 관리직 경력자로서 국가 발전 차원에서 **점진적 통일**(예: 교류 확대 → 경제협력 → 단계적 통합) 방식을 선호할 가능성이 높아, \"**다소 필요하다**(2)\"라는 중도적 입장을 택할 확률이 큽니다. 또한, 충청/강원 지역의 경우 수도권 대비 통일 비용 분담 부담이 상대적으로 적어 **긍정적 인식**이 약간 우세하나, 절대적 필요성까지는 느끼지 않아 2~3번 구간에서 선택될 수 있습니다. 최종적으로 보수적 관점과 실용주의적 접근을 결합해 **2번**을 선택했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215306",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P039",
+          "answer": 2,
+          "raw": "답변: 2  \n(40대 전문직 남성의 경우, 통일의 상징적·장기적 가치는 인식하나 단기적 비용과 불확실성에 대한 실용적 고민이 복합적으로 작용하여 **'다소 필요하다'**는 중간 입장이 우세함을 반영함.)  \n\n단계별 근거 요약:  \n1. **학력/직업**: 높은 정보 접근성 → 통일 효과 예측 가능성 ↑ (단기 vs 장기 이익 균형 고려).  \n2. **연령**: 전쟁 경험 부재 → 평화 체제 추구 성향 있으나 현실적 리스크 관리 의식 병존.  \n3. **거주지(수도권)**: 통일 후 경제 재편 우려(예: 인프라 분산 비용) + 글로벌 도시 경쟁력 유지 기대 혼재.  \n4. **사회 트렌드**: 최근 조사 결과(2023년 서울대 통일연구소), 동세대 집단 내 **'조건부 찬성'(2~3점 척도) 비중 증가 추세** 참조.  \n\n결과 도출: 이념보다 실용 중심의 중도적 입장 강화 경향 반영 → **2**(다소 필요).",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215317",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P040",
+          "answer": 3,
+          "raw": "답변:  \n**3**\n\n설명:  \n호남권 출신 대졸 40대 남성의 통일 인식은 역사적·정치적 배경과 경제적 실용주의 관점에서 분석됩니다. 호남권은 전통적으로 진보적 성향이 있으나, 최근에는 청년층 중심으로 통일 필요성에 무관심해지는 추세입니다. 또한 사무직 종사자로서 경제적 부담과 현실적 리스크를 우선시할 가능성이 높습니다. 이에 따라 \"별로 필요하지 않다\"(3점)로 추정됩니다. 다만, 교육 수준과 지역 정서로는 완전한 부정(4점)보다 중도적 비관론(3점)이 적절하다고 판단했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215336",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P041",
+          "answer": 3,
+          "raw": "답변 (숫자만):  \n**3**\n\n**설명**:  \n주어진 프로필(40대 남성, 기능직, 수도권 거주, 고졸 이하)을 고려할 때, 경제적 실용주의 관점에서 통일에 대한 부담이 클 것으로 추정됩니다. 기능직 종사자로서 현행 체제 유지 시 일자리/복지 안정성을 우선시하는 경향이 강하며, 단기간의 재정 부담과 사회적 혼란을 우려해 **\"별로 필요하지 않다\"(3)**로 답할 가능성이 높습니다. 다만 지역적 특성(수도권)이 안보 개선 기대감으로 일부 긍정적 영향을 줄 수 있으나, 경제적 우려가 우세합니다.  \n\n단순화된 가정에 따른 추론임을 유의하시기 바랍니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P042",
+          "answer": 3,
+          "raw": "답변: 3  \n**추론:**  \n- **거주지역(영남권):** 보수적 성향이 강해 통일에 대한 필요성을 상대적으로 낮게 평가할 가능성이 있음.  \n- **직업(서비스직):** 경제적 부담이 큰 정책에 부정적인 경우가 많아 통일 비용 문제로 인해 필요성을 낮출 수 있음.  \n- **연령 및 교육수준:** 40대 남성과 고졸 이하의 경우 역사적 이슈보다 현실적 이익을 우선시하는 경향이 있으며, 이는 통일 반대 의견으로 이어질 수 있음.  \n\n다만, 완전한 부정(4점)보다는 약간의 유보적 태도를 보일 것으로 추정되어 **3점**(별도로 필요하지 않다)을 선택함.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P043",
+          "answer": 3,
+          "raw": "답변:  \n**3**\n\n영남권 거주 및 자영업 특성 상 안보와 경제적 안정 우선 의식이 강할 가능성이 높고, 40대 이상 세대의 통일에 대한 관심도는 상대적으로 낮을 것으로 추정됨. 따라서 통일의 필요성을 \"별로 필요하지 않다\"고 판단했을 확률 높음.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215346",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P044",
+          "answer": 2,
+          "raw": "답변: 2  \n**설명:**  \n주어진 조건(40대 여성, 대졸, 수도권 거주, 전문직)을 고려했을 때, **경제적 안정성**과 **실용적 사고 방식**이 강할 것으로 추정됩니다. 통일에 대한 필요성을 완전히 부정하기보다는 점진적 접근을 선호하며, 사회적·경제적 리스크를 감안하여 **\"다소 필요하다\"(2)** 수준으로 평가할 가능성이 높습니다. 또한 높은 교육 수준은 복잡한 이슈에 대한 다각적 이해를 반영할 수 있으므로 극단적 입장(1 또는 4) 대신 중도적 견해를 취할 것입니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215400",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P045",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명**:  \n응답자의 배경(영남권·보수 성향 예상, 서비스직·다양한 의견 노출, 40대 여성의 현실적 시각 등)과 최근 남북 관계 및 여론 동향(통일 필요성 인식 하락)을 고려해 **별도로 필요하지 않다**(3점)를 추정했습니다. 완전한 부정(4점)보다는 현 상태 유지 선호 심리를 반영했으며, 보수적 지역/연령대의 영향력을 우선시했습니다.  \n\n단, 실제 조사 결과는 변동될 수 있으나 주어진 조건 내에서 최적의 추정치입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215415",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P046",
+          "answer": 3,
+          "raw": "답변:\n3  \n\n**근거**:  \n- **연령층**(40대): 일부 연구에선 중장년층이 젊은 세대에 비해 통일에 약간 긍정적이지만, 절대적 찬성 비율은 낮음.  \n- **교육수준**(고졸 이하): 정치적 이슈보다 실생활 관심도가 높아 경제적 부담 등 현실적 측면에서 부정적 평가 가능성 있음.  \n- **직업**(자영업): 경기 변동 민감성으로 통일 과정의 경제적 리스크 우려가 클 수 있음.  \n- **일반적 추세**: 최근 국내 여론조사에선 통일의 당위성보다는 점진적 협력 선호 비율이 증가 중임. 따라서 ‘별 필요 없음’(3)이 합리적 추정값.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215428",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P047",
+          "answer": 2,
+          "raw": "답변:  \n2  \n\n호남권 거주 및 전문직 여성을 고려하여 사회적 통합의 중요성을 인지하되, 현실적 어려움도 감안한 중도적 입장으로 판단하였습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P048",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n- **연령/성별**: 40대 여성으로서 현실적 문제 인식 및 경제적 부담 우려가 클 수 있음.  \n- **교육수준**: 고학력으로 정치적·사회적 맥락을 이해하나, 통일의 구체적 실행 가능성에는 회의적일 가능성.  \n- **거주지역(영남권)**: 상대적으로 보수적 성향으로 인해 통일 논의에 신중하거나 부정적 견해가 많음.  \n- **직업(관리직)**: 조직 운영 경험으로 체제 통합 시 리스크를 경계할 수 있음.  \n\n이러한 요소를 종합하여 **“다소 필요하다”**(2)라는 중도적 입장보다는 **“별로 필요하지 않다”**(3)에 가까운 선택이 예상되나, 완전한 부정보다 유보적 태도를 반영해 **2**로 결정했습니다. 다만 실제 데이터 기반 분석 없이 가정에 의존하므로 오차 가능성 존재.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P049",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n주어진 프로필(40대, 여성, 고졸 이하, 충청/강원 거주, 기능직)을 고려할 때, **실용적이고 현실적인 가치관**이 강할 가능성이 높습니다.  \n통일 자체보다는 **현재의 경제적 안정**이나 **사회 문제 해결**(예: 일자리, 복지 등)을 우선시하는 경향이 예상되며, 이는 역사적·민족적 당위성보다 **개인적 삶의 개선**을 중시하는 태도로 이어질 수 있습니다.  \n다만, 일부는 **민족 화합**에 공감할 수 있으나, 통계적 일반화를 위해 **평균치인 3점(\"별로 필요하지 않다\")**을 선택했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P050",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n40대 여성으로서 서비스직 종사자의 경우, 경제적 부담 증가 우려 및 사회적 혼란 가능성에 대한 인식이 상대적으로 높을 수 있습니다. 또한 현재 분단 상태에서의 일상 유지 선호 경향을 감안해 **\"별로 필요하지 않다\"(3)** 로 추정되었습니다. 지역별 정책 차이와 개인적 삶의 변화에 대한 우려가 영향을 미쳤을 것으로 보입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215438",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P051",
+          "answer": 2,
+          "raw": "2  \n**설명:** 대상자가 40대 여성으로서 일반적으로 통일에 대한 긍정적 인식이 높으나, 관리직 경험과 높은 교육 수준으로 인한 현실적 고민을 반영하여 **'다소 필요하다(2)'** 선택 가능성. 통일 비용·경제적 부담 등을 감안하되, 장기적 평화 추구 차원에서 완전 부정적 입장까지는 아닐 것으로 추정됨.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215448",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P052",
+          "answer": 2,
+          "raw": "답변: 2  \n(설명: 50대 남성의 경우 역사적 경험으로 인해 통일의 중요성을 느낄 수 있으나, 자영업자의 경제적 관점 및 지역적 특성 등을 고려해 완전한 낙관보다는 신중한 태도를 반영했습니다.)  \n\n**단어 수:** 102  \n**토큰 수:** ~150 추정",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215458",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P053",
+          "answer": 2,
+          "raw": "2  \n(설명: 50대 남성의 경우 역사적 맥락과 경제적 부담을 고려해 통일의 필요성을 일정 부분 인정하되, 당장의 시급성에는 회의적일 가능성이 높습니다. 이에 따라 '다소 필요하다'(2)를 선택한 것으로 추정됩니다.)  \n\n**답변:**  \n2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215508",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P054",
+          "answer": 2,
+          "raw": "답변:  \n2  \n\n**설명:**  \n연구원으로서의 분석적 사고와 대학원 교육의 영향을 고려할 때, 통일의 이론적·장기적 가치는 인정하나 현 시점에서의 긴급성과 실현 가능성에는 회의적일 수 있습니다. 따라서 **단계적 접근**(점진적 통일 준비)을 전제로 한 \"다소 필요하다\"(2)가 가장 타당합니다. 단, 개인의 이념적 성향(보수/진보)에 따라 변동 가능성 있으나, 제공된 정보 기반으로는 중도적 실용주의 관점이 우세할 것으로 추정됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215520",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P055",
+          "answer": 3,
+          "raw": "답변: 3  \n설명: 50대 남성은 전통적으로 국가적 의제에 민감하나, 경제적 부담 및 현실적 어려움을 고려하여 통일의 즉각적 필요성에는 회의적일 수 있음. 관리직 경력상 안정성과 예측 가능성을 중시하는 성향 반영 시 '별로 필요하지 않다'(3)를 선택할 가능성이 높음.  \n\n**답변 (숫자만):**  \n3",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P056",
+          "answer": 2,
+          "raw": "답변: **2**  \n연구직으로서 복잡한 문제를 다각도로 분석하며 단계적 해결을 지향할 것으로 보입니다. 또한 호남권의 역사적 맥락과 교육 수준을 고려할 때, 통일의 장기적 이익을 인정하되 현실적 난제도 인지하여 '다소 필요하다'는 입장을 취할 가능성이 높습니다. 다만, 주관적 견해가 아닌 추론에 기반한 답변이므로 실제 답변과는 차이가 있을 수 있습니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P057",
+          "answer": 3,
+          "raw": "답변:\n**3**\n\n---\n\n근거 요약:  \n1. **연령 및 직업**: 50대 기능직 종사자는 경제적 안정·실용적 가치를 우선시하는 경향이 있어 단기적 통일 비용을 우려함.  \n2. **교육 수준 & 지역**: 수도권 거주 시 사회경제적 부담이 클 것으로 예상되며, 단순화된 민족주의보다 현실적 이슈를 중시할 가능성 높음.  \n3. **일반적 경향**: 최근 국내 여론 조사에선 통일에 대한 긍정적 인식 하락 추세 반영.  \n\n결과: \"별로 필요하지 않다\"(3)로 추정됨.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215534",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P058",
+          "answer": 3,
+          "raw": "답변:  \n**3**\n\n설명:  \n주어진 특성(수도권 거주 자영업자, 50대 남성, 대졸)과 최근 사회적 분위기(경제적 부담 우려 증가, 남북 관계 긴장 지속 등)를 종합했을 때, **'별로 필요하지 않다'**라는 응답이 상대적으로 빈번할 것으로 추정됩니다. 자영업자의 경우 경제적 리스크 회피 성향과 수도권 주민으로서의 재정적 부담 우려가 영향을 미칠 수 있으며, 고령층의 경험적 관점에서 현실적 접근을 선호할 가능성도 있습니다. 단, 통계적 근거 없는 추론임을 유의하시기 바랍니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215550",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P059",
+          "answer": 2,
+          "raw": "답변:  \n**2**\n\n---\n\n### 이유 요약:\n- **연령/성별**: 50대 남성의 경우 역사적 경험(분단 지속 등)과 경제적 부담 인식 영향 가능성 있음.  \n- **교육/직업**: 고학력·관리직 특성 상 통일 시 예상되는 경제적 리스크와 시스템 통합 과제에 대한 현실적 고민 반영.  \n- **수도권 거주**: 안보 이슈 및 경제적 파급력에 민감하나, 점진적 협력 선호 경향 존재.  \n\n※ 통계적 추정이며 개인차 존재합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215602",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P060",
+          "answer": 4,
+          "raw": "답변: 4  \n\n**설명**:  \n- **연령/성별**: 50대 남성의 경우 역사적 경험과 경제적 안정 추구 경향으로 통일 필요성에 부정적 견해가 상대적으로 높음.  \n- **교육수준**: 고졸 이하 계층은 통일에 따른 사회적·경제적 변화에 대한 불확실성을 우려하며 현상 유지 선호 경향 있음.  \n- **거주지역**: 영남권은 전통적으로 보수적 성향이 강해 국가 정책 변화(예: 통일 추진)에 신중하거나 반대 입장 표출 빈도가 높음.  \n- **직업**: 자영업자는 경기 변동성과 비용 증가 리스크에 민감하므로 통일 과정에서의 경제적 충격을 경계함.  \n\n위 요소를 종합 시, \"전혀 필요하지 않다\"(4점)가 가장 타당한 답변으로 추정됩니다. 단, 개인의 개별 사례는 다를 수 있으나 주어진 인구통계학적 특성에 기반한 일반화된 결과임.",
+          "parsed": 4,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215622",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P061",
+          "answer": 2,
+          "raw": "답변: 2  \n설명: 50대 남성, 대졸, 자영업자라는 특성으로 볼 때, 역사적 경험과 경제적 관점에서 통일에 대한 균형된 시각을 가질 가능성이 있습니다. 일반적으로 해당 연령대에서 통일에 대한 지지는 중립적이거나 부분적으로 긍정적일 수 있으며, 경제적 부담 우려와 미래 기회 사이에서 **\"다소 필요하다\"(2)**로 평가했을 것으로 추정됩니다.  \n\n단순화된 논리:  \n- **연령**: 50대는 통일에 중립~약간 긍정적 경향 (역사적 기억 + 현실적 판단).  \n- **직업/교육**: 자영업자로서는 경제적 리스크 우려 있으나, 대졸로서 장기적 이익 기대 가능성.  \n- **종합**: 강한 찬성(1)보다 유보적 입장(2) 선택 가능성 높음.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215637",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P062",
+          "answer": 2,
+          "raw": "답변: 2  \n관리직 여성의 경우 사회 통합 및 안정 추구 성향 있으나 경제·현실적 부담 고려 시 **‘다소 필요하다’(2)**로 추정됩니다. 50대는 경험 기반 중도적 태도가 흔하며, 수도권 거주자는 지역 간 이해관계 차이로 인해 단순 찬반보다 실용적 접근 선호 가능성 있음. 단, 표본 규모와 조사에 따라 결과 차이 존재함.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215647",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P063",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n귀하의 프로필(50대 여성, 대졸, 관리직, 수도권 거주)과 한국의 사회적·정치적 맥락을 고려했을 때, **통일 필요성에 대해 부분적으로 공감하되 현실적 어려움을 인지하는 입장**(2점)이 일반적일 것으로 추정됩니다.  \n- 50대는 역사적 경험과 미래 세대 영향력을 고려해 일정 수준의 필요성을 인식할 수 있으나, 경제적 부담이나 사회적 갈등 우려 등으로 절대적 찬성(1점)에는 신중해질 가능성 높음.  \n- 관리직 특성상 국가 통합의 장기적 이익과 리스크를 함께 평가하며, 현 시점에서는 교류 협력 중심 접근을 선호할 개연성이 있음.  \n따라서 **\"다소 필요하다\"(2)**로 답변합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P064",
+          "answer": 3,
+          "raw": "답변: 3  \n**근거:**  \n- **연령 & 세대 특성**: 50대는 역사적 분단 경험을 직접 겪지 않아 통일의 절박감이 낮을 수 있음.  \n- **경제적 우려**: 기능직 종사자로서 통일 시 발생할 경제적 부담(세금 증가 등)에 대한 우려가 클 가능성.  \n- **현상 유지 선호**: 수도권 거주자로서는 현재 체제의 안정을 우선시하는 경향이 나타남.  \n- **사회적 변화 회피**: 급격한 사회 변화보다 점진적 개선을 선호할 것으로 추정됨.  \n\n※ 통계적 경향 참고: 동세대 집단 내 통일 필요성 긍정률이 비교적 낮아, 중간 단계(3)로 추정.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P065",
+          "answer": 3,
+          "raw": "3  \n기능직 여성의 경우 일상 생활의 안정성과 경제적 실용성에 관심이 많을 것으로 보입니다. 통일에 따른 경제적 부담이나 사회 변화를 우려하며, 현재 상태 유지를 선호할 가능성이 높아 보입니다. 다만 완전한 부정(4점)보다는 현상 유지 관점을 반영해 중간보다 조금 낮은 단계인 **3**으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215659",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P066",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n수도권 50대 여성으로 사무직이라면, 통일 시 경제적 부담과 사회적 혼란 우려는 있으나 역사/문화적 동질감 차원에서 **\"다소 필요함\"(2)**을 선택할 가능성이 높습니다. 실제 설문조사에 따르면, 동일 계층에서 통일의 필요성은 공감하되 시급성에는 회의적이거나 실용적 접근을 선호합니다. 따라서 극단적 긍정(1)보다는 유보적 태도를 취할 것으로 보입니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215709",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P067",
+          "answer": 2,
+          "raw": "답변: 2  \n**설명:**  \n수도권 거주 50대 여성 관리직 종사자로서는 경제적 부담 및 사회 통합 비용 등 현실적 요인을 고려하면서도 민족적 동질감과 안보 리스크 완화 등의 긍정적 측면을 균형 있게 볼 가능성이 있습니다. 따라서 **'다소 필요하다'(2)**로 추정됩니다. 단, 개인 경험/정치 성향에 따라 편차가 클 수 있으나, 해당 집단 내 중도적 의견이 우세하다는 선행 연구 경향성을 반영했습니다.  \n\n(단어 제한으로 인해 간략화)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215721",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P068",
+          "answer": 2,
+          "raw": "답변:\n**2**\n\n설명:  \n사용자의 특성(50대 여성, 대졸, 수도권, 사무직)을 고려했을 때, **실용적이고 현실적인 시각**이 강할 것으로 예상됩니다.  \n연령상 분단의 역사와 통일에 대한 민족적 공감대를 일부 공유하나, 동시에 경제적 부담·사회적 갈등 등의 현실적 문제를 인지하여 **완전한 찬반보다는 유보적 태도**(‘다소 필요하다’)를 취할 가능성이 높습니다.  \n\n최근 통일보다는 평화 공존을 선호하는 청년층과는 달리, 50대는 상대적으로 전통적 가치를 유지하면서도 합리적 평가를 내릴 수 있는 계층입니다. 다만, 급격한 통일 추진보다는 점진적 교류를 통한 단계적 접근을 선호하므로 **‘다소 필요하다’(2)**가 적합합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215741",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P069",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자는 **영남권 거주 및 자영업자**라는 배경을 가지고 있습니다. 일반적으로 영남권은 보수 성향이 강하며, 경제적 안정에 민감합니다. 또한 자영업자는 통일 시 예상되는 경제적 변동성(비용 증가 등)을 우려할 가능성이 높습니다. 다만 **50대**이자 **대졸**이므로 일부 통일의 필요성을 인지할 수는 있으나, 지역·직업적 특성이 더 크게 작용하여 **\"별로 필요하지 않다\"(3)**로 추정됩니다. 단, 실제 여론조사 결과는 개인별 차이가 크므로 참고용으로만 활용하시기 바랍니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215755",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P070",
+          "answer": 2,
+          "raw": "답변: 2  \n관리직 경력 및 대졸 학력으로 인한 사회적 책임감과 현실적 관점에서 균형을 고려하여 **\"다소 필요하다\"**라는 중도적 입장을 취했을 것으로 추정됩니다. 지역적 특성(영남권), 연령 등을 종합할 때 완전한 긍정/부정보다 실용적 접근 가능성이 높아 보입니다.  \n\n(추가 설명: 50대의 역사적 경험 + 관리직으로서의 현실 인식 → 급진적 통일보다는 점진적 협력 단계 선호 경향 반영)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215809",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P071",
+          "answer": 2,
+          "raw": "답변: 2  \n설명: 50대 여성, 관리직 경력 및 대졸 학력으로 인해 현실적 관점에서 통일 필요성은 인정하나 즉각적이기보다 점진적 접근 선호 가능성. 수도권 거주는 북한 개발비용 우려와 연결될 수 있으므로 완전한 찬성(1)보다는 유보적 태도(2).  \n\n**Answer:** 2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P072",
+          "answer": 4,
+          "raw": "답변: 4  \n설명: 대상자가 60대 이상의 남성 농업 종사자로, 일반적으로 경제적 부담 및 사회 통합 문제를 고려해 통일에 회의적일 가능성이 높습니다. 보수적 관점에서 현 체제 유지 선호로 인해 \"전혀 필요하지 않다\"(4점)를 선택할 것으로 추정됩니다.",
+          "parsed": 4,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P073",
+          "answer": 3,
+          "raw": "답변 (숫자만):  \n3  \n\n**근거:**  \n1. **연령 및 경험**: 60대 이상으로서 분단 상황 장기화에 따른 피로감과 경제적 부담 우려가 있을 수 있음.  \n2. **직업**: 농업 종사자로서 통일에 따른 경제적·사회적 변화 리스크를 경계할 가능성.  \n3. **최근 트렌드**: 청년층뿐 아니라 고령층 일부에서도 통일 필요성에 대한 관심 감소 추세 반영.  \n4. **보수적 성향**: 낮은 교육 수준과 수도권 거주 특성으로 현 체제 안정 추구 경향 추정.  \n\n최종적으로 \"별로 필요하지 않다\"(3)로 선택함.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215831",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P074",
+          "answer": 2,
+          "raw": "답변 (숫자만):  \n**2**\n\n---  \n근거 요약:  \n- **연령**: 60대 이상 → 분단 시대 경험 및 전통적 가치관 강조 가능성.  \n- **직업/지역**: 농업/어업·충청/강원 → 경제협력 기대나 안보 우려 혼재.  \n- **교육수준**: 고졸 이하 → 단순화된 민족주의적 관점 우세 추정.  \n\n통일에 대한 긍정적 정서 있으나 현실적 과제 인식하여 **\"다소 필요하다\"(2)** 로 평가됨.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215845",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P075",
+          "answer": 3,
+          "raw": "답변: 3  \n\n고령층의 경우 역사적 경험과 현재 상황을 고려해 통일의 시급성보다는 현 상태 유지나 점진적 접근을 선호하는 경향이 있습니다. 특히 경제적 부담, 사회적 갈등 등의 현실적 문제로 인해 통일의 필요성이 크지 않다고 판단할 가능성이 높습니다. 호남권의 정치적 다양성과 학력 수준을 감안하더라도, 급진적 변화보다는 신중함을 중시하는 태도가 반영된 것으로 보입니다. 따라서 **별도로 필요하지 않다**(3점)는 응답이 타당하다고 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215859",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P076",
+          "answer": 2,
+          "raw": "답변:  \n**2**\n\n---  \n**설명:**  \n설정된 조건(60대 이상, 남성, 고졸 이하, 충청/강원 거주, 은퇴)에 따르면, 해당 집단은 전통적 가치관과 역사적 경험을 중시하며 국가 통합에 긍정적일 가능성이 높습니다. 그러나 은퇴 후 경제적 안정성과 현 체제의 유지에 대한 우려로 인해 **단기적 실현보다는 점진적 협력**을 선호할 수 있습니다. 이에 따라 \"다소 필요하다\"(2)라는 중도적 입장이 가장 타당합니다.  \n\n단계적 분석:  \n1. **세대 특성**: 분단과 전쟁 세대로서 통일에 대한 정서적 공감대는 있으나, 현실적 난제에 대한 경계심 존재.  \n2. **경제적 고려**: 은퇴자로서 복지·세금 등 개인적 이익과의 충돌 가능성.  \n3. **지역적 요인**: 충청/강원의 농업 중심 지역에서 통일 시 예상되는 산업 구조 변화 불확실성.  \n\n결과적으로 **필요성은 인정하되 급진적 추진보다 실용적 접근**(2)이 적합합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215914",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P077",
+          "answer": 2,
+          "raw": "답변: 2  \n\n**설명:**  \n60대 이상 고령층의 경우 역사적 경험으로 인한 통일에 대한 관심은 있으나, 현실적 비용 및 사회 통합의 어려움을 우려합니다. 대학원 학력의 은퇴자로서는 경제적·사회적 영향을 종합적으로 판단하며, 충청/강원 지역적 특성으로 안보보다 실용적 접근을 우선시할 가능성 있어 **'다소 필요하다'(2)**로 추정됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215926",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P078",
+          "answer": 2,
+          "raw": "답변: 2  \n\n**설명:**  \n60대 이상 남성, 수도권 거주, 은퇴자의 특성 상 역사적 경험과 안보 관점이 복합적으로 작용합니다. 이들은 분단 시대의 경험을 통해 통일의 상징적 의미를 중요하게 여기면서도, 경제적 부담·사회적 갈등 등 현실적 문제도 우려합니다. 조사에 따르면 해당 연령대에서 **'다소 필요하다'(2)**라는 중간적 응답이 상대적으로 높게 나타나며, 이는 단기간 실현보다는 점진적 통합에 대한 기대와 현실적 고민을 반영합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215938",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P079",
+          "answer": 3,
+          "raw": "답변: 3  \n\n고령층의 경우, 역사적 경험이나 경제적 부담 등으로 인해 통일에 대한 관심이 낮거나 현실적 어려움 때문에 필요성을 크게 느끼지 않는 경향이 있습니다. 또한, 충청·강원 지역의 특성상 다른 지역 대비 통일 이슈가 직접적이지 않아 영향력이 적을 수 있으며, 은퇴자로서 재정적 부담을 의식하여 신중한 입장을 취할 가능성도 있습니다. 이러한 요소들이 복합적으로 작용해 **'별로 필요하지 않다'**라는 응답(3점)으로 연결될 것으로 예상됩니다. 단, 개인의 정치적 성향이나 생애 경험에 따라 차이가 발생할 수 있음을 고려합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_215951",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P080",
+          "answer": 2,
+          "raw": "답변: **2**  \n설명: 해당 집단은 분단 시대를 겪으며 통일에 대한 역사적 소망을 가질 수 있으나, 동시에 농업·어업 중심의 생계와 지역적 특수성으로 인해 경제적 불안정성, 사회 변화에 대한 우려 등으로 즉각적 통일 추진보다 점진적 접근을 선호할 가능성이 높습니다. 따라서 \"다소 필요하다\"(2점)를 선택할 것으로 추정됩니다. 다만, 개인별 차이가 크므로 절대적 결론은 아닙니다.  \n\n**최종 답변**: \\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P081",
+          "answer": 2,
+          "raw": "답변 (숫자만):  \n**2**\n\n---\n\n### 설명:\n- **연령**: 60대 이상 → 분단 경험 세대로 통일에 대한 정서적 공감대는 있으나 경제적 부담을 우려할 가능성 있음.  \n- **성별/직업**: 남성 자영업자 → 경제적 리스크 회피 성향으로 통일 필요성을 제한적으로 평가할 수 있음.  \n- **교육수준**: 대졸 → 합리적 판단으로 통일의 장단점을 균형 있게 고려하며, 완전한 부정(4)이나 강한 긍정(1)보다는 중도적 입장(2)을 취할 가능성 높음.  \n\n결과적으로, **경제적 부담과 현실적 한계**를 인정하면서도 **민족적 통합의 상징적 의미**를 부분적으로 수용하는 **'다소 필요하다'(2)**로 예측됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P082",
+          "answer": 3,
+          "raw": "답변: 3  \n고령의 자영업자인 경우 경제적 안정 및 현 상황에 익숙해져 있어 통일의 필요성을 상대적으로 낮게 평가할 가능성이 높습니다. 또한, 안보 우선 지역 출신이라도 오랜 분단 체제에 익숙해져 점차 통일에 대한 관심 감소 추세와 부합합니다. 단, 완전한 부정이 아닌 중도적 회피 태도를 반영하여 **3**을 선택했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220004",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P083",
+          "answer": 2,
+          "raw": "답변: 2  \n\n고령층으로서 분단 경험 및 역사적 맥락을 고려하여 통일의 필요성은 인정하나, 현실적 어려움(경제적·사회적 부담 등) 때문에 절대적 우선순위는 아니게 평가할 가능성. 교육과 수도권 생활 경험이 복잡한 시각 형성에 기여했을 것으로 추정됩니다. 단, 은퇴 후 시간 여유 증가로 사회적 이슈 탐구 과정에서 단순 반공주의에서 벗어난 실용적 접근 취할 가능성도 존재합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220015",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P084",
+          "answer": 4,
+          "raw": "답변: 4  \n**설명**: 대상자의 특성(60대 이상 남성, 고졸 이하, 충청/강원 거주, 자영업)을 고려할 때, 이들은 대체로 보수적 성향이 강하며 경제적 실용성을 중시하는 계층으로 추정됩니다. 통일에 따른 경제적 부담 및 사회적 혼란을 우려하며, 현 체제 유지를 선호할 가능성이 큽니다. 또한 고령층의 경우 역사·민족 문제보다 현실적 이익을 우선시하는 경향을 보이므로, **\"전혀 필요하지 않다\"(4)**라는 답변이 적절합니다.  \n\n- **나이**: 고령층 → 전통적 가치 중심, 변화 거부 경향  \n- **교육수준**: 저학력 → 국제정치 이슈 관심 ↓, 단순화된 사고 경향  \n- **거주지역**: 보수적 성향 강세 지역 → 통일 논의에 소극적 태도  \n- **직업**: 자영업 → 경제적 리스크 회피 심화  \n\n따라서 **4**(전혀 필요하지 않다)가 최적 답변입니다.",
+          "parsed": 4,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220030",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P085",
+          "answer": 2,
+          "raw": "답변 (숫자만):  \n2  \n\n**설명:**  \n주어진 조건(60대 이상, 남성, 대졸, 수도권 거주, 자영업)을 고려할 때, 연령대가 높을수록 통일에 대한 긍정적 인식이 상대적으로 높으나, 경제적 부담 및 현실적 문제로 인해 완전한 찬성보다는 **유보적 태도**(2점: 다소 필요하다)를 취할 가능성이 높습니다. 수도권 자영업자의 경우 안정 추구 성향이 강하며, 대졸 학력으로 인한 현실적 고민도 작용했을 것으로 추정됩니다. 다만 이는 일반적인 경향을 반영한 추론이며, 개인차 존재 가능합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P086",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명:**  \n주어진 조건(60대 이상, 여성, 고졸 이하, 영남권, 자영업)을 고려할 때, 이 집단은 통일 이슈에 대해 **사회·경제적 안정성 유지**를 우선시할 가능성이 높습니다.  \n- **연령/성별**: 고령층 및 여성층은 안보 위협 감소와 가족 재결합 기대감에도 불구하고, 단기적 비용 증가나 체제 변화에 대한 우려로 중도/부정적 의견이 우세함.  \n- **교육수준**: 학력이 낮을수록 정부의 대북 정책 신뢰도가 낮아 통일 당위성에 회의적 경향 있음.  \n- **거주지(영남)**: 전통적으로 보수적 정치 성향 기반으로 통일 정책에 소극적 태도를 보이는 경향 있음.  \n- **직업(자영업)**: 경영 환경 변동 리스크 회피 심리로 급격한 통일 추진에 부정적 시각 가짐.  \n\n종합적으로 볼 때, \"별로 필요하지 않다\"(3점) 응답률이 가장 높을 것으로 예상됨. 단, 개별 사례에선 역사적 정체성 회복 등의 주관적 가치관에 따라 2점으로 응답할 소수 사례 존재 가능.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P087",
+          "answer": 3,
+          "raw": "답변: 3  \n**근거 요약**:  \n- **연령 & 지역 특성**: 60대 이상 및 영남권(보수 성향 강함) → 안보 중심 경향으로 통일 필요성에 부정적일 가능성 ↑  \n- **교육 수준**: 대졸이지만, 보수적 배경이 경제적·안보적 현실 우선 시 예상  \n- **종합 판단**: 보수적 관점에서의 현상 유지 선호로 ‘별로 필요하지 않다’(3) 선택 가능성 높음  \n\n※ 실제 조사 결과는 변동될 수 있으나, 주어진 조건 기반 추론임.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220052",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P088",
+          "answer": 1,
+          "raw": "답변: 1  \n**설명**: 60대 이상 고령층의 경우 역사적 경험으로 인한 민족 통합 욕구가 강하며, 대학원 이상의 학력으로 사회적·정치적 문제에 대한 이해도가 높아 통일의 필요성을 강하게 인식할 가능성이 큽니다. 수도권 거주 및 은퇴 상황 역시 장기적 관점의 국가 발전에 대한 관심을 높일 요소로 작용합니다. 이에 따라 **\"매우 필요하다\"(1)**라는 응답이 가장 타당하다고 판단됩니다.  \n\n- 핵심 근거: 연령별 통일 의식 연구 결과 상 높은 연령대에서 통일의 당위성 인정 비율이 높음.  \n- 제한사항: 개인의 이념적 성향이나 생애 경험에 따라 편차 발생 가능하나, 제시된 조건 전반은 긍정적 응답을 지지함.",
+          "parsed": 1,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220107",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P089",
+          "answer": 3,
+          "raw": "3  \n\n고령층이면서 전통적인 가치를 중시하는 집단 특성상 통일보다는 안정을 우선시할 가능성을 반영했습니다. 다만 개인차가 크므로 정확한 예측은 어렵습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220118",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P090",
+          "answer": 2,
+          "raw": "2  \n연령층이 높고 지역적 특성 상 안보 및 역사적 경험을 중시하는 경향이 있으나, 경제적 부담 등의 현실적 고민을 반영하여 **'다소 필요하다'** 로 추정합니다. 단, 개인의 이념적 성향 차이로 인해 변동 가능성 존재합니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220128",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P091",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n사용자의 특성(60대 이상, 여성, 고졸 이하, 영남권, 자영업자)과 정치적·사회적 맥락을 고려하여 추정했습니다.  \n- **연령/성별/교육수준**: 고령층이면서 교육 수준이 낮은 경우, 기존 체제에 안정감을 느끼고 급격한 변화에 부정적일 가능성이 있습니다.  \n- **거주지역(영남권)**: 해당 지역은 역사적으로 보수적 성향이 강하며, 대북 정책에서도 신중론을 지향합니다.  \n- **직업(자영업자)**: 경제적 불확실성에 민감하므로 통일 과정에서의 잠재적 비용 리스크를 경계할 수 있습니다.  \n\n이러한 요인을 종합하면, 통일의 당위성보다 현실적 이익을 우선시하며, **\"별로 필요하지 않다\"(3점)**라는 답변이 타당하다고 판단됩니다. 단, 실제 여론조사와 개인의 주관적 의견 간에는 차이가 있을 수 있음을 유의해야 합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220144",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P092",
+          "answer": 1,
+          "raw": "답변: 1  \n(설명: 60대 이상 여성으로서 분단의 역사적 경험을 직간접적으로 체감했을 가능성이 높고, 통일을 통해 국가적 단합과 평화 정착을 기대할 수 있습니다. 영남권 거주 및 자영업이라는 배경에서도 대체로 통일의 긍정적 측면을 강조하는 경향이 반영되었습니다.)  \n\n**답변:**  \n1",
+          "parsed": 1,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P093",
+          "answer": 1,
+          "raw": "답변:  \n1  \n\n**설명:**  \n주어진 프로필(60대 이상, 여성, 저학력, 충청/강원 거주, 은퇴자)의 경우, 분단과 전쟁 경험을 직간접적으로 체감했을 가능성이 높고, 통일에 대한 감정적·역사적 중요도가 크다고 가정합니다. 따라서 **통일 필요성에 대해 긍정적인 평가**(1점: 매우 필요함)를 내릴 가능성이 높습니다. 다만, 일부는 경제적 부담 등을 이유로 소극적 태도를 보일 수 있으나, 전반적으로는 통일을 지지하는 경향이 우세하다고 판단했습니다.",
+          "parsed": 1,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P094",
+          "answer": 2,
+          "raw": "2  \n**설명:**  \n- **연령 (60대 이상):** 역사적 경험이 있어 통일의 중요성을 인식하나, 경제적 부담을 우려할 가능성 있음.  \n- **학력 (대졸):** 국제 정세와 경제적 영향을 고려해 균형 잡힌 판단 예상됨.  \n- **거주지 (수도권):** 통일 시 지역 발전 가능성과 비용 증가 사이에서 갈등할 수 있음.  \n- **직업 (자영업):** 사업 환경 변화에 민감하므로 신중한 입장 취할 가능성 큼.  \n\n따라서 **\"다소 필요하다\"(2)** 로 추정되며, 필요성은 인정하되 현실적 조건과 균형을 강조하는 태도를 반영함.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P095",
+          "answer": 3,
+          "raw": "답변: 3  \n설명: 해당 응답자의 연령대와 생활 환경 등을 고려할 때, 분단 상황에 익숙해져 있거나 현실적인 경제적 부담을 우선시하는 경향이 있을 수 있습니다. 따라서 통일의 필요성을 크게 느끼지 않아 **3**으로 선택했을 것으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220155",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P096",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 연령대(60대 이상), 교육수준(고졸 이하), 지역(충청/강원), 은퇴 등의 특성을 고려할 때, **경제적 부담**, **안보 우선주의**, **보수적 가치관** 등이 반영되어 통일의 필요성을 낮게 평가할 가능성이 높습니다.  \n다만, 세대적 경험(한국전쟁 영향 등)으로 인해 일부 긍정적인 인식이 있을 수 있으나, 현실적 문제로 인해 \"별로 필요하지 않다\"(3점)로 기울 것으로 추정됩니다. 단, 절대적 결론은 아니므로 유의미한 표본 데이터 없이 정확한 예측은 어렵습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220209",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P097",
+          "answer": 3,
+          "raw": "답변 (숫자만):  \n3  \n\n---  \n**설명**:  \n주어진 프로필(60대 이상·여성·영남권·자영업)을 고려해 분석한 결과, **‘별로 필요하지 않다’(3)** 가 가장 적합합니다.  \n- **연령/성별**: 60대 이상 세대는 분단 경험을 공유하며 안보 우선 의식이 강할 수 있습니다.  \n- **거주지(영남권)**: 전통적인 보수 성향 지역에서 통일 논의는 경제·사회적 불확실성으로 인식될 수 있습니다.  \n- **직업(자영업)**: 사업 환경 변화에 민감하므로 단기적 이익보다 장기적 통일 비용에 회의적일 수 있습니다.  \n\n다만 개인의 가치관에 따라 차이가 있을 수 있으나, 주어진 특성상 **3**으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220221",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P098",
+          "answer": 1,
+          "raw": "답변: 1  \n**설명:** 대상자의 특성상 역사적 경험과 민족적 정체성을 중시하며, 연령대와 교육 수준에서 통일의 당위성을 높게 평가할 가능성이 큽니다. 단, 수도권 거주 및 은퇴 상태는 현실적 고민을 반영할 수 있으나, 전반적으로 통일의 필요성을 강하게 인식할 것으로 추정됩니다.  \n\n\\boxed{1}",
+          "parsed": 1,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220236",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P099",
+          "answer": 1,
+          "raw": "답변: **1**  \n(60대 이상 농어촌 여성으로서 역사적 경험과 경제적 안정에 대한 관심, 평화 의지를 고려하여 통일의 필요성을 높게 평가한다고 가정합니다.)  \n\n---  \n**설명**:  \n- **역사적 경험**: 분단·전쟁 세대와의 교차점으로 평화 추구 경향 강함.  \n- **경제적 관점**: 농산물 시장 확대 등 장기적 이익 기대.  \n- **사회문화적 요인**: 전통적 공동체 의식 강화 욕구 반영.  \n- 단, 단기적 혼란 우려로 일부는 반대하나, 전체적으로는 긍정적 전망 우세하다고 판단됨.",
+          "parsed": 1,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_220256",
+            "previous_answer": 3,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P100",
+          "answer": 2,
+          "raw": "답변: **2**  \n나이든 세대라도 고학력 및 자영업자로서 경제적 현실을 고려하여 통일의 필요성을 완전히 부정하지는 않으나, 즉각적이고 강한 필요성보다는 점진적 접근을 선호할 가능성이 높습니다. 호남권의 역사적 배경과 개인의 경제적 우려가 복합적으로 작용하여 \"다소 필요하다\"는 중간 입장에 기울 것으로 추정됩니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        }
+      ]
+    }
+  ]
+}

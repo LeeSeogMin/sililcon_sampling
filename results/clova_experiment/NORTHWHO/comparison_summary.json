@@ -1,0 +1,37 @@
+{
+  "timestamp": "20251227_145421",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "NORTHWHO"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "NORTHWHO": {
+      "clova_hcx007": {
+        "js_divergence": 0.08409540301163107,
+        "distribution": {
+          "1": 0.0,
+          "2": 4.0,
+          "3": 78.0,
+          "4": 18.0
+        }
+      },
+      "gpt_5_2": {
+        "js_divergence": 0.3773318664385776,
+        "distribution": {
+          "1": 0.0,
+          "2": 98.0,
+          "3": 2.0,
+          "4": 0.0,
+          "5": 0.0
+        }
+      },
+      "delta": 0.29323646342694654,
+      "clova_better": true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "20251227_141750",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "CONLEGIS"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "CONLEGIS": {
+      "clova_hcx007": {
+        "js_divergence": 0.08250313891684816,
+        "distribution": {
+          "1": 0.0,
+          "2": 66.0,
+          "3": 34.0
+        }
+      },
+      "gpt_5_2": {
+        "js_divergence": 0.3607586667649319,
+        "distribution": {
+          "1": 0.0,
+          "2": 100.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0
+        }
+      },
+      "delta": 0.2782555278480837,
+      "clova_better": true
+    }
+  }
+}

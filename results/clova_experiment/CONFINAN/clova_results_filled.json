@@ -1,0 +1,1464 @@
+{
+  "timestamp": "20251227_210926",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "CONFINAN"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "results": [
+    {
+      "variable": "CONFINAN",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 100,
+      "distribution": {
+        "1": 1.0,
+        "2": 47.0,
+        "3": 52.0
+      },
+      "js_divergence": 0.0862976302016126,
+      "responses": [
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        1,
+        3,
+        2,
+        3,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 2,
+          "raw": "2  \n전문직 종사자로서 금융기관과의 직접적 관계가 있을 수 있으나, 20대 층은 전통적 기관에 비해 디지털 금융·핀테크를 선호합니다. 사회적 불신 확산 및 경제적 경험 부족 등이 복합적으로 작용하여 **보통(2)** 수준의 신뢰로 판단됩니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P002",
+          "answer": 2,
+          "raw": "2  \n\n(설명: 20대 남성의 경우, 금융기관에 대한 신뢰도는 일반적으로 중간 정도로 나타납니다. 경제적 지식과 경험 부족으로 완전한 불신을 갖기에는 한계가 있으나, 최근 금융권의 부정적 사례나 고객 중심 정책 미흡 등으로 완전한 신뢰 또한 어려운 상태이기 때문입니다.)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P003",
+          "answer": 2,
+          "raw": "2  \n(젊은 세대와 호남권 특성 상 금융기관에 대한 비판적 시각이 있을 수 있으나, 구체적인 근거 부족 시 중립적 선택)  \n\n**단:**  \n- **20대**: 디지털 정보 노출 빈도로 인한 부정적 인식 가능성 있음.  \n- **호남권**: 지역 경제 격차 체감이 영향 요인으로 작용할 수 있음.  \n- **사무직**: 내부 관행 인지 시 실망감 반영될 수 있으나, 전문성 인정 시 신뢰도 상승 여지도 공존함.  \n- **균형적 판단**: 뚜렷한 방향성 없는 경우 ‘보통’ 선호 경향 고려하여 2번 채택.  \n\n결론: 복합적 요소를 감안해 **2**로 최종 결정.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P004",
+          "answer": 3,
+          "raw": "3  \n금융기관 경영진에 대한 신뢰는 낮은 편입니다. 20대 남성의 경우, 디지털 금융 서비스 확대와 정보 접근성이 높아지며 전통적 금융기관의 역할 감소가 체감됩니다. 과거 대출금리 조작 사건, 고객 정보 유출 사고 등이 누적된 부정적 이미지와 결합되어 투명성과 공정성에 의구심이 큽니다. 경제적 불안정 속에서 단기 이익 중심의 정책 역시 비우호적인 시각을 강화합니다. 사회초년생으로서 실질적 혜택보다는 수수료·이자 구조에 민감하기 때문에 신뢰도 하락 추세에 부합한다고 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205430",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P005",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n20대 대졸 사무직으로서 금융기관과의 직접적 접촉 경험이 있으나, 최근 고금리·대출 규제 등 부정적 이슈와 비교대상 없는 첫 직장 생활로 인해 **보통 수준의 신뢰**(2)를 보일 것으로 추정됩니다. 다만 실제 데이터 부족 시 3(신뢰 저하) 경향도 존재하나, 핵심 기능 자체는 필요악으로 인식되어 중간값 선택이 합리적입니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205441",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P006",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n20대 대학생으로서 최신 정보에 민감하며, 특히 금융기관 관련 이슈(금리 논란, 데이터 유출 등)에 노출되기 쉬움. MZ세대 사이에서 전통 금융기관에 대한 비판적 시각과 함께 핀테크 선호 현상이 두드러지며, 이는 기존 금융 리더십에 대한 신뢰 저하로 이어질 수 있음. 또한 경제적 경험이 제한적이므로 복잡한 금융 구조에 대한 이해 부족으로 인해 신뢰하기 어려울 수 있다는 점을 고려해 **3**(거의/전혀 신뢰하지 않음)을 선택함.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205456",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P007",
+          "answer": 3,
+          "raw": "답변: 3  \n(젊은 세대는 금융 기관의 리더십에 대한 불신 경향이 강하며, 사회경제적 문제로 인해 신뢰도가 낮을 것으로 추정됨.)  \n\n토큰 수: ~500 토큰 (설명 생략 시 1토큰 이하).  \n※ 본 답변은 가상의 시나리오 기반 추론이며 실제 데이터와는 무관합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205509",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P008",
+          "answer": 2,
+          "raw": "2  \n(설명: 20대 남성 대졸 사무직의 경우, 금융기관 리더십에 대한 신뢰도는 일반적으로 **보통(2)** 수준으로 추정됩니다. 젊은 층은 디지털 환경 노출로 정보 접근성이 높아 부정적 사례에 민감할 수 있으나, 금융 시스템 활용 필요성과 전문성 인정 사이에서 중립적 태도를 보일 가능성이 큽니다.)  \n\n**Answer:**  \n2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205529",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P009",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n20대는 일반적으로 전통적 권위나 기존 시스템에 대한 비판적 시각이 강합니다. 또한 SNS와 정보 접근성이 높아 금융권의 부정적 사건(예: 부실 관리, 고객 이익 외면 등)에 노출되기 쉬워 금융 리더층에 대한 불신감이 형성될 가능성이 큽니다. 대졸·사무직이라는 배경에도 불구하고, 최근 사회 분위기상 **\"거의/전혀 신뢰하지 않음\"(3)**이 가장 타당한 추론으로 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P010",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명**: 20대 여성 대졸 사무직 호남권의 경우, 디지털 환경에 익숙해 다양한 정보를 통해 비판적 사고를 하며, 전통적 권위나 기관에 대한 신뢰도가 상대적으로 낮다는 점을 반영했습니다. 금융기관의 리더십에 대한 부정적 인식 가능성을 고려했습니다.  \n\n(최대 2048자 제한 준수를 위해 간결히 작성)",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P011",
+          "answer": 3,
+          "raw": "3  \n**설명:**  \n사용자의 조건(20대 여성, 고졸 이하, 수도권 거주, 판매직)을 고려해 볼 때, 금융기관 리더에 대한 신뢰도는 비교적 낮을 것으로 예상됩니다. 판매직 특성상 금융상품 접촉 빈도가 높으나, 이로 인한 부정적 경험(과도한 권유, 이해 부족 등)이 누적되었을 가능성이 있습니다. 또한 MZ세대는 전통적 기관보다 디지털 플랫폼 선호 성향이 강하며, 금융기관의 투명성에 의구심을 가지는 경향도 있습니다. 이러한 요인을 종합해 \"거의/전혀 신뢰하지 않음\"(3점)으로 평가했습니다.  \n\n단순화: **3**",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P012",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명**: 20대 대학생으로서의 관점에서는 금융기관 리더들의 도덕적 해이나 고객 이익 대비 자기 이익 추구 등의 사례가 부각되며, 디지털 금융 서비스 활성화 속에서 전통적 기관에 대한 의구심이 증가하여 비교적 낮은 신뢰도를 보일 것으로 예상됩니다. 따라서 \"거의/전혀 신뢰하지 않음\"(3)을 선택합니다.  \n\n단, 이는 일반적인 경향성을 반영한 것이며 개인의 실제 경험과 가치관에 따라 달라질 수 있습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205548",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P013",
+          "answer": 2,
+          "raw": "2  \n전문직 종사자로서 경제 및 금융 시스템에 대한 이해가 높으나, 최근 금융권의 논란으로 인해 완전한 신뢰보다는 중립적인 입장을 취할 가능성이 높습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205600",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P014",
+          "answer": 3,
+          "raw": "3  \n\n단순노무 종사자인 20대 여성의 경우 경제적 어려움과 사회경제적 지위 차이로 인해 금융기관에 대한 접근성이 낮거나 부정적 경험이 많을 수 있습니다. 또한 청년층 사이에서 기성 체제에 대한 비판적 시각과 함께 금융 시스템의 투명성·공정성에 대한 의심이 존재하는 점도 영향을 미칩니다. 이러한 요인들이 결합되어 금융기관 리더십에 대한 불신을 강화할 가능성이 높습니다. 다만 개인의 구체적 경험에 따라 차이가 있을 수 있으나, 일반적인 경향성을 반영하여 **3**을 선택합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205609",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P015",
+          "answer": 3,
+          "raw": "3  \n\n젊은 층 및 대학생 계층에서는 전통적인 금융기관에 대한 불신 풍조가 강하며, 호남권 역시 전국적 흐름과 유사한 경향을 보일 것으로 추정됨. 최근 금융기관 관련 부정적 이슈와 청년 실업률 상승 등 사회경제적 요인이 반영된 결과로 해석 가능함. 따라서 **3**(거의/전혀 신뢰하지 않음)으로 답변합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205621",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P016",
+          "answer": 3,
+          "raw": "답변: 3  \n사용자의 특성(저학력, 저소득 계층, 단순노무 종사 등)과 금융기관 리더십에 대한 일반적 인식(이익 중심 구조, 투명성 부족 등)을 종합하면 **신뢰도가 낮을 가능성**이 큽니다. 경제적 취약계층은 금융시스템 자체보다 개인의 생계 문제를 우선시하므로, 금융기관 리더들의 결정이 개인 삶에 미치는 영향력을 체감하기 어렵습니다. 이는 \"거의/전혀 신뢰하지 않는다\"(3점)라는 반응으로 이어질 수 있습니다. 다만 실제 데이터 기반 분석 없이 추정하는 것이므로 참고용으로 활용하시기 바랍니다.  \n\n\\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P017",
+          "answer": 3,
+          "raw": "답변: 3  \n(젊은 세대의 금융기관 리더십에 대한 비판적 인식과 사회경제적 환경 등을 고려하여 신뢰하지 않는 방향으로 판단했습니다.)  \n\n**설명:**  \n20대 여성 대졸자의 경우, 경제적 불안정과 정보 접근성으로 인해 금융기관에 대한 회의적 시각이 두드러질 것으로 추정됩니다. 또한, 최근 사회 트렌드상 대형 기관의 투명성과 책임감에 대한 요구가 높아지며, 이에 대한 실망감이나 불신이 반영되어 **3**(거의/전혀 신뢰하지 않음) 선택을 유도합니다. 단, 완전한 불신보다는 상황적 요인에 따른 평가이므로 절대적 수치보다는 상대적 맥락에서의 결과임을 참고하시기 바랍니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P018",
+          "answer": 2,
+          "raw": "2  \n\n사용자의 프로필(30대 남성, 대졸, 관리직, 호남권)과 최근 금융기관 신뢰도 추이를 고려했습니다.  \n관리직으로서 금융시스템 활용 경험이 있으나, 과거 사례(라임사태 등) 및 규제 미비 논란 등으로 **완전한 신뢰는 어려우나 기본적 신뢰**는 유지될 것으로 판단됩니다. 따라서 **보통(2)** 선택.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P019",
+          "answer": 2,
+          "raw": "답변: 2  \n관리직으로서의 경험을 통해 금융기관의 구조와 운영 방식을 이해할 수 있으나, 과거 사례 및 일부 관행으로 인한 회의감이 존재합니다. 완전한 신뢰보다는 객관적 평가 차원에서 **보통** 수준으로 답하였습니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205639",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P020",
+          "answer": 3,
+          "raw": "3  \n\n사용자의 특성(서비스직, 낮은 소득 예상, 현장 경험 다수)과 경제적 어려움 등으로 인해 금융기관 리더십에 대한 부정적 인식 가능성 반영.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205648",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P021",
+          "answer": 2,
+          "raw": "2  \n\\boxed{2}  \n\n한국 남자 30대 전문직 종사자로서 경제적 이해도와 정보 접근성이 높아 금융 시스템 전반을 일정 부분 이해하고 있습니다. 그러나 금융 기관 리더십의 정책 결정 및 투명성에 대한 잠재적 회의감, 개인적인 경험 등을 고려해 **보통(2)** 수준의 신뢰도를 보이는 것이 타당하다고 판단됩니다. 이는 완전한 신뢰와 불신 사이의 균형점으로 해석될 수 있으며, 특히 지역적 요인과 연령대의 특성보다는 직업적 합리성과 사회적 맥락이 주요 요소로 작용했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205701",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P022",
+          "answer": 3,
+          "raw": "3  \n\n서비스직 30대 남성의 경우 경제적 압박과 금융시스템 접근성 제한이 있을 수 있으며, 고졸 이하 학력과 영남권 특성으로 인한 보수적 가치관이 복합적으로 작용해 금융 리더십에 대한 비판적 시각 형성 가능성을 반영했습니다. 최근 금융권 신뢰도 하락 사례와 결합시 최저 점수 배정이 타당합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205711",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P023",
+          "answer": 2,
+          "raw": "답변: 2  \n(설명: 관리직으로서의 경험과 경제 상황을 고려할 때, 금융기관 리더십에 대한 신뢰도는 보통 수준일 것으로 예상됩니다.)  \n\n**단어 수 제한**: 2048자 이하 확인 완료.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205725",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P024",
+          "answer": 3,
+          "raw": "3  \n금융기관 리더에 대한 신뢰도가 낮음을 반영하여 '거의/전혀 신뢰하지 않음'(3점)을 선택했습니다. 전문직 종사자로서 경제적 문제에 대한 이해도가 높고, 최근 금융권의 논란 및 불신 확산 경향 등을 고려하였습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P025",
+          "answer": 2,
+          "raw": "2  \n\n(설명: 주어진 프로필과 최근 사회 분위기를 고려할 때, 금융기관 리더십에 대한 신뢰도는 일반적으로 **보통** 수준으로 예상됩니다. 경제적 경험 축적 및 정보 접근성 증가로 완전히 신뢰하지는 않지만, 극단적 불신 단계까지는 아닌 중도적 입장을 반영했습니다.)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P026",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명:**  \n금융기관 리더에 대한 신뢰도를 묻는 질문에 **3**(거의/전혀 신뢰하지 않음)을 선택한 이유는 다음과 같습니다:  \n1. **경제적 취약계층 특성**: 자영업자로서 경기 변동 및 금리 인상에 따른 자금 부담으로 금융기관에 대한 부정적인 경험이 누적될 가능성이 높습니다.  \n2. **정보 접근성 제한**: 고졸 이하의 학력으로 인해 복잡한 금융 상품 이해도가 낮아 피해를 경험했을 수 있으며, 이는 신뢰 저하로 이어집니다.  \n3. **사회적 인식 영향**: 최근 금융권의 부실 관리·부정 사건 보도가 많아 사회적 불신이 확산되고 있습니다.  \n\n다만, 실제 응답은 개인 경험에 따라 달라질 수 있으나, 주어진 프로필과 맥락을 종합하면 **3**이 가장 타당합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P027",
+          "answer": 2,
+          "raw": "2  \n전문직으로서 금융 시스템 이해도가 높고, 사회적으로 드러난 부정적 사례들(예: 횡령, 불완전판매)로 인해 신뢰감이 약해질 수 있으나, 개인의 직접 경험이나 합리적 평가 기반이 있을 경우 극단적 비신뢰보다는 **중립적 태도**를 취할 가능성이 높습니다. 따라서 일반적인 집단보다 약간 높은 신뢰도(**2**)로 추정됩니다.  \n\n단, 실제 데이터 없이 가정에 의존한 분석이므로 오차 가능성 있음.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205736",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P028",
+          "answer": 3,
+          "raw": "3  \n\n금융기관 리더십에 대한 신뢰도가 낮은 것으로 예상되는 이유는 다음과 같음:\n1. **사회적 분위기**: 최근 대형 금융 사고(DLF, 라임 사태 등)로 인한 부정적 여론 확산  \n2. **전문직 배경**: 경제적·금융적 지식 수준이 높아 문제점을 더 정확히 인지할 가능성  \n3. **정보 접근성**: 수도권 거주 및 디지털 인프라 활용으로 부정적 사례 노출 빈도 증가  \n\n이러한 요소들을 종합해 볼 때, 비교적 낮은 신뢰도(3점)로 응답할 가능성이 높다고 판단됨. 단, 개별 차이는 존재함.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205747",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P029",
+          "answer": 2,
+          "raw": "답변: 2  \n\n**설명:**  \n- **대상 특성**: 30대 여성, 대졸, 전문직, 호남권 거주.  \n- **고려 사항**:  \n  - 전문직 종사자로서 경제적 안정성과 정보 접근성 ↑ → 금융 시스템 이해도 ↑.  \n  - 청년층이지만 교육 수준과 직업적 배경이 합리적이고 균형 잡힌 판단 유도.  \n  - 최근 금융 기관 리더십에 대한 일반적 신뢰도는 부분적 하락 추세이나, 개인적 경험 또는 객관적 분석을 통해 **중립적 입장(2)** 가능성 높음.  \n  - 지역(호남권)이 신뢰도에 미치는 영향은 제한적일 것으로 가정.  \n\n→ **종합 평가**: 과도한 낙관 또는 비관보다는 현실적 관점 반영 → **2(보통)**.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205805",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P030",
+          "answer": 2,
+          "raw": "답변: 2  \n\n수도권 거주 30대 대졸 여성의 경우, 금융기관 리더십에 대해 **보통(2)** 수준의 신뢰를 보일 가능성이 높습니다. 이는 경제적 정보 접근성이 높아 기관 운영 방식의 장단점을 인지하고 있으나, 과거 사례와 현재 시스템의 한계를 고려하며 완전 신뢰 또는 완전한 불신을 보이기보다는 균형 잡힌 태도를 취하기 때문입니다. 다만 개인별 차이는 존재할 수 있습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205817",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P031",
+          "answer": 2,
+          "raw": "2  \n\n금융기관 리더십에 대한 신뢰도는 개인의 경험과 사회 인식에 따라 다를 수 있습니다. 전문직으로서 경제적 이해도와 정보 접근성이 높아 금융 시스템을 분석적으로 볼 수 있으며, 최근 금융권 이슈(사기, 부실 관리 등)로 인한 불신 정서도 반영됩니다. 그러나 직업 특성으로 기본적 신뢰는 유지될 것으로 보여 **\"보통\"(2)** 수준의 신뢰도로 평가했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P032",
+          "answer": 2,
+          "raw": "답변: 2  \n\n관리직 경력, 대졸 학력 등으로 인해 금융시스템 이해가 높으나 최근 금융 이슈 및 사회적 분위기를 고려하여 보통 수준의 신뢰를 가질 것으로 추정됩니다. 호남권의 지역적 특성이나 개인적 경험은 추가 정보가 없어 중립적 판단을 기준으로 하였습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P033",
+          "answer": 2,
+          "raw": "금융기관 리더십에 대한 신뢰도는 다양한 요인에 따라 달라집니다. 사용자의 특성(30대 여성, 대졸, 사무직)을 고려할 때, 금융 시스템에 대한 이해도와 이용 빈도는 비교적 높을 것으로 예상됩니다. 그러나 최근 금융권의 부정적 이슈(예: 금리 조작 사건) 등을 접하며 비판적 시각이 형성되었을 가능성도 있습니다. 또한, 젊은 세대는 전통적 금융보다 디지털 솔루션을 선호하며, 이로 인한 신뢰 저하 현상도 관찰됩니다.  \n\n종합적으로 **일반적 신뢰도 중립** 위치인 **2**가 가장 타당한 추정으로 보입니다.  \n다만, 개별 경험 차이로 인해 1~3 범위에 모두 분포될 수 있으나, 평균적 추론을 우선시합니다.  \n\n**답변:**  \n2  \n\n(단, 실제 조사 결과는 표본 집단의 구체적 경험 및 사회적 맥락에 따라 달라질 수 있음.)",
+          "parsed": 30,
+          "used_default": true,
+          "error": "invalid_response",
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205837",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P034",
+          "answer": 2,
+          "raw": "답변: 2  \n\n관리직으로서 경제적 상황을 잘 알고 있으나, 최근 금융 기관의 논란과 개인 경험 등을 종합했을 때 **보통** 수준의 신뢰도로 평가합니다. 높은 전문성과 시스템 안정성에 일부 긍정하되, 과도한 이익 추구 및 투명성 부족 문제로 완전한 신뢰는 하지 않는 중도적 입장을 반영했습니다.  \n(최종 답변 형식 준수를 위해 단어 수는 생략되었습니다.)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205847",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P035",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n40대 대졸 남성 관리직의 관점에서, 금융기관 리더들은 전문성과 시스템 이해를 바탕으로 경제 운영에 기여하나, 최근 발생한 부실 대출·개인정보 유출 등 부정적 사례들로 인해 완전한 신뢰보다는 **보통 수준의 신뢰**(2점)를 형성할 것으로 예상됩니다. 산업 구조적 중요성은 인식하되, 개별 사건의 영향력과 규제 미비점에 대한 비판적 시각이 반영된 결과입니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205903",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P036",
+          "answer": 2,
+          "raw": "답변: 2  \n\n관리직으로서 금융 기관과의 업무 경험이 있을 수 있으며, 일반적으로는 시스템의 필요성을 인정하되 개인적 이해관계나 구조적 문제에 대한 경계심도 존재합니다. 따라서 **보통(2)** 수준의 신뢰도를 보일 것으로 추정됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205915",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P037",
+          "answer": 2,
+          "raw": "2  \n금융기관 리더십에 대한 신뢰 여부는 개인 경험 및 사회적 인식에 따라 달라집니다. 40대 대졸 사무직 남성의 경우 경제적 이해도가 높고 최근 금융기관 관련 논란(예: 대출금리 조작, 개인정보 유출 등)을 접했을 가능성이 있습니다. 그러나 실생활에서 금융 서비스 의존도가 높고 규제 강화 추세 등을 고려하면 **중립적 평가(2)**가 가장 타당합니다. 다만 소득·자산 규모나 구체적인 경험에 따라 편차가 발생할 수 있으나, 주어진 정보 기반으로는 **보통** 수준을 선택했습니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205926",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P038",
+          "answer": 2,
+          "raw": "2  \n\n관리직으로서의 경험과 대졸 이상의 교육을 통해 금융기관의 의사결정 구조와 전략을 이해하고 있을 것입니다. 그러나 최근 금융기관의 성과주의 문화, 리스크 관리 실패 사례 등은 부정적인 인식을 유발할 수 있습니다. 이러한 복합적 요인으로 인해 **평균적인 신뢰 수준(2)**을 보일 것으로 예상됩니다. 단, 개별 경험에 따라 변동될 수 있으나, 제시된 조건 하에서의 합리적인 추정치는 2점입니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_205942",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P039",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n한국 사회에서 금융기관의 리더십에 대한 신뢰도는 역사적 사건과 사회적 인식에 영향을 받습니다. 최근 몇 년간 발생한 금융 사기 및 관리 부실 사례(예: 라임 펀드 사태 등)로 인해 금융권 고위층에 대한 불신이 증가했습니다. 40대 전문직 남성의 경우 경제적 이해도와 정보가 풍부하여, 구조적 문제의 심각성을 인지하고 비판적 관점을 가질 가능성이 높습니다. 이로 인해 **\"거의/전혀 신뢰하지 않음\"(3)**이라는 답변을 선택한 것으로 추정됩니다. 다만, 이는 일반화된 경향성이며 개인의 경험에 따라 차이가 발생할 수 있습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P040",
+          "answer": 2,
+          "raw": "2  \n\n금융기관 리더십에 대한 신뢰도를 평가할 때, 최근 금융권 논란에도 불구하고 완전 불신보다 중립적인 입장이 일반적이라 판단됩니다. 사용자의 대졸 학력과 사무직 경력상 정보 접근성과 현실적 관점을 고려해 \"보통\"(2)을 선택했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P041",
+          "answer": 3,
+          "raw": "3  \n\n**설명**:  \n40대 남성의 경우 경제적 경험이 풍부하며, 기능직으로 일하면서 실제 생활 현장에서 체감하는 경제적 어려움이 클 수 있습니다. 고졸 이하의 학력과 결합된 수도권 거주 특성으로 보아, 주거비 부담이나 물가 상승 등에 민감하게 반응할 가능성이 높습니다. 금융기관의 정책(예: 대출 제한, 금리 인상 등)이 실생활에 직접 영향을 미칠 경우, 이를 주도하는 리더십에 대한 반감이 커지기 쉽습니다. 따라서 **신뢰하지 않는 경향**(3점)이 강할 것으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P042",
+          "answer": 3,
+          "raw": "답변: 3  \n근거: 40대 남성 서비스직 종사자로 경제적 부담이 크고, 고졸 이하 학력으로 금융 정보 접근성 제한 및 부정적 경험 가능성 높음. 영남권의 보수적 성향과 결합되어 금융기관 리더십에 대한 불신 강화됨. 따라서 신뢰하지 않는 쪽으로 평가됨.  \n\n(결과: **3**)",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210001",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P043",
+          "answer": 3,
+          "raw": "3  \n\n금융기관 리더십에 대한 신뢰도는 개인 경험 및 사회적 맥락에 따라 달라집니다. 자영업자인 경우 경기 변동과 금리 정책 등에 민감하며, 과거 금융위기 대응 과정에서의 실망감이나 복잡한 절차 등이 부정적 인식을 강화시킬 수 있습니다. 특히 경제적 어려움 속에서는 기관 책임자에 대한 비판적 시각이 형성되기 쉽습니다. 이러한 맥락을 반영하여 가장 비관적인 답변인 **3**을 선택합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210012",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P044",
+          "answer": 2,
+          "raw": "2  \n\n전문직 및 대졸자로서 정보 접근성이 높고, 금융기관의 구조적 문제에 대한 인식이 있을 수 있으나, 개인적인 이용 경험이나 상황에 따라 신뢰도는 중립적일 가능성이 있습니다. 따라서 **2**를 선택합니다.  \n(단순화된 결론: 사회적 비판과 개인적 경험 간 균형점으로 추정)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210024",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P045",
+          "answer": 2,
+          "raw": "2  \n\n금융기관 리더십에 대한 신뢰도는 개인의 경험과 사회경제적 배경에 따라 달라집니다. 40대 여성으로서 서비스직에 종사하며 고졸 이하의 학력을 가진 경우, 경제적 어려움과 일상 속 접점에서 형성된 현실적 인식이 반영되어 **\"보통\"(2)** 정도의 평가를 내릴 가능성이 있습니다. 이는 금융기관에 대한 높은 기대감보다 실용적 관점에서의 중립적 태도로 해석됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210036",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P046",
+          "answer": 3,
+          "raw": "답변: 3  \n설명: 해당 응답자의 특성상 경제적 어려움과 금융 정책에 대한 부정적 경험이 많을 가능성이 높아, 금융기관 리더십에 대한 신뢰도가 낮게 나타날 것으로 예상됩니다.  \n\n\\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210045",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P047",
+          "answer": 2,
+          "raw": "2  \n\n전문직 종사자인 40대 여성으로서 금융기관의 리더십에 대해 **보통** 수준의 신뢰를 보인다고 가정합니다.  \n교육과 경험을 바탕으로 정보를 분석하는 경향이 있으나, 최근 금융계 논란 및 개인적 경험 차이로 완전한 신뢰보다는 균형 잡힌 시각을 가질 것으로 예상됩니다.  \n호남권 특성과 사회적 분위기도 중간 성향 유지에 일부 영향 줄 수 있음.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P048",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n40대 여성으로 대학원 이상의 학력과 관리직 경험을 가진 경우, 금융기관의 운영 및 의사결정 구조를 이해할 능력과 정보가 충분합니다. 이는 금융 리더십에 대한 **비판적 시각**으로 이어질 수 있으나, 동시에 조직 내부의 합리성이나 규제 체계 등에 대한 **현실적 인식**도 반영됩니다.  \n다만, 최근 금융기관의 투명한 소통 부재나 단기 성과 중심의 문화 등이 지적받으며 일반인의 신뢰도가 하락하는 추세임을 고려할 때, **보통 수준(2)** 의 신뢰도로 답변이 적절하다고 판단했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P049",
+          "answer": 2,
+          "raw": "답변: 2  \n기능직 종사자로서 경제적 안정에 민감하며, 고졸 이하의 학력으로 복잡한 금융 시스템 이해 어려움. 최근 금융권의 이자 장사 논란 등 부정적 뉴스 영향받아 신뢰도는 중간 수준이지만 완전한 불신까지는 아님을 반영함.  \n\n(최종 답변 형식 준수를 위해 추가 설명 생략)  \n**답변:**  \n2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P050",
+          "answer": 2,
+          "raw": "답변: 2  \n서비스직 종사자로서 금융기관과의 직접적인 상호작용이 있을 수 있으나, 고졸 이하의 학력과 40대 여성의 관점에서 볼 때 금융 시스템 전반에 대한 심층적 이해가 부족할 가능성이 있습니다. 또한 최근 경제 상황에서 대출금리 상승 등으로 인해 금융기관에 대한 불만이 증가하는 추세이므로 **'보통'(2)** 수준의 신뢰도로 추정됩니다. 다만 이는 개인의 구체적 경험에 따라 달라질 수 있음을 감안했습니다.  \n\n(결과: 2)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210057",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P051",
+          "answer": 2,
+          "raw": "답변: 2  \n\n**설명**:  \n40대 여성으로서 대학원 이상 교육을 받고 관리직에 종사하는 경우, 금융 시스템에 대한 이해도와 분석력이 높다. 관리직 경험상 조직 운영 방식과 리더십 평가를 통해 금융기관 리더들을 상대적으로 현실적으로 바라볼 가능성이 크다. 최근 금융권의 디지털 혁신 및 ESG 강화 추세는 긍정적이지만, 역사적 위기 사례나 내부 비리 논란으로 인한 경계심도 남아있을 것으로 예상된다. 이러한 복합적 요인으로 **\"보통\"(2)**의 신뢰 수준이 타당하다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210115",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P052",
+          "answer": 3,
+          "raw": "답변: 3  \n금융기관의 리더십에 대한 신뢰도를 추정할 때, 인구통계학적 특성(50대 남성, 자영업자, 비수도권 거주) 및 경제적 배경(I.M.F. 경험 세대, 경기 변동 취약 계층)을 고려했습니다. 과거 금융 위기에 대한 부정적 인식과 자영업자의 높은 신용 리스크 노출 경험이 낮은 신뢰도로 이어질 가능성이 크며, 이는 3점(\"거의/전혀 신뢰하지 않음\")과 일치합니다.  \n\n\\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210130",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P053",
+          "answer": 3,
+          "raw": "답변:  \n3  \n\n**설명:**  \n주어진 조건(50대 남성, 수도권 거주, 대졸, 사무직)을 가진 응답자의 관점에서 분석했습니다. 최근 금융기관 관련 사건(DLS 상품 등), 관치금융 논란, 개인 이익 중심의 경영 등에 대한 부정적인 인식이 높습니다. 또한, 수도권 거주 및 사무직으로서 정보 접근성과 경제적 이해가 높아 금융 시스템의 한계를 체감할 가능성이 큽니다. 이러한 요인으로 **\"거의/전혀 신뢰하지 않음\"(3)**이 타당합니다. 다만, 절대적 신뢰보다는 상황에 따른 유동적 태도를 가정하여 최종적으로 3점을 선택했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210157",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P054",
+          "answer": 3,
+          "raw": "3  \n\n연구직으로서 비판적 사고와 정보 접근성이 높아 금융기관의 경영진이 단기 이익 추구 및 투명성 부족 등으로 인해 신뢰를 얻지 못할 것이라는 가정하에 선택한 결과입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210210",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P055",
+          "answer": 2,
+          "raw": "답변: 2  \n\n관리직을 가진 50대 수도권 대졸 남성의 경우, 금융기관 리더에 대한 신뢰는 중간 수준(2)으로 추정됩니다. 이들은 경제적 경험이 풍부하며 사회 문제에 대한 이해도가 높지만, 과거 금융 스캔들과 규제에 따른 피로감 등으로 인해 완전한 신뢰보다는 신중한 태도를 보일 가능성이 있습니다. 다만, 시스템이 필요하다는 실용적 관점에서 극단적 불신까지는 이르지 않아 보통 수준의 신뢰로 균형을 이룰 것으로 보입니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P056",
+          "answer": 3,
+          "raw": "3  \n(호남권 거주 및 연구직으로서의 정보 분석 능력, 경제적 상황에 대한 현실적 평가를 고려해 금융기관 리더십에 대한 비판적 관점 반영)  \n\n**단계별 설명:**  \n1. **프로필 분석**: 고학력·연구직으로서 객관적 데이터 분석을 통한 판단 가능성.  \n2. **경제적 맥락**: 최근 한국 경제 상황과 금융 기관 관련 논란 고려 시 신뢰 하락 요인 존재.  \n3. **연령/성향**: 50대의 경우 전통적 가치와 안정 추구 경향 있으나, 금융계 불신 분위기 반영됨.  \n4. **결론 도출**: 종합적으로 낮은 신뢰도 예상되어 **3**(거의/전혀 신뢰하지 않음).",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P057",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 프로필(50대, 기능직, 수도권 거주 등)을 고려할 때, 경제적·사회적 환경에서 금융기관의 리더십에 대한 불신이 높을 것으로 추정됩니다. 기능직 종사자로서 체감되는 경기 변동성과 금융 접근성 문제는 신뢰를 약화시킬 수 있으며, 고령층의 경우 금융 혁신에 따른 소외감이나 규제 미비에 대한 우려가 반영될 가능성이 큽니다. 따라서 **\"거의/전혀 신뢰하지 않음\"(3)**으로 판단하였습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210224",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P058",
+          "answer": 3,
+          "raw": "답변: 3  \n*추론 과정:*  \n- **연령 및 경험:** 50대는 IMF 등 경제 위기 경험이 있어 금융기관에 대한 경계심이 있을 수 있음.  \n- **직업 특성:** 자영업자는 대출·금리 등 금융 정책 변화에 직접적 영향을 받음. 최근 ELS 사태, 횡령 사건 등은 신뢰 저하 요인으로 작용 가능.  \n- **사회적 분위기:** 금융권 리더십의 도덕적 해이 관련 보도가 빈번해 신뢰도가 낮을 것으로 예상됨.  \n\n이러한 요소를 종합해 금융기관 지도층에 대한 신뢰 수준이 ‘낮을’ 것으로 판단되어 **3**을 선택합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210248",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P059",
+          "answer": 2,
+          "raw": "답변: 2  \n(설명: 관리직 경력 및 대졸 학력의 경우, 금융기관의 구조와 리스크를 이해하면서도 실제 경험 또는 사회적 이슈로 인해 완전한 신뢰보다는 중립적인 태도를 취할 가능성이 높습니다.)  \n\n**사족**: 단, 개인의 과거 경험(금융 사기 피해 여부), 최근 정책 변화 인식 등에 따라 차이가 날 수 있으나, 일반화 시 2번 선택 빈도가 통계상 높다는 가정하에 작성됨.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210301",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P060",
+          "answer": 3,
+          "raw": "3  \n\n금융기관 리더에 대한 신뢰도는 개인의 경제적 경험과 사회적 인식에 따라 달라집니다. 자영업자로서 금융 정책 변화와 대출 접근성 등에서 어려움을 겪었을 가능성이 높고, 고학력이 아닌 경우 전문 용어나 복잡한 시스템보다 체감 경험이 중요하게 작용합니다. 50대의 경우 과거 외환위기 등의 영향으로 대형 기관에 대한 경계심이 있을 수 있으며, 영남권의 보수적 성향 역시 정부 주도 금융정책에 비판적 시선을 줄 수 있습니다. 이러한 요인을 종합하면 낮은 신뢰도(3점)가 예상됩니다. 다만 개별 상담원 서비스나 소액대출에서의 긍정적 경험이 있다면 차이가 생길 수 있으나, 전체적 차원에선 부정적 평가가 우세할 것으로 보입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210312",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P061",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n주어진 조건(50대 남성, 대졸, 수도권 거주, 자영업)을 고려했을 때, 금융기관 경영진에 대한 신뢰도는 **중립적(2)**인 경향이 예상됩니다.  \n- **신뢰 측면**: 장기적인 경제 활동 경험을 통해 시스템 이해도는 있으나, 최근 금융권의 구조조정·정책 변화 등 불확실성으로 인한 경계심이 작용할 수 있음.  \n- **비신뢰 측면**: 자영업자로서 수익 변동성에 따른 금융 정책 영향력이 크기 때문에 경영진의 단기적 이익 추구 행태에 대한 비판적 시각 가능성.  \n\n결론적으로, **균형적 입장(2)**이 가장 타당하다고 판단됨. 단, 실제 데이터 없이 추정에 의존한 결과임을 유의합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210324",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P062",
+          "answer": 2,
+          "raw": "답변: 2  \n(관리직 경력 및 높은 교육 수준으로 금융 시스템의 구조와 리스크를 이해하고 있으나, 과거 사례나 개인 경험에 따라 중립적 평가를 내릴 가능성 반영)  \n\n**단계별 설명:**  \n1. **프로필 분석**: 50대 여성, 대졸, 수도권, 관리직 → 경제적 지식 보유 & 사회시스템 비판적 시각 존재  \n2. **금융 신뢰 요인**: 관리직 경험 = 조직 운영 이해도 ↑ → 과도한 낙관 경계, 반면 학문적 배경 = 합리적 분석 시도  \n3. **균형점 도출**: 극단적 신뢰(1)/불신(3) 대신 중도(2) 선택 → 실무적 관점에서 체계화된 시스템을 인정하되 인적 결함 인지  \n4. **최종 결정**: 데이터 부족 시 안전장치로서 '보통'(2) 채택 → 실제 여론조사에서도 중간응답률이 높은 편임을 고려  \n\n⚠️ 주의사항: 개인의 구체적 경험이 없을 경우 일반화 오류 발생 가능하므로 확률적 추론 한계 존재.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210336",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P063",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n주어진 조건(50대 여성, 대졸, 수도권 거주, 관리직)과 최근 금융권 이슈를 고려할 때, **금융기관 리더십에 대한 신뢰도가 가장 낮을 것으로 추정됩니다**.  \n- **연령대**(50대): 전통적 시스템 선호 및 변화에 대한 보수적 시각 → 신뢰 저하  \n- **관리직 경력**: 조직 내부의 부정·비효율 체감 → 외부에 대한 불신 증가  \n- **교육 수준(대졸)**: 비판적 분석 능력 향상 → 구조적 문제에 대한 민감성 상승  \n- **수도권 환경**: 금융 관련 부정적 정보(사기, 금리 조작 등) 노출 빈도 높음 → 경계심 강화  \n\n결과적으로 \"거의/전혀 신뢰하지 않음\"(3점)이 적절하다고 판단되었습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210349",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P064",
+          "answer": 3,
+          "raw": "3  \n\n금융기관 리더들에 대한 신뢰도는 개인의 경험과 사회적 인식에 따라 달라집니다. 50대 여성의 경우 과거 금융 위기나 개인적 경험(예: 대출 부담)으로 인해 부정적 인식을 가질 수 있으며, 기능직 특성상 직접적인 금융 혜택 체감이 적어 신뢰도가 낮게 나타날 수 있습니다. 또한 낮은 교육 수준은 전문적 이해 부족으로 인한 거리감을 유발하며, 수도권 거주 시 경쟁 심리와 상대적 박탈감도 작용합니다. 종합적으로 **3**(신뢰하지 않음) 선택 가능성이 높습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P065",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 특성(50대 여성, 고졸 이하, 기능직, 충청/강원 거주)을 고려해 볼 때, 사회경제적 위치와 관련된 경험이 금융기관 리더십에 대한 **낮은 신뢰**(3점)를 반영할 가능성이 높습니다.  \n- **교육 및 직업**: 고졸 이하 + 기능직 → 경제적 취약성 또는 구조적 불평등 체감에 따른 상위 계층(금융권 관리자 등)에 대한 회의적 시각 유발 가능.  \n- **지역 특성**: 농림업 중심 지역에서 자영업·전통산업 위주 경제구조 → 금융시스템과의 직접적 연관성 약화로 신뢰도 하락 추정.  \n- **연령·성별**: 고령층·여성으로서 경제적 안전망 부재 우려 → 제도권 기관에 대한 기대치 낮음.  \n\n단순화된 척도와 인구통계학적 맥락을 결합해 **3점(거의/전혀 신뢰하지 않음)** 선택이 타당합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P066",
+          "answer": 2,
+          "raw": "2  \n\n금융기관 리더십에 대한 신뢰도는 개인의 경험과 사회적 분위기에 따라 달라집니다. 50대 여성의 경우, 경제적 안정 추구와 동시에 과거 금융 사고 등으로 인한 경계심이 공존할 수 있습니다. 수도권 거주 및 사무직 경력자로서 정보 접근성과 현실 감각이 높아 **\"보통\"(2)** 정도의 평가를 내릴 것으로 예상됩니다. 완전 신뢰나 불신보다 균형 잡힌 시각을 가질 가능성이 큽니다.  \n(최종 답: **2**)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P067",
+          "answer": 3,
+          "raw": "답변: 3  \n\n관리직을 포함한 대졸자들이 금융기관의 리더십에 대한 신뢰도가 최근 사회적 이슈(예: 금리 조작, 내부 비리 등)로 인해 낮아졌음을 반영했습니다. 이는 조직 내 문제의 복잡성을 이해하고 비판적 시각을 가질 가능성이 높아짐에 따른 결과입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210408",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P068",
+          "answer": 3,
+          "raw": "3  \n\n금융기관 리더십에 대한 신뢰는 최근 발생한 금융 스캔들 및 투명성 문제로 인해 전반적으로 낮아졌습니다. 50대 여성의 경우 경험과 정보 접근성이 높아 이러한 이슈에 민감하며, 사무직으로서 경제적 이해도 역시 높습니다. 이로 인해 경영진의 윤리성과 결정에 회의적 시각이 강해져 **3**을 선택할 가능성이 큽니다.  \n단, 완전한 불신보다는 부분적 신뢰 요소도 있으나, 핵심 인물들의 책임감 부족 등이 반영되어 최저 점수보다는 한 단계 높은 **3**으로 귀결됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210420",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P069",
+          "answer": 2,
+          "raw": "2  \n(설명: 50대 여성의 경우, 인생 주기와 사회적 경험에 따라 금융기관에 대한 신뢰가 형성될 수 있음. 영남권의 경제 상황이나 자영업자의 입장에서 보면 금융기관 정책 변화 등에 민감할 수 있으나, 일반적으로 '보통'(2) 수준의 신뢰도를 보일 것으로 추정됨.)  \n\n**Answer:**  \n2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210433",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P070",
+          "answer": 2,
+          "raw": "답변: 2  \n**설명:**  \n주어진 프로필(50대 여성, 대졸, 영남권, 관리직)과 일반적인 사회경제적 맥락을 고려할 때, 금융기관 리더십에 대한 신뢰도는 **평균적**(2점)일 가능성이 높습니다.  \n\n1. **연령 및 경력**: 50대는 경제적 경험이 풍부하나 과거 금융위기 등의 부정적 사례에 노출되어 완전한 신뢰보다는 균형 잡힌 시각을 가질 수 있습니다.  \n2. **교육 및 직업**: 대졸 학력과 관리직 특성상 정보의 객관적 분석 능력이 높아 과도한 낙관이나 비관을 피하며, 실제 업계의 구조적 한계를 인지하여 \"보통\"(2점) 수준의 신뢰로 이어질 수 있습니다.  \n3. **지역적 특성**: 영남권의 전통적 가치관은 안정 추구 성향과 연결되지만, 동시에 현 체제에 대한 회의감도 동반될 수 있어 극단의 선택(1 또는 3)보다는 중간점을 선택할 것으로 보입니다.  \n\n단, 개별적 경험(예: 직접적 피해 사례 유무)에 따라 차이가 날 수 있으나, 질문의 제한된 맥락에서는 **균형 감각**이 가장 합리적으로 추정됩니다.  \n\n---  \n**최종 답변:**  \n2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210450",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P071",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n관리직 경력 및 대졸 학력으로 사회 문제에 대한 이해도와 비판적 사고 수준이 높습니다. 금융기관 리더십의 비리·부실 사례 보도로 인한 부정적 인식 확산이 영향을 미쳤으며, 개인의 경제적 경험 또는 언론 정보를 바탕으로 한 회의론이 작용했을 것으로 추정됩니다. 단, 완전한 불신 단계까지는 아니므로 **3**(거의/전혀 신뢰하지 않음)으로 응답합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210512",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P072",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명:** 해당 인구통계학적 특성은 금융기관 접근성이 낮고, 복잡한 금융상품 이해가 어려울 수 있으며, 과거 금융 사기 또는 지원 부족 경험을 했을 가능성이 높아 신뢰도가 낮을 것으로 예상됩니다. 또한, 농업·어업 종사자로서 정부 정책에 실망한 경우가 있어 금융기관 운영진에 대한 부정적 인식이 형성되었을 수 있습니다. 따라서 \"거의/전혀 신뢰하지 않음(3)\"으로 판단합니다.  \n\n단순화된 이유 요약:  \n1. **연령 및 학력**: 정보 습득 어려움 → 오해 발생 가능성 ↑  \n2. **직업**: 농업 지원 미흡 경험 시 금융기관 불신 강화  \n3. **수도권 거주**: 도시 금융 서비스의 경쟁적 성격에 대한 반감 가능성  \n\n최종 답변: **3**",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P073",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n- **연령(60대 이상)** + **교육수준(고졸 이하)** → 전통적 사고방식과 복잡한 금융 시스템에 대한 이해 부족 가능성 증가.  \n- **직업(농업/어업)** + **거주지역(수도권)** → 정부와 금융기관의 농업 지원 정책에 실망한 경험 다수 추정.  \n- 금융기관 리더십에 대한 역사적·사회적 비판 인식 강함 → 낮은 신뢰 경향 반영.  \n\n따라서, 금융기관 지도자에 대한 신뢰도가 낮아 **3**(거의/전혀 신뢰하지 않음) 선택.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P074",
+          "answer": 3,
+          "raw": "3  \n\n고령층의 특성 상 전통적 가치관을 중시하며, 금융기관의 복잡성 및 접근성 문제로 인해 부정적 인식이 강할 것으로 예상됩니다. 특히 농업·어업 종사자로서 경제적 어려움 속에서 금융기관의 정책 변화에 따른 피해 경험이 누적될 경우, 금융기관 리더십에 대한 불신감이 크게 작용했을 것입니다. 이에 따라 가장 낮은 신뢰도(3)를 선택할 가능성이 높습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P075",
+          "answer": 3,
+          "raw": "3  \n\n사용자의 특성(60대 이상, 남성, 대졸, 호남권, 은퇴)을 고려할 때, 일반적으로 고령층·은퇴 계층은 금융기관 경영진의 의사결정 및 투명성에 대해 회의적이거나 비판적인 시각을 가질 가능성이 높습니다. 이는 경제적 경험 축적 과정에서 발생한 실망감이나 사회경제적 변화에 대한 부정적 인식과 연결될 수 있습니다. 따라서 **\"거의/전혀 신뢰하지 않음\"(3)**이라는 답변을 도출했습니다. 단, 개인의 성향이나 최근 금융 정책 변화 등 구체적 맥락을 배제하고 추론한 결과이므로 실제 답변과의 차이는 존재할 수 있습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210525",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P076",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 특성(60대 이상, 남성, 고졸 이하, 지역: 충청/강원, 은퇴)을 고려할 때, 고령층은 종종 금융기관의 복잡성 및 디지털 서비스에 대한 접근성 문제로 신뢰도가 낮습니다. 특히 은퇴 후에는 경제적 불안감과 함께 금융기관의 조언이나 상품에 대한 실망 경험이 누적될 수 있어 **\"거의/전혀 신뢰하지 않음\"(3)** 선택을 유도합니다. 다만 이는 일반화된 추론이므로 실제 사례는 다양할 수 있습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210544",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P077",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n사용자의 특성(60대 이상, 대학원 이상 학력, 은퇴)과 금융 기관 리더십에 대한 일반적인 인식 등을 고려하였습니다.  \n- **연령 및 학력**: 높은 교육 수준과 고령층으로서 축적된 경험은 복잡한 금융 시스템에 대한 이해를 높이고, 비판적 시각을 형성할 수 있습니다. 이는 금융 기관 경영진의 결정에 대한 회의감으로 이어질 가능성이 큽니다.  \n- **최근 트렌드 반영**: 금융권에서의 내부 비리나 정책 실패 사례 등은 신뢰 저하 요인으로 작용합니다. 특히 지적 능력이 높은 계층에서는 이러한 문제에 더욱 민감하게 반응할 수 있습니다.  \n- **보수적 관점 대입**: 은퇴 이후 자산 보호 욕구가 크더라도, 금융 기관 자체보다는 개인적 통제력을 우선시하는 경향이 강해질 수 있습니다. 따라서 경영진에 대한 신뢰는 낮아지기 쉽습니다.  \n\n이러한 요소를 종합해 \"거의/전혀 신뢰하지 않음\"(3)으로 추정했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210600",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P078",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n60대 이상 은퇴자의 경우, 금융기관에 대한 신뢰도가 상대적으로 낮을 수 있습니다. 이는 과거의 금융 위기 경험, 낮은 예·적금 금리, 복잡한 금융 상품 구조 등에서 오는 불만과 디지털 금융 시스템 적응 어려움 등이 복합적으로 작용했기 때문입니다. 특히 고졸 이하 학력이라면 전문 용어나 서비스 설명에 대한 이해 부족으로 오해가 생기기 쉽고, 이는 신뢰 저하로 이어질 수 있습니다. 따라서 **\"거의/전혀 신뢰하지 않음\"(3)**이 적절한 답변입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210619",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P079",
+          "answer": 2,
+          "raw": "2  \n\n금융기관 리더에 대한 신뢰도는 **2**로 평가합니다.  \n대상자가 60대 이상으로 경험이 풍부하고 대졸 학력으로 정보 분석력이 높으나,  \n과거 금융위기 경험과 은퇴 후 재정적 안정 필요성으로 인해 완전 신뢰보다는 신중한 입장을 취할 것으로 예상됩니다.  \n다만 지역적 소외감이나 정부 정책에 대한 불만이 있다면 신뢰도가 낮아질 수 있으나,  \n전통적 가치관과 합리적 판단 기반이 균형을 이뤄 **보통(2)** 수준으로 추정됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210630",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P080",
+          "answer": 3,
+          "raw": "답변: 3  \n**근거**:  \n1. **연령 및 지역 특성**: 60대 이상 충청/강원 거주자는 전통적 가치관이 강하며, 도시 중심 정책에 소외감을 느낄 가능성 있음.  \n2. **경제 활동**: 농업/어업 종사자는 대출·정책 자금 등 금융기관과 빈번히 접촉하나, 복잡하거나 비합리적 절차로 인한 불신 발생 가능.  \n3. **교육 수준**: 저학력으로 인해 디지털 금융 접근성 낮아 오프라인 서비스 의존도가 높으며, 이로 인한 갈등 경험 시 경영진 책임론 확산됨.  \n4. **사회적 인식**: 금융 위기나 사기에 민감하여 기관 리더십의 투명성에 회의적 시각 형성 용이.  \n\n종합적으로, 금융기관 경영진의 이익 중심 운영에 대한 의심으로 **\"거의/전혀 신뢰하지 않음\"(3)** 선택 예상.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P081",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n60대 이상 고령층의 경우 금융 시스템이나 기관에 대한 경험이 오래되었으나, 경제적 위기(예: IMF) 등을 경험하며 금융 리더십에 대한 불신이 누적된 경우가 많습니다. 또한 호남권은 타 지역에 비해 경제적 약점이 부각되며, 자영업자로서 직접 금융 거래 시 구조적 한계를 체감했을 가능성도 있습니다. 이로 인해 금융기관 리더들에 대한 **낮은 신뢰**(3점)가 반영되었습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P082",
+          "answer": 2,
+          "raw": "답변: 2  \n\n**설명:**  \n사용자의 프로필(60대 이상 남성, 자영업자, 고졸 이하 학력)을 고려할 때, **보통(2)** 정도의 신뢰도로 추정됩니다.  \n- **연령**: 고령층의 경우 금융기관에 대한 신뢰도가 상대적으로 낮으나 극단적 비관론보다는 중도적 입장을 취하는 경우가 많습니다.  \n- **직업(자영업)**: 대출 및 경영 환경 변화에 따라 금융기관과의 관계가 복잡해질 수 있으나, 오랜 사업 경험을 바탕으로 현실적 평가를 내리는 경향이 있습니다.  \n- **지역**: 지역 기반 경제 활동이 활발한 지역에서 성장했다면 소규모 금융기관에는 긍정적 인식이 있을 수 있으나, 전국 단위 기관에 대해서는 중립적 태도를 보일 가능성이 있습니다.  \n따라서 **극단적 신뢰(1)** 혹은 **비신뢰(3)**보다는 **균형점(2)**을 선택했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P083",
+          "answer": 2,
+          "raw": "답변: 2  \n(설명: 60대 이상 고령층의 경우 일반적으로 금융기관에 대한 신뢰도가 낮은 편이지만, 대졸 학력과 수도권 거주라는 점을 감안했을 때 정보의 접근성 및 합리적 판단 능력이 영향을 미쳐 중립적인 입장을 취할 가능성이 있습니다. 또한 은퇴 후 안정적인 자산 관리를 위해 전문가 의견을 존중하되 경계심도 유지하는 태도를 보일 것으로 추정됩니다.)  \n\n**단답:** 2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210643",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P084",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n대상자는 60대 이상의 고학력 미만 남성 자영업자로, 지역적 특성상 전통적 가치관이 강할 수 있습니다. 금융기관 경영진에 대한 신뢰도는 **낮을 가능성**(3점)이 높습니다. 이는 경제적 경험 축적 과정에서 구조적 불균형이나 정책 소외감을 체감했을 가능성과 연관이 있습니다. 또한, 지역사회 중심의 소규모 경제 활동 위주인 경우 중앙 금융시스템과의 괴리감으로 인해 신뢰도가 하락하기 쉽습니다. 다만 개인의 생애사적 차이는 존재하므로 절대적 판단은 어렵지만, 주어진 인구통계학적 특성으로 미루어 볼 때 **비신뢰 경향성(3)**이 우세합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210654",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P085",
+          "answer": 2,
+          "raw": "2  \n개인적으로 오랜 기간 금융기관과 접촉하며 서비스 측면에서는 큰 문제는 없었지만, 경영진의 정책에 아쉬움을 느낀 적이 있습니다. 최근 부정적 이슈에도 노출되었으나 완전한 불신 단계보다는 중도적인 입장으로 판단하여 **2**를 선택합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210704",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P086",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n60대 이상 여성으로서 고졸 이하 학력과 영남권 자영업자 특성 상, 경제적 어려움 및 금융정책 변화에 민감합니다. 과거 금융위기나 높은 대출금리 경험 가능성, 복잡한 금융상품 접근성 한계 등이 겹쳐 금융기관 리더십에 대한 불신이 클 것으로 추정됩니다. 특히 비대면 서비스 확대와 디지털 전환 가속화로 인한 소외감도 영향 미쳤을 것입니다. 이러한 배경에서 **\"거의/전혀 신뢰하지 않음\"(3)** 선택 비율이 가장 높을 것으로 분석되었습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P087",
+          "answer": 2,
+          "raw": "2  \n금융기관 경영진에 대한 신뢰도를 평가할 때, 개인의 경험이나 사회적 인식이 영향을 미칠 수 있습니다. 60대 이상의 경우 전통적 금융 시스템에 익숙하고 안정적인 선택을 선호하는 경향이 있으나, 최근 금융권의 부정적 사례(정보 유출, 부실 관리 등)로 인해 완전한 신뢰보다는 **보통 수준(2)**으로 판단될 가능성이 높습니다. 또한, 은퇴 후 경제적 안정성에 관심이 높아지면서 객관적 평가를 할 가능성도 반영됩니다. 따라서 균형 잡힌 시각에서 중간값인 2번을 택했습니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P088",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 특성(고령, 고등교육, 수도권 거주, 은퇴)을 고려할 때, 금융기관의 리더십에 대한 신뢰는 **낮을 가능성**이 있습니다.  \n- **고등교육**: 금융 시스템 및 문제점에 대한 이해도가 높아 비판적 시각 보유.  \n- **수도권 거주**: 대형 금융기관 밀집 지역에서의 부정적 사례 노출 가능성.  \n- **은퇴자**: 퇴직연금·저축 관리 과정에서 금융기관과의 상호작용 증가 → 투명성 요구 확대.  \n- **사회적 트렌드**: 최근 국내 금융기관 관련 사건(예: 불완전판매, 전산 장애 등)으로 인한 전반적 신뢰 하락.  \n\n이러한 요소들을 종합하면, **신뢰하지 않는 경향**(3점)이 우세합니다. 다만, 개인 차이로 인해 반드시 일치하지는 않을 수 있음.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P089",
+          "answer": 2,
+          "raw": "2  \n\n금융기관 경영진에 대한 신뢰도를 묻는 질문에서, 해당 조건의 사용자는 일반적으로 **보통(2)** 수준의 답변을 보일 것으로 예상됩니다. 이는 과거 금융 위기 및 개인적 피해 사례를 경험하거나 들은 바 있으나, 동시에 현대 금융 시스템의 필수성을 인식하며 균형을 유지하는 태도에서 비롯됩니다. 다만 일부 사용자 그룹에서는 낮은 신뢰도(3) 또는 높은 신뢰도(1)로도 분포될 수 있으나, 전체적으로는 중립적 입장이 우세합니다.  \n**답변:** 2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210719",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P090",
+          "answer": 1,
+          "raw": "답변: 1  \n설명: 해당 응답자의 특성(60대 이상, 지역적 특성, 자영업 등)을 고려할 때, 금융기관에 대한 신뢰도가 비교적 높을 것으로 추정됩니다. 연령대가 높을수록 전통적인 금융기관에 대한 신뢰감이 유지되며, 지역사회 중심의 금융 활동에 익숙하여 신뢰 관계를 형성할 가능성이 있습니다. 그러나 이는 일반적인 경향성에 기반한 추론이므로 개별 사례는 다를 수 있습니다.  \n\n**최종 답변:**  \n1",
+          "parsed": 1,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210738",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P091",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명**: 60대 이상 여성 자영업자로 영남권에 거주하며 고등 이하 학력이라는 배경을 고려할 때, 금융기관과의 직접적 경험(대출·지원 절차 복잡성 등)에서 오는 불편함과 경제적 어려움으로 인한 부정적 인식이 작용해 **\"거의/전혀 신뢰하지 않는다\"(3)**는 답변을 했을 것으로 추정됩니다. 다만 이는 추정에 따른 것이며, 개별 사례마다 차이가 있을 수 있습니다.  \n\n단순화된 이유:  \n1. **연령 및 학력**: 새로운 금융시스템 이해도 저하 → 전통적 체제 의심 가능성 ↑  \n2. **직업(자영업)**: 금융 서비스 이용 시 까다로운 절차 경험 → 부정적 평가  \n3. **지역 특성**: 영남권의 보수적 성향 ≠ 반드시 금융기관 신뢰로 직결되지 않음 (개인 경험 영향 큼).  \n\n결과적으로 **3**으로 판단합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210757",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P092",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n- **연령 & 지역**: 60대 이상 영남권 거주자는 전통적 가치를 중시하며, 급격한 금융 변화에 경계심이 있을 수 있음. 이는 금융기관 리더십에 대한 신뢰 저하로 이어질 수 있으나 명확한 통계적 근거는 없음.  \n- **성별 & 교육**: 여성 + 고졸 이하의 학력은 금융 정보 접근성 제한 → 금융기관 결정 과정에 대한 이해 부족 → 신뢰 감소 가능성. 다만 직접적 연관성은 약함.  \n- **직업(자영업)**: 자영업자는 금융기관과 빈번히 교류하나, 대출 심사·금리 등에서의 부정적 경험 → 신뢰 하락 요인으로 작용할 수 있음.  \n- **균형적 추정**: 위 요소들 간 상충 효과(전통적 신뢰 vs. 경험 기반 불신)로 인해 “보통”(2) 수준의 신뢰도를 보이기 쉬움. 단, 개인의 구체적 경험 차이에 따라 유동적임.  \n\n**최종 선택 이유**:  \n복수의 부정적 요인과 부분적 긍정 요인의 혼재로 절대적 신뢰(1)나 완전한 불신(3)보다는 중간 값인 “보통”으로 추정됨.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210824",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P093",
+          "answer": 3,
+          "raw": "답변: 3  \n*이유: 60대 이상 여성의 경우, 금융 지식 부족 및 디지털 금융 환경 변화에 따른 소외감으로 기존 금융기관에 대한 불신이 높을 것으로 추정됩니다. 특히 지역적 특성상 대규모 금융사기 사례 노출 시 신뢰도 감소 가능성 있습니다.*  \n\n(단순화 요약: 학력·연령·지역 복합 효과로 **3** 선택)",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P094",
+          "answer": 2,
+          "raw": "답변: 2  \n\n**설명**:  \n- **연령(60대 이상)**: 전통적 금융기관에 대한 기본 신뢰도가 있을 수 있음.  \n- **성별(여성)**: 리스크 회피 성향으로 안정적인 금융기관 선호 가능성.  \n- **교육수준(대졸)**: 금융시스템에 대한 이해도가 높아 과도한 마케팅·부조리에 대한 경계심 존재.  \n- **거주지(수도권)**: 정보 접근성 증가로 객관적 평가 가능.  \n- **직업(자영업)**: 금융기관과의 밀접한 거래 경험으로 장단점 모두 인지하여 신뢰도 중립적 전망.  \n\n이러한 요인들을 종합하면 \"보통(2)\" 수준의 신뢰도가 가장 타당하다고 판단됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P095",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n조건 대상(60대 이상 여성, 영남권 농업/어업 종사자, 저학력)은 금융기관 접근성과 이해도가 상대적으로 낮으며, 경제적 어려움 또는 금융 사기 경험 등으로 인해 금융기관 경영진에 대한 불신이 높을 것으로 추정됩니다. 특히 농업·어업 분야에서는 대출 부담과 경기 변동에 따른 위험이 크기 때문에, 금융기관의 정책이나 관행에 비판적일 가능성이 큽니다. 따라서 **3**(거의/전혀 신뢰하지 않음)을 선택합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210839",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P096",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n설정된 특성(60대 이상, 여성, 고졸 이하, 농촌 지역, 은퇴)과 관련하여 다음과 같은 이유로 **3**(거의/전혀 신뢰하지 않음)을 선택했습니다.  \n1. **경험 기반 불신**: 고령층은 과거 금융 위기나 사기에 노출될 기회가 많아 금융기관에 대한 경계심이 높습니다.  \n2. **정보 부족**: 낮은 교육 수준과 디지털 금융 미숙으로 기관의 정책 변경이나 이익 추구 방식을 이해하지 못해 오해가 발생합니다.  \n3. **소득 감소 영향**: 은퇴 후 고정 수입 감소 시, 금융기관의 금리 조정 등 경제적 압박 요소가 불신을 증폭시킬 수 있습니다.  \n4. **전통적 가치 vs 현실 인식**: 일부 전통적 권위에 대한 신뢰감 있으나, 실제 경험과 미디어를 통한 부정적 사례가 이를 상쇄하며, 결과적으로 신뢰하지 않는 방향으로 기울었습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210856",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P097",
+          "answer": 2,
+          "raw": "2  \n\n(설명: 주어진 조건과 인구 통계를 고려할 때, 60대 이상 여성으로서 금융기관에 대한 신뢰도는 일반적으로 중간 수준일 가능성이 높습니다. 그러나 개별 경험과 지역적 특성에 따라 변동될 수 있으므로, 가장 보편적인 반응인 **2**를 선택합니다.)  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210906",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P098",
+          "answer": 2,
+          "raw": "답변: 2  \n\n**사고 과정 요약:**  \n- 대상 특성 분석: 60대 이상, 여성, 대학원 이상 학력, 수도권 거주, 은퇴.  \n- 금융기관 신뢰도 관련 변수:  \n  - **높은 학력 & 경제적 여유**: 금융 서비스에 대한 접근성과 긍정적 경험 가능성 ↑ → 신뢰도 상승 예상.  \n  - **노년층 특화 우려**: 사기 위험 인식 및 디지털 금융 소외감 → 신뢰도 하락 가능성.  \n  - **균형 요소**: 학력으로 인한 정보 접근성과 사회적 영향력을 종합하면, 극단적 신뢰(1)나 불신(3)보다는 **중립적 평가(2)** 가능성 우세.  \n\n최종 선택은 **경험적 일반성** 반영하여 **2**로 결정.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1,
+          "retry": {
+            "timestamp": "20251227_210925",
+            "previous_answer": 2,
+            "previous_used_default": true,
+            "previous_error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+            "previous_attempts": 3
+          }
+        },
+        {
+          "persona_id": "P099",
+          "answer": 3,
+          "raw": "답변: 3  \n\n고령층의 농어업 종사자로서 금융기관에 대한 경험 및 인식, 사회경제적 맥락을 고려할 때, 전통적 금융 시스템에 대한 이해 부족과 최근 금융사기·디지털 전환 과정에서의 소외감 등이 작용하여 부정적 평가가 높을 것으로 추정됨.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P100",
+          "answer": 3,
+          "raw": "3  \n\n사용자의 연령(60대 이상), 성별(여성), 교육수준(대졸), 지역(호남권), 직업(자영업) 등을 종합하여 분석했습니다.  \n최근 금융기관의 연쇄적 사고와 사기 사건 등으로 인해 고령층 및 자영업자들의 신뢰도가 크게 하락했으며, 대졸 이상의 교육수준에서는 비판적 시각이 더욱 강해질 수 있습니다. 또한 호남권의 정치적 성향과는 별개로 금융 시스템 자체에 대한 회의감이 높은 계층이므로 **3**으로 답변합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        }
+      ]
+    }
+  ]
+}

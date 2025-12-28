@@ -16,7 +16,7 @@ import argparse
 import os
 import sys
 import time
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -195,6 +195,39 @@ def load_gpt5_results(path: str) -> Dict[str, Any]:
     return results_by_var
 
 
+def load_clova_baseline_results(root_dir: str, variables: List[str]) -> Dict[str, Dict[str, Any]]:
+    """
+    Load baseline CLOVA results (one file per variable) to compare against.
+
+    Expected file layout:
+      {root_dir}/{VARIABLE}/clova_results.json
+    """
+    baseline: Dict[str, Dict[str, Any]] = {}
+    for variable in variables:
+        path = os.path.join(root_dir, variable, "clova_results.json")
+        if not os.path.exists(path):
+            continue
+        try:
+            data = read_json(path)
+            cfg = data.get("configuration", {}) if isinstance(data, dict) else {}
+            results = data.get("results", []) if isinstance(data, dict) else []
+            if not results:
+                continue
+            js_value = results[0].get("js_divergence")
+            if js_value is None:
+                continue
+            baseline[variable] = {
+                "js_divergence": float(js_value),
+                "thinking": cfg.get("thinking"),
+                "temperature": cfg.get("temperature"),
+                "n_samples": cfg.get("n_samples"),
+                "path": path,
+            }
+        except Exception:
+            continue
+    return baseline
+
+
 def run(args: argparse.Namespace) -> int:
     load_dotenv()
 
@@ -214,7 +247,21 @@ def run(args: argparse.Namespace) -> int:
     # Load GPT-5.2 results for comparison
     gpt5_results = load_gpt5_results(args.gpt5_results)
 
+    baseline_results: Dict[str, Dict[str, Any]] = {}
+    if args.baseline_root:
+        baseline_results = load_clova_baseline_results(args.baseline_root, variables)
+
+    partial_path = os.path.join(out_dir, "clova_results_partial.json")
     results: List[Dict[str, Any]] = []
+    completed_variables: List[str] = []
+
+    if args.resume and os.path.exists(partial_path):
+        partial = read_json(partial_path)
+        if isinstance(partial, dict) and partial.get("status") == "in_progress":
+            completed_variables = list(partial.get("completed_variables", []))
+            results = list(partial.get("results", []))
+            print(f"🔁 Resuming from {partial_path} (completed: {', '.join(completed_variables) or 'none'})")
+
     comparison: Dict[str, Any] = {
         "timestamp": utc_timestamp(),
         "configuration": {
@@ -230,7 +277,34 @@ def run(args: argparse.Namespace) -> int:
     total_calls = len(variables) * len(personas)
     completed = 0
 
+    if completed_variables:
+        for r in results:
+            variable = r.get("variable")
+            if not variable:
+                continue
+            gpt5_var = gpt5_results.get(variable, {})
+            gpt5_js = gpt5_var.get("js_divergence")
+            clova_js = r.get("js_divergence")
+            if clova_js is None:
+                continue
+            comparison["variables"][variable] = {
+                "clova_hcx007": {
+                    "js_divergence": float(clova_js),
+                    "distribution": r.get("distribution"),
+                },
+                "gpt_5_2": {
+                    "js_divergence": gpt5_js,
+                    "distribution": gpt5_var.get("distribution"),
+                } if gpt5_js else None,
+                "delta": float(gpt5_js - float(clova_js)) if gpt5_js else None,
+                "clova_better": float(clova_js) < gpt5_js if gpt5_js else None,
+            }
+
+    new_variables_completed = 0
     for variable in variables:
+        if variable in completed_variables:
+            print(f"\n[Skip] {variable}: already completed")
+            continue
         if variable not in variable_defs:
             raise ValueError(f"Missing variable definition for {variable} in {args.variables_config}")
 
@@ -292,6 +366,19 @@ def run(args: argparse.Namespace) -> int:
 
         print(f"  CLOVA JS: {clova_js:.4f}" + (f" | GPT-5.2 JS: {gpt5_js:.4f} | Delta: {gpt5_js - clova_js:+.4f}" if gpt5_js else ""))
 
+        if args.compare_baseline:
+            baseline = baseline_results.get(variable)
+            if baseline:
+                baseline_js = float(baseline["js_divergence"])
+                baseline_thinking: Optional[str] = baseline.get("thinking")
+                delta = clova_js - baseline_js
+                print(
+                    f"  Baseline CLOVA ({baseline_thinking or 'unknown'}) JS: {baseline_js:.4f}"
+                    f" | Delta (new - baseline): {delta:+.4f}"
+                )
+            else:
+                print("  Baseline CLOVA: (missing)")
+
         # Incremental save after each variable
         write_json(os.path.join(out_dir, "clova_results_partial.json"), {
             "timestamp": utc_timestamp(),
@@ -301,6 +388,11 @@ def run(args: argparse.Namespace) -> int:
             "results": results,
         })
         print(f"  [Saved: {variable} → clova_results_partial.json]")
+
+        new_variables_completed += 1
+        if args.max_new_variables and new_variables_completed >= args.max_new_variables:
+            print(f"\n⏸️ Stopping after {new_variables_completed} new variable(s). Resume with --resume.")
+            return 0
 
     # Save final results
     write_json(os.path.join(out_dir, "clova_results.json"), {
@@ -373,6 +465,13 @@ def main() -> int:
     parser.add_argument("--thinking", type=str, default="medium", choices=["short", "medium", "deep", "none"],
                         help="HCX-007 thinking effort level (default: medium)")
     parser.add_argument("--gpt5-results", type=str, default="results/gpt5_full_comparison/results_20251220_012830.json")
+    parser.add_argument("--baseline-root", type=str, default="results/clova_experiment",
+                        help="Baseline CLOVA results root for per-variable comparison")
+    parser.add_argument("--compare-baseline", action="store_true",
+                        help="After each variable, print comparison vs baseline CLOVA JS")
+    parser.add_argument("--resume", action="store_true", help="Resume from clova_results_partial.json if present")
+    parser.add_argument("--max-new-variables", type=int, default=0,
+                        help="Stop after completing N new variables (0 = no limit)")
     parser.add_argument("--out-dir", type=str, default=None)
     args = parser.parse_args()
 

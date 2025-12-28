@@ -6,31 +6,18 @@ __pycache__/
 .Python
 env/
 venv/
+.venv/
 ENV/
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
 *.egg
 
-# Virtual environments
-.venv/
-venv/
-
-# Environment variables
+# Environment variables (contains API keys)
 .env
 .env.local
 .env.*
+!.env.example
 
 # IDE
 .vscode/
@@ -42,22 +29,29 @@ venv/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Generated artifacts (do not publish)
-outputs/
-output/
-results/
-papers/
-ms-word
-temp/
-docs/
-
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
+# Logs and temp files
 *.log
-
-# Temporary files
 *.tmp
 *.bak
+
+# Generated outputs (not needed for reproducibility)
+outputs/
+
+# MS Word conversion tools (not needed)
+ms-word/
+
+# Partial/checkpoint files (included completed results only)
+*_partial.json
+*_checkpoint*.json
+*_checkpoint*.md
+
+# Keep these for reproducibility:
+# - data/           (benchmark distributions)
+# - config/         (variable definitions)
+# - code/           (experiment scripts)
+# - results/        (selected final results)
+# - docs/           (paper markdown)

@@ -1,0 +1,66 @@
+{
+  "timestamp": "20251227_204510",
+  "configuration": {
+    "results_root": "results/clova_experiment",
+    "benchmark": "data/kgss_benchmarks_2023.json",
+    "variables": [
+      "CONFINAN",
+      "CONLEGIS",
+      "KRPROUD",
+      "NORTHWHO",
+      "UNIFI",
+      "PARTYLR"
+    ],
+    "success_criteria": "used_default == false AND error == null"
+  },
+  "variables": {
+    "CONFINAN": {
+      "n_total": 100,
+      "n_valid": 38,
+      "n_excluded": 62,
+      "excluded_rate": 0.62,
+      "original_js": 0.06224955520893834,
+      "filtered_js": 0.1182002054241765
+    },
+    "CONLEGIS": {
+      "n_total": 100,
+      "n_valid": 37,
+      "n_excluded": 63,
+      "excluded_rate": 0.63,
+      "original_js": 0.08250313891684816,
+      "filtered_js": 0.05864487250810369
+    },
+    "KRPROUD": {
+      "n_total": 100,
+      "n_valid": 41,
+      "n_excluded": 59,
+      "excluded_rate": 0.59,
+      "original_js": 0.13380504662024745,
+      "filtered_js": 0.01228174366527713
+    },
+    "NORTHWHO": {
+      "n_total": 100,
+      "n_valid": 100,
+      "n_excluded": 0,
+      "excluded_rate": 0.0,
+      "original_js": 0.08409540301163107,
+      "filtered_js": 0.08409540301163107
+    },
+    "UNIFI": {
+      "n_total": 100,
+      "n_valid": 31,
+      "n_excluded": 69,
+      "excluded_rate": 0.69,
+      "original_js": 0.11500248329549892,
+      "filtered_js": 0.016370262218714016
+    },
+    "PARTYLR": {
+      "n_total": 100,
+      "n_valid": 100,
+      "n_excluded": 0,
+      "excluded_rate": 0.0,
+      "original_js": 0.06525181475609976,
+      "filtered_js": 0.06525181475609976
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "timestamp": "20251228_011909",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "PARTYLR",
+      "NORTHWHO",
+      "UNIFI",
+      "CONFINAN",
+      "CONLEGIS",
+      "KRPROUD"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "PARTYLR": {
+      "clova_hcx007": {
+        "js_divergence": 0.016468375899904814,
+        "distribution": {
+          "1": 0.0,
+          "2": 23.0,
+          "3": 37.0,
+          "4": 32.0,
+          "5": 8.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "NORTHWHO": {
+      "clova_hcx007": {
+        "js_divergence": 0.1535683490212926,
+        "distribution": {
+          "1": 0.0,
+          "2": 1.0,
+          "3": 92.0,
+          "4": 7.000000000000001
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "UNIFI": {
+      "clova_hcx007": {
+        "js_divergence": 0.09560782991397668,
+        "distribution": {
+          "1": 1.0,
+          "2": 22.0,
+          "3": 76.0,
+          "4": 1.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "CONFINAN": {
+      "clova_hcx007": {
+        "js_divergence": 0.06430437871035488,
+        "distribution": {
+          "1": 0.0,
+          "2": 82.0,
+          "3": 18.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "CONLEGIS": {
+      "clova_hcx007": {
+        "js_divergence": 0.07552136272139792,
+        "distribution": {
+          "1": 0.0,
+          "2": 64.0,
+          "3": 36.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "KRPROUD": {
+      "clova_hcx007": {
+        "js_divergence": 0.03767193330328557,
+        "distribution": {
+          "1": 9.0,
+          "2": 55.00000000000001,
+          "3": 36.0,
+          "4": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    }
+  }
+}

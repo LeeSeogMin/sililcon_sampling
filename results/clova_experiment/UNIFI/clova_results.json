@@ -1,0 +1,1031 @@
+{
+  "timestamp": "20251227_143112",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "medium",
+    "variables": [
+      "UNIFI"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "results": [
+    {
+      "variable": "UNIFI",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 100,
+      "distribution": {
+        "1": 2.0,
+        "2": 15.0,
+        "3": 82.0,
+        "4": 1.0
+      },
+      "js_divergence": 0.11500248329549892,
+      "responses": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 2,
+          "raw": "답변: **2**  \n(20대가 통일 문제에 대해 현실적·경제적 측면을 고려하여 유보적이지만, 교육 수준과 전문직 특성상 역사적·사회적 필요성은 일정 부분 인정할 가능성을 반영함)  \n\n단계별 설명:  \n1. **연령/성별**: 20대 남성의 경우 통일보다 현 체제 유지나 점진적 협력을 선호한다는 통계 경향 존재.  \n2. **교육수준**: 대학 교육을 통해 통일의 역사적 당위성은 학습했으나 실생활 영향력 평가가 병행됨.  \n3. **거주지역(수도권)**: 직접적 경제 부담(통일 비용) 우려가 상대적으로 클 수 있음.  \n4. **직업(전문직)**: 사회 시스템 변화에 민감하므로 장기적 통합 이익 가능성에도 주목할 여지 보유.  \n5. 종합: 완전한 부정(3,4점)보다는 조건부 필요성(2점)으로 절충.  \n\n추가 근거: 최근 조사에 따르면 2030세대의 약 40%가 \"통일보다는 평화적 공존\"을 우선시하나, 이는 절대적 반대(4점)와는 구분됨. 따라서 \"다소 필요하다\"(2점)로 해석.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P002",
+          "answer": 3,
+          "raw": "답변:  \n**3**\n\n젊은 세대의 경우 통일보다 경제·실용적 문제를 우선시하는 경향이 있으며, 통일 비용과 사회통합 어려움 등을 우려합니다. 또한 수도권 대졸 사무직 특성상 글로벌 감각과 개방적 사고로 현 체제 유지나 점진적 협력을 선호할 수 있습니다. 다만 역사·민족적 측면에서 완전한 단절에는 부정적이므로 극단적 불필요(4점) 대신 **별로 필요하지 않다(3점)**를 선택할 것으로 추정됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P003",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P004",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P005",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P006",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P007",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P008",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P009",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P010",
+          "answer": 2,
+          "raw": "답변: **2**  \n(젊은 세대 중에서도 통일에 대한 관심이 상대적으로 낮으나, 교육 수준과 지역적 특성 상 평화 및 협력 필요성은 일부 인지하고 있을 것으로 추정됨.)  \n\n단계별 설명:  \n1. **연령(20대)** → 통일보다 실용적 이슈 우세 가능성 ↑  \n2. **성별/교육/직업(여성, 대졸, 사무직)** → 합리적 관점에서 비용·혜택 분석 가능성  \n3. **거주지역(호남권)** → 평균 대비 진보적 성향 강하나, 경제적 부담 의식 존재  \n4. **종합 평가** → \"평화적 공존\"(현상유지)과 \"장기적 통일 기대\" 사이에서 **균형적 입장**(2점).  \n\n근거: 최근 설문조사에선 2030세대 약 40%가 \"통일 불필요\", 30% 내외가 \"조건부 찬성\". 호남권도 전국 평균보다 약간 높은 편이지만 절대 다수 의견은 아님.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P011",
+          "answer": 3,
+          "raw": "답변:  \n3  \n\n**설명:**  \n설문에 주어진 조건은 **20대 여성, 고졸 이하 학력, 수도권 거주, 판매직 종사자**입니다. 최근 조사에 따르면, 20대 청년층의 상당수는 통일 문제에 대해 상대적으로 낮은 관심을 보이며, 경제적 부담이나 실생활과의 거리감 등을 이유로 필요성에 회의적입니다. 특히 판매직 등 현업 종사자의 경우 즉각적인 생계 문제와의 연관성이 낮아 통일의 필요성을 크게 느끼지 않을 가능성이 있습니다. 이에 따라 \"별로 필요하지 않다\"(3점)라는 응답이 가장 타당하다고 판단됩니다. 다만 일부 응답자들은 역사적·민족적 관점에서 소극적 필요성을 인정할 수 있으나, 전반적으로는 부정적인 경향이 우세합니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P012",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P013",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P014",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P015",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P016",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P017",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n20대는 일반적으로 통일보다는 실용적 접근(평화 공존 등)을 선호한다는 조사 결과가 있으나, 여전히 역사적·인도적 차원에서 **\"다소 필요하다\"(2)**고 보는 시각이 우세합니다. 단, 세대별 차이와 개인차가 크므로 절대적이지는 않습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P018",
+          "answer": 2,
+          "raw": "2  \n**설명:**  \n호남 지역은 역사적으로 진보 성향 및 통일에 대한 긍정적 인식이 상대적으로 높은 편이지만, 최근 경제적 부담 등 현실적 문제로 인해 통일에 대한 긍정적 의견이 약화되고 있음. 관리직으로서 경제적·사회적 영향력을 고려했을 때 **\"다소 필요하다\"(2)**가 가장 타당한 선택으로 보임.  \n\n(단순화된 핵심 요인: 지역 정서 + 직업적 현실 감각 반영)",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P019",
+          "answer": 3,
+          "raw": "답변: 3  \n관리직 및 영남권 특성상 경제적 실용성과 안보 안정을 중시하는 경향으로 인해 통일의 즉각적 필요성에 회의적일 가능성이 높다. 단, 대졸 계층이므로 장기적 관점에서의 가치 인식 차이 발생 시 **2**로도 변동 가능하다. 현 시점에서는 중도적 비관론 우세 추정.  \n\n\\boxed{3}",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P020",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P021",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P022",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P023",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P024",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P025",
+          "answer": 3,
+          "raw": "답변 (숫자만):  \n3  \n\n**설명:**  \n30대 남성 대졸 사무직이면서 영남권에 거주하는 경우, 경제적 부담 및 현 체제 유지 관점에서 **통일 필요성을 '별로 필요하지 않다'고 인식**할 가능성이 높습니다. 일반적으로 해당 계층은 실용적·안보 중심의 접근을 선호하며, 통일에 따른 사회적 비용과 불확실성을 우려합니다. 따라서 척도에서 **'3(별로 필요하지 않다)'**이 적합하다고 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P026",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명:**  \n사용자의 프로필(30대·여성·고졸 이하·수도권·자영업)을 고려할 때, **경제적 안정**과 **현실에 밀접한 문제**를 중요시하는 관점에서 분석했습니다.  \n통일 논의가 단기적 경제 부담이나 불확실성으로 인식될 수 있으며, 자영업자의 경우 사업 환경 변화에 대한 우려가 클 것으로 추정됩니다.  \n젊은 층의 통일에 대한 회의적 시각과 개인적 삶의 우선순위를 반영해 \"별도로 필요하지 않다\"(3점)로 판단했습니다. 다만, 완전한 부정은 아닌 중간 정도의 유보적 태도를 나타냅니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P027",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P028",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P029",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P030",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P031",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P032",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P033",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n사용자의 특성(30대, 여성, 대졸, 충청/강원 거주, 사무직)과 최근 사회 경향을 고려했습니다.  \n젊은 세대는 통일 시 경제적 부담을 우려하거나 실용적 관점에서 접근하는 경향이 있습니다. 또한 여성의 경우 인도주의적 관점이 반영될 수 있으나, 현재 조사 결과에 따르면 20~30대 중 상당수가 \"별도의 필요성이 낮다\"라고 응답합니다. 따라서 **3**(별로 필요하지 않다)이 가장 적절한 선택지로 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P034",
+          "answer": 3,
+          "raw": "답변:\n  \n3  \n\n**설명:**  \n사용자가 **관리직** 및 **수도권 대졸**로서 경제적·실용적 측면을 중시하며, 최근 여론조사 트렌드상 통일에 대한 열망이 감소하는 점을 고려했습니다. 또한 역사적 당위성과 별개로 현 체제 유지를 선호할 가능성을 반영하여 **\"별로 필요하지 않다(3)\"**로 추정했습니다. 다만 강한 부정(4) 대신 부분적 필요성은 인정함으로써 중도적 태도를 취했다고 가정했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P035",
+          "answer": 2,
+          "raw": "답변:  \n**2**\n\n관리직 및 수도권 거주자로서 경제적·사회적 영향을 종합적으로 고려합니다. 통일 시 단기적 비용 증가와 체제 통합 어려움 등이 있으나 장기적 평화 구축과 시장 확대 가능성 등도 존재하므로, **\"다소 필요하다\"**(2점)로 평가했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P036",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P037",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P038",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P039",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P040",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P041",
+          "answer": 3,
+          "raw": "답변 (숫자만):  \n**3**\n\n**설명**:  \n주어진 프로필(40대 남성, 기능직, 수도권 거주, 고졸 이하)을 고려할 때, 경제적 실용주의 관점에서 통일에 대한 부담이 클 것으로 추정됩니다. 기능직 종사자로서 현행 체제 유지 시 일자리/복지 안정성을 우선시하는 경향이 강하며, 단기간의 재정 부담과 사회적 혼란을 우려해 **\"별로 필요하지 않다\"(3)**로 답할 가능성이 높습니다. 다만 지역적 특성(수도권)이 안보 개선 기대감으로 일부 긍정적 영향을 줄 수 있으나, 경제적 우려가 우세합니다.  \n\n단순화된 가정에 따른 추론임을 유의하시기 바랍니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P042",
+          "answer": 3,
+          "raw": "답변: 3  \n**추론:**  \n- **거주지역(영남권):** 보수적 성향이 강해 통일에 대한 필요성을 상대적으로 낮게 평가할 가능성이 있음.  \n- **직업(서비스직):** 경제적 부담이 큰 정책에 부정적인 경우가 많아 통일 비용 문제로 인해 필요성을 낮출 수 있음.  \n- **연령 및 교육수준:** 40대 남성과 고졸 이하의 경우 역사적 이슈보다 현실적 이익을 우선시하는 경향이 있으며, 이는 통일 반대 의견으로 이어질 수 있음.  \n\n다만, 완전한 부정(4점)보다는 약간의 유보적 태도를 보일 것으로 추정되어 **3점**(별도로 필요하지 않다)을 선택함.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P043",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P044",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P045",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P046",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P047",
+          "answer": 2,
+          "raw": "답변:  \n2  \n\n호남권 거주 및 전문직 여성을 고려하여 사회적 통합의 중요성을 인지하되, 현실적 어려움도 감안한 중도적 입장으로 판단하였습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P048",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n- **연령/성별**: 40대 여성으로서 현실적 문제 인식 및 경제적 부담 우려가 클 수 있음.  \n- **교육수준**: 고학력으로 정치적·사회적 맥락을 이해하나, 통일의 구체적 실행 가능성에는 회의적일 가능성.  \n- **거주지역(영남권)**: 상대적으로 보수적 성향으로 인해 통일 논의에 신중하거나 부정적 견해가 많음.  \n- **직업(관리직)**: 조직 운영 경험으로 체제 통합 시 리스크를 경계할 수 있음.  \n\n이러한 요소를 종합하여 **“다소 필요하다”**(2)라는 중도적 입장보다는 **“별로 필요하지 않다”**(3)에 가까운 선택이 예상되나, 완전한 부정보다 유보적 태도를 반영해 **2**로 결정했습니다. 다만 실제 데이터 기반 분석 없이 가정에 의존하므로 오차 가능성 존재.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P049",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n주어진 프로필(40대, 여성, 고졸 이하, 충청/강원 거주, 기능직)을 고려할 때, **실용적이고 현실적인 가치관**이 강할 가능성이 높습니다.  \n통일 자체보다는 **현재의 경제적 안정**이나 **사회 문제 해결**(예: 일자리, 복지 등)을 우선시하는 경향이 예상되며, 이는 역사적·민족적 당위성보다 **개인적 삶의 개선**을 중시하는 태도로 이어질 수 있습니다.  \n다만, 일부는 **민족 화합**에 공감할 수 있으나, 통계적 일반화를 위해 **평균치인 3점(\"별로 필요하지 않다\")**을 선택했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P050",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P051",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P052",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P053",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P054",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P055",
+          "answer": 3,
+          "raw": "답변: 3  \n설명: 50대 남성은 전통적으로 국가적 의제에 민감하나, 경제적 부담 및 현실적 어려움을 고려하여 통일의 즉각적 필요성에는 회의적일 수 있음. 관리직 경력상 안정성과 예측 가능성을 중시하는 성향 반영 시 '별로 필요하지 않다'(3)를 선택할 가능성이 높음.  \n\n**답변 (숫자만):**  \n3",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P056",
+          "answer": 2,
+          "raw": "답변: **2**  \n연구직으로서 복잡한 문제를 다각도로 분석하며 단계적 해결을 지향할 것으로 보입니다. 또한 호남권의 역사적 맥락과 교육 수준을 고려할 때, 통일의 장기적 이익을 인정하되 현실적 난제도 인지하여 '다소 필요하다'는 입장을 취할 가능성이 높습니다. 다만, 주관적 견해가 아닌 추론에 기반한 답변이므로 실제 답변과는 차이가 있을 수 있습니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P057",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P058",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P059",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P060",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P061",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P062",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P063",
+          "answer": 2,
+          "raw": "2  \n\n**설명:**  \n귀하의 프로필(50대 여성, 대졸, 관리직, 수도권 거주)과 한국의 사회적·정치적 맥락을 고려했을 때, **통일 필요성에 대해 부분적으로 공감하되 현실적 어려움을 인지하는 입장**(2점)이 일반적일 것으로 추정됩니다.  \n- 50대는 역사적 경험과 미래 세대 영향력을 고려해 일정 수준의 필요성을 인식할 수 있으나, 경제적 부담이나 사회적 갈등 우려 등으로 절대적 찬성(1점)에는 신중해질 가능성 높음.  \n- 관리직 특성상 국가 통합의 장기적 이익과 리스크를 함께 평가하며, 현 시점에서는 교류 협력 중심 접근을 선호할 개연성이 있음.  \n따라서 **\"다소 필요하다\"(2)**로 답변합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P064",
+          "answer": 3,
+          "raw": "답변: 3  \n**근거:**  \n- **연령 & 세대 특성**: 50대는 역사적 분단 경험을 직접 겪지 않아 통일의 절박감이 낮을 수 있음.  \n- **경제적 우려**: 기능직 종사자로서 통일 시 발생할 경제적 부담(세금 증가 등)에 대한 우려가 클 가능성.  \n- **현상 유지 선호**: 수도권 거주자로서는 현재 체제의 안정을 우선시하는 경향이 나타남.  \n- **사회적 변화 회피**: 급격한 사회 변화보다 점진적 개선을 선호할 것으로 추정됨.  \n\n※ 통계적 경향 참고: 동세대 집단 내 통일 필요성 긍정률이 비교적 낮아, 중간 단계(3)로 추정.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P065",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P066",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P067",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P068",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P069",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P070",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P071",
+          "answer": 2,
+          "raw": "답변: 2  \n설명: 50대 여성, 관리직 경력 및 대졸 학력으로 인해 현실적 관점에서 통일 필요성은 인정하나 즉각적이기보다 점진적 접근 선호 가능성. 수도권 거주는 북한 개발비용 우려와 연결될 수 있으므로 완전한 찬성(1)보다는 유보적 태도(2).  \n\n**Answer:** 2",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P072",
+          "answer": 4,
+          "raw": "답변: 4  \n설명: 대상자가 60대 이상의 남성 농업 종사자로, 일반적으로 경제적 부담 및 사회 통합 문제를 고려해 통일에 회의적일 가능성이 높습니다. 보수적 관점에서 현 체제 유지 선호로 인해 \"전혀 필요하지 않다\"(4점)를 선택할 것으로 추정됩니다.",
+          "parsed": 4,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P073",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P074",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P075",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P076",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P077",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P078",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P079",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P080",
+          "answer": 2,
+          "raw": "답변: **2**  \n설명: 해당 집단은 분단 시대를 겪으며 통일에 대한 역사적 소망을 가질 수 있으나, 동시에 농업·어업 중심의 생계와 지역적 특수성으로 인해 경제적 불안정성, 사회 변화에 대한 우려 등으로 즉각적 통일 추진보다 점진적 접근을 선호할 가능성이 높습니다. 따라서 \"다소 필요하다\"(2점)를 선택할 것으로 추정됩니다. 다만, 개인별 차이가 크므로 절대적 결론은 아닙니다.  \n\n**최종 답변**: \\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P081",
+          "answer": 2,
+          "raw": "답변 (숫자만):  \n**2**\n\n---\n\n### 설명:\n- **연령**: 60대 이상 → 분단 경험 세대로 통일에 대한 정서적 공감대는 있으나 경제적 부담을 우려할 가능성 있음.  \n- **성별/직업**: 남성 자영업자 → 경제적 리스크 회피 성향으로 통일 필요성을 제한적으로 평가할 수 있음.  \n- **교육수준**: 대졸 → 합리적 판단으로 통일의 장단점을 균형 있게 고려하며, 완전한 부정(4)이나 강한 긍정(1)보다는 중도적 입장(2)을 취할 가능성 높음.  \n\n결과적으로, **경제적 부담과 현실적 한계**를 인정하면서도 **민족적 통합의 상징적 의미**를 부분적으로 수용하는 **'다소 필요하다'(2)**로 예측됩니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P082",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P083",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P084",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P085",
+          "answer": 2,
+          "raw": "답변 (숫자만):  \n2  \n\n**설명:**  \n주어진 조건(60대 이상, 남성, 대졸, 수도권 거주, 자영업)을 고려할 때, 연령대가 높을수록 통일에 대한 긍정적 인식이 상대적으로 높으나, 경제적 부담 및 현실적 문제로 인해 완전한 찬성보다는 **유보적 태도**(2점: 다소 필요하다)를 취할 가능성이 높습니다. 수도권 자영업자의 경우 안정 추구 성향이 강하며, 대졸 학력으로 인한 현실적 고민도 작용했을 것으로 추정됩니다. 다만 이는 일반적인 경향을 반영한 추론이며, 개인차 존재 가능합니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P086",
+          "answer": 3,
+          "raw": "답변: 3  \n**설명:**  \n주어진 조건(60대 이상, 여성, 고졸 이하, 영남권, 자영업)을 고려할 때, 이 집단은 통일 이슈에 대해 **사회·경제적 안정성 유지**를 우선시할 가능성이 높습니다.  \n- **연령/성별**: 고령층 및 여성층은 안보 위협 감소와 가족 재결합 기대감에도 불구하고, 단기적 비용 증가나 체제 변화에 대한 우려로 중도/부정적 의견이 우세함.  \n- **교육수준**: 학력이 낮을수록 정부의 대북 정책 신뢰도가 낮아 통일 당위성에 회의적 경향 있음.  \n- **거주지(영남)**: 전통적으로 보수적 정치 성향 기반으로 통일 정책에 소극적 태도를 보이는 경향 있음.  \n- **직업(자영업)**: 경영 환경 변동 리스크 회피 심리로 급격한 통일 추진에 부정적 시각 가짐.  \n\n종합적으로 볼 때, \"별로 필요하지 않다\"(3점) 응답률이 가장 높을 것으로 예상됨. 단, 개별 사례에선 역사적 정체성 회복 등의 주관적 가치관에 따라 2점으로 응답할 소수 사례 존재 가능.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P087",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P088",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P089",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P090",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P091",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P092",
+          "answer": 1,
+          "raw": "답변: 1  \n(설명: 60대 이상 여성으로서 분단의 역사적 경험을 직간접적으로 체감했을 가능성이 높고, 통일을 통해 국가적 단합과 평화 정착을 기대할 수 있습니다. 영남권 거주 및 자영업이라는 배경에서도 대체로 통일의 긍정적 측면을 강조하는 경향이 반영되었습니다.)  \n\n**답변:**  \n1",
+          "parsed": 1,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P093",
+          "answer": 1,
+          "raw": "답변:  \n1  \n\n**설명:**  \n주어진 프로필(60대 이상, 여성, 저학력, 충청/강원 거주, 은퇴자)의 경우, 분단과 전쟁 경험을 직간접적으로 체감했을 가능성이 높고, 통일에 대한 감정적·역사적 중요도가 크다고 가정합니다. 따라서 **통일 필요성에 대해 긍정적인 평가**(1점: 매우 필요함)를 내릴 가능성이 높습니다. 다만, 일부는 경제적 부담 등을 이유로 소극적 태도를 보일 수 있으나, 전반적으로는 통일을 지지하는 경향이 우세하다고 판단했습니다.",
+          "parsed": 1,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P094",
+          "answer": 2,
+          "raw": "2  \n**설명:**  \n- **연령 (60대 이상):** 역사적 경험이 있어 통일의 중요성을 인식하나, 경제적 부담을 우려할 가능성 있음.  \n- **학력 (대졸):** 국제 정세와 경제적 영향을 고려해 균형 잡힌 판단 예상됨.  \n- **거주지 (수도권):** 통일 시 지역 발전 가능성과 비용 증가 사이에서 갈등할 수 있음.  \n- **직업 (자영업):** 사업 환경 변화에 민감하므로 신중한 입장 취할 가능성 큼.  \n\n따라서 **\"다소 필요하다\"(2)** 로 추정되며, 필요성은 인정하되 현실적 조건과 균형을 강조하는 태도를 반영함.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P095",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P096",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P097",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P098",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P099",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P100",
+          "answer": 2,
+          "raw": "답변: **2**  \n나이든 세대라도 고학력 및 자영업자로서 경제적 현실을 고려하여 통일의 필요성을 완전히 부정하지는 않으나, 즉각적이고 강한 필요성보다는 점진적 접근을 선호할 가능성이 높습니다. 호남권의 역사적 배경과 개인의 경제적 우려가 복합적으로 작용하여 \"다소 필요하다\"는 중간 입장에 기울 것으로 추정됩니다.  \n\n\\boxed{2}",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "20251227_141750",
+  "configuration": {
+    "n_samples": 100,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "CONFINAN"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "CONFINAN": {
+      "clova_hcx007": {
+        "js_divergence": 0.06224955520893834,
+        "distribution": {
+          "1": 0.0,
+          "2": 78.0,
+          "3": 22.0
+        }
+      },
+      "gpt_5_2": {
+        "js_divergence": 0.09793786662184358,
+        "distribution": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 78.0,
+          "4": 22.0,
+          "5": 0.0
+        }
+      },
+      "delta": 0.03568831141290524,
+      "clova_better": true
+    }
+  }
+}
