@@ -1,222 +1,166 @@
-# Silicon Sampling for Korean Social Surveys
+# Silicon Sampling: Korean LLM Survey Simulation
 
-**Validating LLM-based Survey Simulation with KGSS 2023 Data**
+**Do Indigenous LLMs Show Closer Alignment with Local Survey Responses?**
 
-This repository contains the experimental code for validating Silicon Sampling methodology in the Korean social survey context.
+Replication code for systematic validation of Silicon Sampling methodology using Korean General Social Survey (KGSS) 2023 data.
 
-## 📋 Paper
+## Paper Abstract
 
-**Title**: Validating Silicon Sampling for Korean Social Surveys: A Large-Scale Comparison with KGSS 2023 Data
+This study systematically validates Silicon Sampling through two research axes: (1) methodological effectiveness validation, and (2) cultural context effects. We test whether indigenous LLMs (CLOVA HCX-007) outperform Western LLMs (GPT-5.2) in simulating Korean cultural contexts.
 
-**Abstract**: This study empirically validates whether LLM-based Silicon Sampling can accurately reproduce real Korean social survey data. Using 100 stratified personas and GPT-5.2, we collected responses for 7 key KGSS 2023 variables and compared distributions using statistical tests.
+**Key Findings:**
+- Baseline simulation shows significant differences (mean JS=0.397)
+- Temperature optimization: T=0.7 optimal
+- Chain-of-Thought: 19.1% improvement
+- Prompt engineering: Korean prompts 16.8% better than English
+- **Cultural Context**: CLOVA wins 3/6 variables with 26.5% average JS improvement, but no clear indigenous LLM advantage
 
-**Note**: Manuscript drafts and internal research materials are stored separately and are not included in the public GitHub release. See `PUBLIC_RELEASE.md`.
-
-## 🎯 Research Questions
-
-1. **RQ1**: How accurately does LLM-based Silicon Sampling reproduce KGSS 2023 response distributions?
-2. **RQ2**: What systematic biases exist in Silicon Sampling, and what patterns do they show?
-3. **RQ3**: For which types of variables is Silicon Sampling suitable/unsuitable?
-
-## 📊 Key Findings
-
-### Accuracy (RQ1)
-- All 7 variables showed statistically significant differences (KS test p<.001)
-- Average Jensen-Shannon divergence: **0.226** (moderate similarity, insufficient for replacement)
-
-### Systematic Biases (RQ2)
-1. **Positivity Bias**: 96% positive responses for UNIFI (actual: 26%)
-2. **Extremity Avoidance**: 14.5%p lower extreme response rate on average
-3. **Negativity Omission**: 0% "North Korea responsible" for NORTHWHO (actual: 45%)
-
-### Variable-Specific Performance (RQ3)
-| Variable | JS Divergence | Assessment | Usage |
-|----------|---------------|------------|-------|
-| CONFINAN (Financial trust) | 0.104 | Best | ⚠️ Limited use |
-| SATFIN (Economic satisfaction) | 0.134 | Good | ⚠️ Limited use |
-| KRPROUD (National pride) | 0.158 | Moderate | ⚠️ Caution |
-| NORTHWHO (NK responsibility) | 0.190 | Moderate | ⚠️ Caution |
-| PARTYLR (Political orientation) | 0.296 | Poor | ❌ Avoid |
-| UNIFI (Unification necessity) | 0.339 | Very Poor | ❌ Prohibited |
-| CONLEGIS (Parliamentary trust) | 0.361 | Critical Failure | ❌ Prohibited |
-
-## 🔬 Experimental Design
-
-### Variables (7 KGSS 2023 items)
-- **SATFIN**: Household economic satisfaction (1-5 scale)
-- **CONFINAN**: Trust in financial institutions (recoded; see `data/kgss_benchmarks_2023.json`)
-- **CONLEGIS**: Trust in National Assembly (recoded; see `data/kgss_benchmarks_2023.json`)
-- **PARTYLR**: Political orientation (0-10 scale)
-- **NORTHWHO**: Responsibility for NK relations deterioration (see benchmark)
-- **UNIFI**: Necessity of unification (see benchmark)
-- **KRPROUD**: Pride in being Korean (see benchmark)
-
-### Personas
-- **Sample size**: n=100
-- **Stratification**: Age, gender, education, region, occupation
-- **Distribution**: Matched to KGSS 2023 demographic proportions
-
-### LLM Setup
-- **Primary model**: GPT-5.2 (OpenAI, 2025)
-- **Comparison model**: GPT-4o-mini (for model improvement analysis)
-- **Temperature**: 0.7
-- **API calls**: 1,000 total (700 per model)
-
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 silicon_sampling/
-├── README.md                  # This file
-├── PUBLIC_RELEASE.md          # What to publish (and not)
-├── requirements.txt           # Python dependencies
-├── data/                      # Benchmark data
-│   └── kgss_benchmarks_2023.json
-├── config/                    # Variable definitions for prompting
-├── code/                      # Experimental code
-│   ├── 01_generate_personas.py
-│   ├── 02_run_main_experiment.py
-│   ├── 03_gpt5_comparison.py
-│   └── 04_statistical_analysis.py
-└── outputs/                   # Generated artifacts (gitignored)
+├── code/                          # Experiment scripts
+│   ├── 01_generate_personas.py    # Generate 100 stratified personas
+│   ├── 02_run_main_experiment.py  # GPT experiments (Exp 1-4)
+│   ├── 04_statistical_analysis.py # KS test, Chi-square, JS divergence
+│   ├── 05_report_experiments.py   # Generate reports
+│   ├── 06_clova_experiment.py     # CLOVA HCX-007 experiment (Exp 5)
+│   └── 06_update_paper_bootstrap_table.py
+├── config/
+│   └── kgss_variables_2023.json   # Variable definitions & prompts
+├── data/
+│   └── kgss_benchmarks_2023.json  # KGSS 2023 benchmark distributions
+├── results/                       # Experiment results
+│   ├── clova_experiment/          # CLOVA HCX-007 results (Exp 5)
+│   ├── gpt52_experiment/          # GPT-5.2 results
+│   └── gpt35turbo_experiment/     # GPT-3.5-turbo baseline
+├── docs/
+│   └── journal_paper.md           # Full paper manuscript
+├── ss_utils.py                    # Shared utilities (JS divergence, etc.)
+├── clova_client.py                # CLOVA Studio API client
+├── requirements.txt               # Python dependencies
+└── .env.example                   # API key template
 ```
 
-## 🚀 Quick Start
+## Five Experiments
+
+| Exp | Claim Tested | Script | Description |
+|-----|--------------|--------|-------------|
+| 1 | Baseline Simulation | `02_run_main_experiment.py` | Demographic persona-based reproduction |
+| 2 | Temperature Optimization | `02_run_main_experiment.py --temperature` | T=0.3-1.1 comparison |
+| 3 | Chain-of-Thought | `02_run_main_experiment.py` + CoT prompt | CoT vs Direct response |
+| 4 | Prompt Engineering | `02_run_main_experiment.py` | Korean vs English prompts |
+| 5 | Cultural Context | `06_clova_experiment.py` | CLOVA HCX-007 vs GPT-5.2 |
+
+## Quick Start
 
 ### 1. Installation
 
 ```bash
-# Clone repository
-git clone https://github.com/YOUR_USERNAME/silicon_sampling.git
+git clone https://github.com/LeeSeogMin/silicon_sampling.git
 cd silicon_sampling
-
-# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 2. Setup API Key
+### 2. Configure API Keys
 
-Create `.env` file (never commit this) based on `.env.example`:
 ```bash
-OPENAI_API_KEY=your_openai_api_key_here
-NCP_ACCESS_KEY_ID=your_ncp_access_key_id_here
-NCP_SECRET_KEY=your_ncp_secret_key_here
-CLOVA_STUDIO_API_KEY=your_clova_studio_api_key_here
+cp .env.example .env
+# Edit .env with your API keys
 ```
+
+Required keys:
+- `OPENAI_API_KEY`: For GPT experiments
+- `CLOVA_STUDIO_API_KEY`: For CLOVA experiments
 
 ### 3. Run Experiments
 
 ```bash
-# Step 1: Generate personas (KGSS 2023 demographic distribution)
-python code/01_generate_personas.py
+# Step 1: Generate 100 stratified personas
+python code/01_generate_personas.py --seed 42 --out outputs/personas/personas_100.json
 
-# Step 2: Run main experiment (GPT-5.2, n=100, 7 variables)
-python code/02_run_main_experiment.py
+# Step 2: Run GPT experiment (Experiments 1-4)
+python code/02_run_main_experiment.py \
+  --model gpt-5.2 \
+  --temperature 0.7 \
+  --n-samples 100
 
-# Step 3: Run GPT-5.2 vs GPT-4o-mini comparison
-python code/03_gpt5_comparison.py
+# Step 3: Run CLOVA experiment (Experiment 5)
+python code/06_clova_experiment.py \
+  --thinking medium \
+  --n-samples 100
 
 # Step 4: Statistical analysis
-python code/04_statistical_analysis.py
+python code/04_statistical_analysis.py \
+  --sim-csv outputs/runs/<timestamp>/persona_responses.csv
 ```
 
-### (Optional) CLOVA Studio Smoke Test
+## Variables (KGSS 2023)
 
-If you set `CLOVA_STUDIO_API_KEY` and `CLOVA_STUDIO_MODEL` in `.env`, you can run:
-```bash
-python code/00_clova_smoke_test.py --prompt "안녕하세요. 한 문장으로 답해줘."
-```
+| Variable | Description | Scale |
+|----------|-------------|-------|
+| CONFINAN | Confidence in financial institutions | 1-3 |
+| CONLEGIS | Confidence in legislature | 1-3 |
+| KRPROUD | Pride in being Korean | 1-4 |
+| NORTHWHO | Perception of North Korea | 1-4 |
+| UNIFI | Support for unification | 1-4 |
+| PARTYLR | Political orientation | 1-5 |
+| SATFIN | Financial satisfaction | 1-5 |
 
-### 4. View Results
+## Key Results
 
-Run artifacts are saved under `outputs/` (ignored by git).
+### Experiment 5: Cultural Context (GPT-5.2 vs CLOVA HCX-007)
 
-## 📈 Reproducibility
+| Variable | GPT-5.2 JS | CLOVA JS | Improvement | Winner |
+|----------|------------|----------|-------------|--------|
+| CONFINAN | 0.062 | 0.062 | -0.2% | Tie |
+| CONLEGIS | 0.134 | 0.083 | 38.5% | CLOVA |
+| KRPROUD | 0.113 | 0.134 | -18.9% | GPT |
+| NORTHWHO | 0.125 | 0.084 | 32.6% | CLOVA |
+| UNIFI | 0.267 | 0.115 | 56.9% | CLOVA |
+| PARTYLR | 0.038 | 0.065 | -70.7% | GPT |
+| **Average** | **0.123** | **0.090** | **26.5%** | **3/6** |
+
+**Conclusion**: Indigenous LLM training does not guarantee superiority across all culturally-sensitive domains.
+
+## Reproducibility
 
 ### System Requirements
-- Python 3.8+
-- OpenAI API access (GPT-4 or GPT-5 models)
-- ~$15 USD for full experiment replication (1,000 API calls)
+- Python 3.10+
+- OpenAI API access (GPT-5.2 or similar)
+- CLOVA Studio API access (HCX-007)
 
-### Expected Runtime
-- Persona generation: <1 minute
-- Main experiment (700 calls): 25-30 minutes
-- Model comparison (300 calls): 10-15 minutes
-- Statistical analysis: <1 minute
+### API Costs (Approximate)
+- GPT-5.2: ~$10-15 per 700 calls
+- CLOVA HCX-007: ~$5-10 per 600 calls
 
-### Verification
-This public repo includes **aggregate KGSS benchmarks** only (no microdata). Analysis scripts are designed to reproduce comparisons against these benchmark distributions.
+### Random Seed
+All experiments use `seed=42` for reproducibility.
 
-## 📝 Citation
-
-If you use this code or findings in your research, please cite:
+## Citation
 
 ```bibtex
 @article{silicon_sampling_korean_2025,
-  title={Validating Silicon Sampling for Korean Social Surveys: A Large-Scale Comparison with KGSS 2023 Data},
-  author={[Author Name]},
-  journal={[Journal Name]},
+  title={Do Indigenous LLMs Show Closer Alignment with Local Survey Responses?
+         Evidence from Korean Cultural Variables},
+  author={[Author]},
+  journal={[Journal]},
   year={2025},
-  note={GitHub: https://github.com/YOUR_USERNAME/silicon_sampling}
+  note={GitHub: https://github.com/LeeSeogMin/silicon_sampling}
 }
 ```
 
-## 🔍 Key Results Summary
+## References
 
-### Main Conclusion
-> Silicon Sampling **cannot replace** traditional social surveys as of 2025, but shows **limited potential** for pilot studies and exploratory analysis.
+- Argyle et al. (2023). Out of one, many: Using language models to simulate human samples. *Political Analysis*
+- Dillion et al. (2023). Can AI language models replace human participants? *Trends in Cognitive Sciences*
+- Ornstein et al. (2024). How to train your stochastic parrot. *Political Science Research and Methods*
+- KGSS (2023). Korean General Social Survey 2023. Sungkyunkwan University Survey Research Center
 
-### Practical Guidelines
+## License
 
-**✅ Acceptable Use** (with caution):
-- Pilot testing of questionnaires
-- Exploratory hypothesis generation
-- Policy scenario simulations (reference only)
-- Educational training
-
-**❌ Prohibited Use**:
-- Policy decision-making
-- Primary data for academic research
-- Political polling
-- Sensitive topics (discrimination, ethics)
-
-### Validation Requirements
-Before using Silicon Sampling for any variable:
-1. Run pilot test (n=30)
-2. Compare with KGSS or similar survey data
-3. Verify JS divergence < 0.15
-4. Re-validate after model updates
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-## 📧 Contact
-
-For questions or collaboration:
-- **Email**: [your_email@example.com]
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/silicon_sampling/issues)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **KGSS (Korean General Social Survey)**: Data source for benchmarking
-- **OpenAI**: GPT models for experiments
-- **Research funding**: [If applicable]
-
-## 📚 Related Work
-
-- Argyle et al. (2023): "Out of One, Many: Using Language Models to Simulate Human Samples"
-- Horton (2023): "Large Language Models as Simulated Economic Agents"
-- Park et al. (2023): "Generative Agents: Interactive Simulacra of Human Behavior"
+MIT License - see [LICENSE](LICENSE) file.
 
 ---
 
-**Last Updated**: December 20, 2025
-**Repository Status**: Active Development
-**Version**: 1.0.0
+**Last Updated**: December 2025
