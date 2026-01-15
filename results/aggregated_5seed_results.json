@@ -18,12 +18,61 @@
     "model_clova": "HCX-007",
     "model_gpt": "gpt-5.2"
   },
-  "statistics": {},
+  "statistics": {
+    "CONFINAN": {
+      "clova_mean": 0.07039026028963005,
+      "clova_std": 0.01594522401410644,
+      "clova_n": 5,
+      "gpt_mean": 0.06327538128864843,
+      "gpt_std": 0.002048546731730166,
+      "gpt_n": 5
+    },
+    "CONLEGIS": {
+      "clova_mean": 0.08593937664061624,
+      "clova_std": 0.03059182034383008,
+      "clova_n": 5,
+      "gpt_mean": 0.1342110101694109,
+      "gpt_std": 0.0,
+      "gpt_n": 5
+    },
+    "KRPROUD": {
+      "clova_mean": 0.11791303605761254,
+      "clova_std": 0.05655447438994371,
+      "clova_n": 5,
+      "gpt_mean": 0.10460824991440046,
+      "gpt_std": 0.007937085303843116,
+      "gpt_n": 5
+    },
+    "NORTHWHO": {
+      "clova_mean": 0.13393390727257862,
+      "clova_std": 0.03935583367600133,
+      "clova_n": 5,
+      "gpt_mean": 0.12300229957714068,
+      "gpt_std": 0.008804724072735397,
+      "gpt_n": 5
+    },
+    "PARTYLR": {
+      "clova_mean": 0.06461545385194689,
+      "clova_std": 0.032840173557873824,
+      "clova_n": 5,
+      "gpt_mean": 0.045881286734835366,
+      "gpt_std": 0.011057290698110603,
+      "gpt_n": 5
+    },
+    "UNIFI": {
+      "clova_mean": 0.11921611144080083,
+      "clova_std": 0.03336168164518517,
+      "clova_n": 5,
+      "gpt_mean": 0.2589380502952862,
+      "gpt_std": 0.010927518043780001,
+      "gpt_n": 5
+    }
+  },
   "summary": {
-    "clova_average": NaN,
-    "gpt_average": NaN,
-    "clova_wins": 0,
-    "gpt_wins": 0,
-    "improvement_percent": 0.0
+    "clova_average": 0.09866802425886419,
+    "gpt_average": 0.12165271299662035,
+    "clova_wins": 2,
+    "gpt_wins": 4,
+    "improvement_percent": 18.893691863982273
   }
 }

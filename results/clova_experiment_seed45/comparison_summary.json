@@ -1,37 +1,22 @@
 {
-  "timestamp": "20260115_191332",
+  "timestamp": "20260115_182559",
   "configuration": {
     "n_samples": 100,
     "temperature": 0.7,
     "thinking": "medium",
     "variables": [
-      "PARTYLR"
+      "KRPROUD"
     ],
     "clova_model": "HCX-007"
   },
   "variables": {
-    "SATFIN": {
-      "clova_hcx007": {
-        "js_divergence": 0.04027160687281352,
-        "distribution": {
-          "1": 0.0,
-          "2": 23.0,
-          "3": 28.000000000000004,
-          "4": 46.0,
-          "5": 3.0
-        }
-      },
-      "gpt_5_2": null,
-      "delta": null,
-      "clova_better": null
-    },
     "CONFINAN": {
       "clova_hcx007": {
-        "js_divergence": 0.08009278114893541,
+        "js_divergence": 0.0620959626570007,
         "distribution": {
           "1": 0.0,
-          "2": 79.0,
-          "3": 21.0
+          "2": 77.0,
+          "3": 23.0
         }
       },
       "gpt_5_2": null,
@@ -40,11 +25,11 @@
     },
     "CONLEGIS": {
       "clova_hcx007": {
-        "js_divergence": 0.04148513567442559,
+        "js_divergence": 0.09388558361501992,
         "distribution": {
           "1": 0.0,
-          "2": 78.0,
-          "3": 22.0
+          "2": 69.0,
+          "3": 31.0
         }
       },
       "gpt_5_2": null,
@@ -53,13 +38,13 @@
     },
     "PARTYLR": {
       "clova_hcx007": {
-        "js_divergence": 0.03595996130704143,
+        "js_divergence": 0.047176623389572424,
         "distribution": {
           "1": 0.0,
-          "2": 7.000000000000001,
-          "3": 73.0,
-          "4": 18.0,
-          "5": 2.0
+          "2": 10.0,
+          "3": 63.0,
+          "4": 22.0,
+          "5": 5.0
         }
       },
       "gpt_5_2": null,
@@ -68,12 +53,12 @@
     },
     "NORTHWHO": {
       "clova_hcx007": {
-        "js_divergence": 0.09590080453997057,
+        "js_divergence": 0.09939363817565314,
         "distribution": {
           "1": 0.0,
-          "2": 2.0,
-          "3": 93.0,
-          "4": 5.0
+          "2": 3.0,
+          "3": 82.0,
+          "4": 15.0
         }
       },
       "gpt_5_2": null,
@@ -82,11 +67,11 @@
     },
     "UNIFI": {
       "clova_hcx007": {
-        "js_divergence": 0.06422941321621665,
+        "js_divergence": 0.044649969643237336,
         "distribution": {
-          "1": 0.0,
-          "2": 12.0,
-          "3": 86.0,
+          "1": 1.0,
+          "2": 53.0,
+          "3": 44.0,
           "4": 2.0
         }
       },
@@ -96,11 +81,11 @@
     },
     "KRPROUD": {
       "clova_hcx007": {
-        "js_divergence": 0.017302470625554858,
+        "js_divergence": 0.13052559211819953,
         "distribution": {
-          "1": 16.0,
-          "2": 49.0,
-          "3": 35.0,
+          "1": 8.0,
+          "2": 30.0,
+          "3": 62.0,
           "4": 0.0
         }
       },

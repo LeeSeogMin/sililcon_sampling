@@ -20,7 +20,27 @@ from ss_utils import load_benchmark
 
 def load_clova_results(seed):
     """Load CLOVA results for a seed"""
-    result_file = f'results/clova_experiment_seed{seed}/clova_results.json'
+    # Seed42는 다른 경로 사용
+    if seed == 42:
+        # Seed42는 폴더별 구조 - 각 변수별 JSON 파일에서 로드
+        results = {}
+        base = 'results/clova_experiment'
+        for var in ['CONFINAN', 'CONLEGIS', 'PARTYLR', 'NORTHWHO', 'UNIFI', 'KRPROUD']:
+            json_path = f'{base}/{var}/clova_results.json'
+            if os.path.exists(json_path):
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                if 'results' in data and len(data['results']) > 0:
+                    r = data['results'][0]
+                    results[var] = r.get('js_divergence')
+        return results
+
+    # Seed43은 partial 파일 사용
+    if seed == 43:
+        result_file = f'results/clova_experiment_seed{seed}/clova_results_partial.json'
+    else:
+        result_file = f'results/clova_experiment_seed{seed}/clova_results.json'
+
     if not os.path.exists(result_file):
         print(f"⚠️  File not found: {result_file}")
         return {}
@@ -36,7 +56,12 @@ def load_clova_results(seed):
 
 def load_gpt_results(seed):
     """Load GPT-5.2 results for a seed"""
-    result_file = f'results/gpt52_experiment_seed{seed}/metrics.json'
+    # Seed42는 다른 경로 사용
+    if seed == 42:
+        result_file = 'results/gpt52_experiment/metrics.json'
+    else:
+        result_file = f'results/gpt52_experiment_seed{seed}/metrics.json'
+
     if not os.path.exists(result_file):
         print(f"⚠️  File not found: {result_file}")
         return {}
@@ -44,9 +69,12 @@ def load_gpt_results(seed):
     with open(result_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
         results = {}
-        if 'metrics' in data:
-            for var, metrics in data['metrics'].items():
-                results[var] = metrics.get('js_divergence')
+        # 직접 변수별 구조 (js_divergence_ln 키 사용)
+        for var, metrics in data.items():
+            if isinstance(metrics, dict):
+                js_val = metrics.get('js_divergence') or metrics.get('js_divergence_ln')
+                if js_val is not None:
+                    results[var] = js_val
         return results
 
 def bootstrap_ci(data, n_bootstrap=10000, ci=95):
@@ -124,14 +152,14 @@ def aggregate_with_bootstrap():
             stats_dict[var] = {
                 'clova': {
                     'mean': float(clova_mean),
-                    'lower': float(clova_lower),
-                    'upper': float(clova_upper),
+                    'lower': float(clova_lower) if not np.isnan(clova_lower) else None,
+                    'upper': float(clova_upper) if not np.isnan(clova_upper) else None,
                     'n': len(clova_vals)
                 },
                 'gpt': {
                     'mean': float(gpt_mean) if gpt_mean is not None else None,
-                    'lower': float(gpt_lower) if not np.isnan(gpt_lower) else None,
-                    'upper': float(gpt_upper) if not np.isnan(gpt_upper) else None,
+                    'lower': float(gpt_lower) if gpt_lower is not None and not np.isnan(gpt_lower) else None,
+                    'upper': float(gpt_upper) if gpt_upper is not None and not np.isnan(gpt_upper) else None,
                     'n': len(gpt_vals) if gpt_vals is not None else 0
                 }
             }

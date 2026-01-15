@@ -25,7 +25,14 @@
       "Bash(then python -c \"import pandas as pd; df=pd.read_csv\\(''c:/Dev/silicon_sampling/results/gpt52_experiment_seed45/persona_responses.csv''\\); print\\(df.groupby\\(''variable''\\).size\\(\\).to_dict\\(\\)\\)\")",
       "Bash(if [ -f \"c:/Dev/silicon_sampling/results/gpt52_experiment_seed46/persona_responses.csv\" ])",
       "Bash(then python -c \"import pandas as pd; df=pd.read_csv\\(''c:/Dev/silicon_sampling/results/gpt52_experiment_seed46/persona_responses.csv''\\); print\\(df.groupby\\(''variable''\\).size\\(\\).to_dict\\(\\)\\)\")",
-      "Bash(PYTHONPATH=. python:*)"
+      "Bash(PYTHONPATH=. python:*)",
+      "Bash(do echo \"=== Seed$seed ===\")",
+      "Bash(if [ -f \"results/clova_experiment_seed$seed/clova_results_partial.json\" ])",
+      "Bash(then python -c \"import json; d=json.load\\(open\\(''results/clova_experiment_seed$seed/clova_results_partial.json''\\)\\); vars=[r[''variable''] for r in d.get\\(''results'',[]\\)]; print\\(f''완료: {len\\(vars\\)}개 - {vars}''\\)\")",
+      "Bash(else echo \"파일 없음\")",
+      "Bash(then python -c \"import json; d=json.load\\(open\\(''results/clova_experiment_seed$seed/clova_results_partial.json''\\)\\); vars=[r[''variable''] for r in d.get\\(''results'',[]\\)]; target=[''CONFINAN'',''CONLEGIS'',''PARTYLR'',''NORTHWHO'',''UNIFI'',''KRPROUD'']; done=[v for v in vars if v in target]; missing=[v for v in target if v not in vars]; print\\(f''완료: {len\\(done\\)}개 - {done}''\\); print\\(f''미완료: {missing}''\\)\")",
+      "Bash(tee:*)",
+      "Bash(xargs:*)"
     ]
   }
 }
