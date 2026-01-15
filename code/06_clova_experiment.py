@@ -255,12 +255,13 @@ def run(args: argparse.Namespace) -> int:
     results: List[Dict[str, Any]] = []
     completed_variables: List[str] = []
 
-    if args.resume and os.path.exists(partial_path):
+    # Always load existing partial results to avoid overwriting (not just when --resume)
+    if os.path.exists(partial_path):
         partial = read_json(partial_path)
-        if isinstance(partial, dict) and partial.get("status") == "in_progress":
+        if isinstance(partial, dict):
             completed_variables = list(partial.get("completed_variables", []))
             results = list(partial.get("results", []))
-            print(f"🔁 Resuming from {partial_path} (completed: {', '.join(completed_variables) or 'none'})")
+            print(f"🔁 Loaded existing results from {partial_path} (completed: {', '.join(completed_variables) or 'none'})")
 
     comparison: Dict[str, Any] = {
         "timestamp": utc_timestamp(),
@@ -394,12 +395,16 @@ def run(args: argparse.Namespace) -> int:
             print(f"\n⏸️ Stopping after {new_variables_completed} new variable(s). Resume with --resume.")
             return 0
 
-    # Save final results
-    write_json(os.path.join(out_dir, "clova_results.json"), {
-        "timestamp": utc_timestamp(),
-        "configuration": comparison["configuration"],
-        "results": results,
-    })
+    # Save final results (only save if all variables are completed)
+    if len(results) == len(variables):
+        write_json(os.path.join(out_dir, "clova_results.json"), {
+            "timestamp": utc_timestamp(),
+            "configuration": comparison["configuration"],
+            "results": results,
+        })
+        print(f"✅ Saved final results: clova_results.json ({len(results)} variables)")
+    else:
+        print(f"⏸️ Incomplete run: {len(results)}/{len(variables)} variables. Results saved in clova_results_partial.json")
 
     write_json(os.path.join(out_dir, "comparison_summary.json"), comparison)
 

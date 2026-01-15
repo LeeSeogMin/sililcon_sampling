@@ -1,22 +1,43 @@
 {
-  "timestamp": "20260115_171409",
+  "timestamp": "20260115_161732",
   "configuration": {
     "n_samples": 100,
     "temperature": 0.7,
     "thinking": "medium",
     "variables": [
-      "NORTHWHO"
+      "SATFIN",
+      "CONFINAN",
+      "CONLEGIS",
+      "PARTYLR",
+      "NORTHWHO",
+      "UNIFI",
+      "KRPROUD"
     ],
     "clova_model": "HCX-007"
   },
   "variables": {
-    "CONFINAN": {
+    "SATFIN": {
       "clova_hcx007": {
-        "js_divergence": 0.09874115988209604,
+        "js_divergence": 0.06924920545407114,
         "distribution": {
           "1": 0.0,
-          "2": 49.0,
-          "3": 51.0
+          "2": 10.0,
+          "3": 74.0,
+          "4": 16.0,
+          "5": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "CONFINAN": {
+      "clova_hcx007": {
+        "js_divergence": 0.06632524820548659,
+        "distribution": {
+          "1": 0.0,
+          "2": 84.0,
+          "3": 16.0
         }
       },
       "gpt_5_2": null,
@@ -25,11 +46,11 @@
     },
     "CONLEGIS": {
       "clova_hcx007": {
-        "js_divergence": 0.03563963214403702,
+        "js_divergence": 0.10212338139081231,
         "distribution": {
-          "1": 1.0,
-          "2": 11.0,
-          "3": 88.0
+          "1": 0.0,
+          "2": 71.0,
+          "3": 28.999999999999996
         }
       },
       "gpt_5_2": null,
@@ -38,56 +59,13 @@
     },
     "PARTYLR": {
       "clova_hcx007": {
-        "js_divergence": 0.03075741383924647,
+        "js_divergence": 0.06184072913505853,
         "distribution": {
           "1": 0.0,
-          "2": 13.0,
-          "3": 50.0,
-          "4": 28.000000000000004,
-          "5": 9.0
-        }
-      },
-      "gpt_5_2": null,
-      "delta": null,
-      "clova_better": null
-    },
-    "SATFIN": {
-      "clova_hcx007": {
-        "js_divergence": 0.04428132177889939,
-        "distribution": {
-          "1": 1.0,
-          "2": 9.0,
-          "3": 70.0,
-          "4": 18.0,
-          "5": 2.0
-        }
-      },
-      "gpt_5_2": null,
-      "delta": null,
-      "clova_better": null
-    },
-    "UNIFI": {
-      "clova_hcx007": {
-        "js_divergence": 0.17248479087780333,
-        "distribution": {
-          "1": 0.0,
-          "2": 9.0,
-          "3": 90.0,
-          "4": 1.0
-        }
-      },
-      "gpt_5_2": null,
-      "delta": null,
-      "clova_better": null
-    },
-    "KRPROUD": {
-      "clova_hcx007": {
-        "js_divergence": 0.1409032347972577,
-        "distribution": {
-          "1": 9.0,
-          "2": 27.0,
-          "3": 64.0,
-          "4": 0.0
+          "2": 10.0,
+          "3": 68.0,
+          "4": 15.0,
+          "5": 7.000000000000001
         }
       },
       "gpt_5_2": null,
@@ -96,12 +74,40 @@
     },
     "NORTHWHO": {
       "clova_hcx007": {
-        "js_divergence": 0.15493151624237683,
+        "js_divergence": 0.15974510603664716,
         "distribution": {
           "1": 0.0,
-          "2": 2.0,
+          "2": 1.0,
           "3": 93.0,
-          "4": 5.0
+          "4": 6.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "UNIFI": {
+      "clova_hcx007": {
+        "js_divergence": 0.10474545344238138,
+        "distribution": {
+          "1": 0.0,
+          "2": 21.0,
+          "3": 77.0,
+          "4": 2.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "KRPROUD": {
+      "clova_hcx007": {
+        "js_divergence": 0.035356849771424836,
+        "distribution": {
+          "1": 9.0,
+          "2": 56.00000000000001,
+          "3": 35.0,
+          "4": 0.0
         }
       },
       "gpt_5_2": null,

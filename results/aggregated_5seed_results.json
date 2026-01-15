@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "variables": [
+      "CONFINAN",
+      "CONLEGIS",
+      "KRPROUD",
+      "NORTHWHO",
+      "PARTYLR",
+      "UNIFI"
+    ],
+    "model_clova": "HCX-007",
+    "model_gpt": "gpt-5.2"
+  },
+  "statistics": {},
+  "summary": {
+    "clova_average": NaN,
+    "gpt_average": NaN,
+    "clova_wins": 0,
+    "gpt_wins": 0,
+    "improvement_percent": 0.0
+  }
+}

@@ -8,7 +8,24 @@
       "Bash(tasklist:*)",
       "Bash(for:*)",
       "Bash(do echo \"Starting CONFINAN batch $i/10 \\(n=10\\)...\")",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(do python code/06_clova_experiment.py --personas outputs/personas/personas_100_seed42.json --thinking short --n-samples 10 --delay 0.2 --variables KRPROUD --out-dir results/clova_experiment)",
+      "Bash(if [ -f results/clova_experiment_seed44/clova_results.json ])",
+      "Bash(then)",
+      "Bash(elif [ -f results/clova_experiment_seed44/clova_results_partial.json ])",
+      "Bash(else)",
+      "Bash(fi)",
+      "Bash(pkill:*)",
+      "Bash(if [ -f \"c:/Dev/silicon_sampling/results/gpt52_experiment/persona_responses.csv\" ])",
+      "Bash(then python -c \"import pandas as pd; df=pd.read_csv\\(''c:/Dev/silicon_sampling/results/gpt52_experiment/persona_responses.csv''\\); print\\(df.groupby\\(''variable''\\).size\\(\\).to_dict\\(\\)\\)\")",
+      "Bash(else echo \"없음\")",
+      "Bash(if [ -f \"c:/Dev/silicon_sampling/results/gpt52_experiment_seed44/persona_responses.csv\" ])",
+      "Bash(then python -c \"import pandas as pd; df=pd.read_csv\\(''c:/Dev/silicon_sampling/results/gpt52_experiment_seed44/persona_responses.csv''\\); print\\(df.groupby\\(''variable''\\).size\\(\\).to_dict\\(\\)\\)\")",
+      "Bash(if [ -f \"c:/Dev/silicon_sampling/results/gpt52_experiment_seed45/persona_responses.csv\" ])",
+      "Bash(then python -c \"import pandas as pd; df=pd.read_csv\\(''c:/Dev/silicon_sampling/results/gpt52_experiment_seed45/persona_responses.csv''\\); print\\(df.groupby\\(''variable''\\).size\\(\\).to_dict\\(\\)\\)\")",
+      "Bash(if [ -f \"c:/Dev/silicon_sampling/results/gpt52_experiment_seed46/persona_responses.csv\" ])",
+      "Bash(then python -c \"import pandas as pd; df=pd.read_csv\\(''c:/Dev/silicon_sampling/results/gpt52_experiment_seed46/persona_responses.csv''\\); print\\(df.groupby\\(''variable''\\).size\\(\\).to_dict\\(\\)\\)\")",
+      "Bash(PYTHONPATH=. python:*)"
     ]
   }
 }
