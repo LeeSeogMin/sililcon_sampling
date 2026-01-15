@@ -1,0 +1,13 @@
+usage: 06_clova_experiment.py [-h] [--personas PERSONAS]
+                              [--benchmark BENCHMARK]
+                              [--variables-config VARIABLES_CONFIG]
+                              [--variables [VARIABLES ...]]
+                              [--n-samples N_SAMPLES]
+                              [--temperature TEMPERATURE] [--delay DELAY]
+                              [--thinking {short,medium,deep,none}]
+                              [--gpt5-results GPT5_RESULTS]
+                              [--baseline-root BASELINE_ROOT]
+                              [--compare-baseline] [--resume]
+                              [--max-new-variables MAX_NEW_VARIABLES]
+                              [--out-dir OUT_DIR]
+06_clova_experiment.py: error: unrecognized arguments: 

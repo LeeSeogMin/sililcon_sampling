@@ -1,0 +1,489 @@
+{
+  "timestamp": "20260115_111609",
+  "configuration": {
+    "n_samples": 5,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "SATFIN",
+      "CONFINAN",
+      "CONLEGIS",
+      "PARTYLR",
+      "NORTHWHO",
+      "UNIFI",
+      "KRPROUD"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "results": [
+    {
+      "variable": "SATFIN",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 5,
+      "distribution": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 60.0,
+        "4": 40.0,
+        "5": 0.0
+      },
+      "js_divergence": 0.13413765686860385,
+      "responses": [
+        4,
+        3,
+        3,
+        3,
+        4
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 4,
+          "raw": "답변: 4  \n\n**설명:**  \n20대 남성의 서비스직 종사자로서 경제적 어려움 가능성 있음. 다만 절대적 빈곤보다는 상대적 박탈감 반영 시 **\"다소 불만족\"(4)**이 합리적 추론. 단, 소득·가족 지원 등이 변수이므로 중간값 근접 점수 선택.",
+          "parsed": 4,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P002",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P003",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P004",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P005",
+          "answer": 4,
+          "raw": "답변: 4  \n학생 신분의 경우 등록금, 생활비 등 경제적 부담이 있을 수 있으나 완전한 불만족 단계까지는 아니며, 일정 부분 제약된 상태에서의 **다소 불만족** 정도로 추정됩니다.",
+          "parsed": 4,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "variable": "CONFINAN",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 5,
+      "distribution": {
+        "1": 0.0,
+        "2": 80.0,
+        "3": 20.0
+      },
+      "js_divergence": 0.06297274860072288,
+      "responses": [
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n서비스직 종사자인 20대 남성의 경우, 경제적 압박과 현장 경험을 통해 금융기관의 비효율성 또는 소비자 중심 정책 부족을 체감할 가능성이 높습니다. 또한, 젊은 세대의 특성상 전통적 금융 시스템보다 기술 기반 플랫폼을 더 신뢰하며, 과거 금융권의 부정적 사례(정보 유출, 과도한 수수료 등)로 인해 기관 리더십에 회의적일 수 있습니다. 이러한 맥락을 종합하여 **3**(신뢰하지 않음)을 선택했습니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P002",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P003",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P004",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P005",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "variable": "CONLEGIS",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 5,
+      "distribution": {
+        "1": 0.0,
+        "2": 100.0,
+        "3": 0.0
+      },
+      "js_divergence": 0.3527333437495402,
+      "responses": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P002",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P003",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P004",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P005",
+          "answer": 2,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "variable": "PARTYLR",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 5,
+      "distribution": {
+        "1": 0.0,
+        "2": 20.0,
+        "3": 80.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "js_divergence": 0.16299719705396354,
+      "responses": [
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P002",
+          "answer": 2,
+          "raw": "2  \n\n한국의 20대, 수도권 거주, 대학원 졸업자의 경우 일반적으로 진보적 성향이 강한 것으로 관찰됩니다. 전문직 종사자로서 사회적 책임감이나 변화에 대한 기대치도 반영될 수 있습니다. 그러나 개인의 주관적 인식은 다양할 수 있으므로 **'다소 진보적'(2)**이 가장 합리적 추정치로 판단했습니다.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 2
+        },
+        {
+          "persona_id": "P003",
+          "answer": 3,
+          "raw": "3  \n\n**설명:**  \n주어진 특성(20대, 수도권, 대졸, 전문직)과 일반적인 사회적 통념을 종합했을 때, **중도 성향**이 가장 합리적인 추정입니다.  \n- **젊은 세대**(20대)는 대체로 사회적 변화에 개방적이지만, 동시에 실용적 경제 이슈에도 민감하여 극단적 성향보다 유연성을 가질 수 있습니다.  \n- **수도권/대졸/전문직** 계층은 특정 정책에 대한 선호도가 다양하나, 중립적 입장에서 현실적 해결책을 추구하는 경우가 많습니다.  \n다만 개인의 경험과 가치관에 따라 다르므로 절대적 결론은 아닙니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P004",
+          "answer": 3,
+          "raw": "3  \n**설명:**  \n영남권은 전통적으로 보수 성향이 강하나, 20대 대졸 학생 계층에서는 비교적 진보적 의견이 증가 추세입니다. 이러한 상반된 요소들의 균형을 고려할 때 **중도(3)** 가 가장 타당한 선택지로 판단됩니다. 단, 실제 개별 사례에서는 개인 경험/환경에 따라 차이가 클 수 있습니다.  \n\n(단어 제한 준수를 위해 핵심 키워드 위주로 설명하였습니다.)",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P005",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "variable": "NORTHWHO",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 5,
+      "distribution": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 100.0,
+        "4": 0.0
+      },
+      "js_divergence": 0.24463587597455055,
+      "responses": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P002",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P003",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P004",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P005",
+          "answer": 3,
+          "raw": "답변: 3  \n\n**설명**:  \n20대 남성의 경우, 최근 사회적 분위기와 정치적 이슈를 고려했을 때 **북한을 \"경계대상\"(3)**으로 여길 가능성이 높습니다. 이는 김정은 체제의 군사적 도발, 핵 개발 지속 등 안보 위협 요소와 연계된 인식이 영향을 미쳤을 것으로 추정됩니다. 또한, 젊은 층의 대북 관심도가 낮은 상황에서 현실적인 위험 요소를 인지하면서도 직접적인 갈등이나 협력보다는 중립적 경계 태도를 취하는 경향이 있습니다. 단, 개인 경험 및 정보 접근성에 따라 차이가 발생할 수 있으나, 통계적 추론으로는 **3번**이 가장 보편적 선택지로 판단됩니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "variable": "UNIFI",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 5,
+      "distribution": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 100.0,
+        "4": 0.0
+      },
+      "js_divergence": 0.2914499963265329,
+      "responses": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 3,
+          "raw": "답변:  \n3  \n\n**설명**:  \n- **연령/세대 영향**: 20대의 경우 통일보다는 현실적 문제(취업, 주거 등)를 우선시하는 경향이 있습니다.  \n- **경제적 부담 우려**: 통일 시 발생할 재정적·사회적 비용을 부담스러워할 가능성이 큽니다.  \n- **정치적 성향**: 영남권은 전통적으로 보수 성향이 강해 통일 문제에 신중하거나 소극적 태도를 보일 수 있습니다.  \n- **개인적 이해관계**: 서비스직 특성상 현 체제의 안정성을 중시하며, 급격한 사회 변화에 대한 우려가 반영되었을 것입니다.  \n\n이에 따라 **\"별로 필요하지 않다\"(3)**가 가장 타당한 답변입니다.",
+          "parsed": 3,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        },
+        {
+          "persona_id": "P002",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P003",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P004",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P005",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "variable": "KRPROUD",
+      "model": "HCX-007",
+      "temperature": 0.7,
+      "n_samples": 5,
+      "distribution": {
+        "1": 0.0,
+        "2": 40.0,
+        "3": 60.0,
+        "4": 0.0
+      },
+      "js_divergence": 0.16024855585500786,
+      "responses": [
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "raw_responses": [
+        {
+          "persona_id": "P001",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P002",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P003",
+          "answer": 3,
+          "raw": "",
+          "parsed": null,
+          "used_default": true,
+          "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007",
+          "attempts": 3
+        },
+        {
+          "persona_id": "P004",
+          "answer": 2,
+          "raw": "답변:  \n**2**\n\n---  \n\n### 설명:  \n주어진 조건(20대, 남성, 대졸, 영남권 대학생)을 바탕으로 다음 요소를 고려했습니다:  \n1. **교육 수준**: 대학 교육을 통해 비판적 사고가 발달했으나, 동시에 국내/글로벌 시각 균형으로 중립적 자부심 예상.  \n2. **연령 및 세대 특성**: 최근 청년층은 실용적이며, 문화적 성과(한류 등)에는 긍정적이지만 사회 구조적 문제(취업난 등)로 복잡한 감정 보유.  \n3. **지역적 배경**: 영남권의 전통적 보수 성향보다는 개별 경험과 현대적 가치관이 더 큰 영향력을 미칠 것으로 판단됨.  \n4. **군 복무 경험**: 긍정적·부정적 영향 모두 가능하나, 전반적으로는 애국심 강화 효과 미미하다고 가정함.  \n\n결과적으로 **\"다소 자랑스럽다\"(2)**가 가장 보편적 반응으로 추정되었습니다. 다만 실제 데이터 부족 시 오류 가능성 있음.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 3
+        },
+        {
+          "persona_id": "P005",
+          "answer": 2,
+          "raw": "답변:\n2  \n\n*호남권 20대 대학생을 기준으로 한 추론:*  \n한국 문화(K-pop, 영화 등)의 국제적 위상 상승 → **국가적 자부심 향상** 가능성 ↑  \n반면 청년층의 높은 실업률/주거비 부담 → 사회 시스템에 대한 실망감 → **부정적 영향** 존재  \n두 요인의 균형을 감안시, 완전한 긍정보다는 **부분적 자부심**(2단계) 우세 예상됨. 다만 실제 데이터 없이 주관적 판단이므로 오차 범위 유의 필요.",
+          "parsed": 2,
+          "used_default": false,
+          "error": null,
+          "attempts": 1
+        }
+      ]
+    }
+  ]
+}

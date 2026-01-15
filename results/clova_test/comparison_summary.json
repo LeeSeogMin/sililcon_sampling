@@ -1,0 +1,118 @@
+{
+  "timestamp": "20260115_111155",
+  "configuration": {
+    "n_samples": 5,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "SATFIN",
+      "CONFINAN",
+      "CONLEGIS",
+      "PARTYLR",
+      "NORTHWHO",
+      "UNIFI",
+      "KRPROUD"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "SATFIN": {
+      "clova_hcx007": {
+        "js_divergence": 0.13413765686860385,
+        "distribution": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 60.0,
+          "4": 40.0,
+          "5": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "CONFINAN": {
+      "clova_hcx007": {
+        "js_divergence": 0.06297274860072288,
+        "distribution": {
+          "1": 0.0,
+          "2": 80.0,
+          "3": 20.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "CONLEGIS": {
+      "clova_hcx007": {
+        "js_divergence": 0.3527333437495402,
+        "distribution": {
+          "1": 0.0,
+          "2": 100.0,
+          "3": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "PARTYLR": {
+      "clova_hcx007": {
+        "js_divergence": 0.16299719705396354,
+        "distribution": {
+          "1": 0.0,
+          "2": 20.0,
+          "3": 80.0,
+          "4": 0.0,
+          "5": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "NORTHWHO": {
+      "clova_hcx007": {
+        "js_divergence": 0.24463587597455055,
+        "distribution": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 100.0,
+          "4": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "UNIFI": {
+      "clova_hcx007": {
+        "js_divergence": 0.2914499963265329,
+        "distribution": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 100.0,
+          "4": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "KRPROUD": {
+      "clova_hcx007": {
+        "js_divergence": 0.16024855585500786,
+        "distribution": {
+          "1": 0.0,
+          "2": 40.0,
+          "3": 60.0,
+          "4": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    }
+  }
+}

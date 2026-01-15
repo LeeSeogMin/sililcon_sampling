@@ -1,0 +1,28 @@
+{
+  "timestamp": "20260115_123430",
+  "configuration": {
+    "n_samples": 5,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "NORTHWHO"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "NORTHWHO": {
+      "clova_hcx007": {
+        "js_divergence": 0.14292974102002595,
+        "distribution": {
+          "1": 0.0,
+          "2": 20.0,
+          "3": 80.0,
+          "4": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    }
+  }
+}

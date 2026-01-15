@@ -1,0 +1,32 @@
+Debug Test Starting 
+ Volume in drive C has no label.
+ Volume Serial Number is 923A-EC3B
+
+ Directory of c:\Dev\silicon_sampling
+
+2026-01-15  오후 09:18    <DIR>          .
+2026-01-11  오후 09:53    <DIR>          ..
+2026-01-15  오후 09:07    <DIR>          .claude
+2025-12-27  오후 07:17             1,025 .env
+2025-12-28  오후 12:31               583 .env.example
+2025-12-28  오후 01:03               873 .gitignore
+2025-12-20  오후 09:42    <DIR>          .vscode
+2026-01-15  오후 07:38            10,454 CLAUDE.md
+2025-12-27  오후 07:31             3,146 clova_client.py
+2026-01-15  오후 07:55    <DIR>          code
+2025-12-28  오전 07:35    <DIR>          config
+2025-12-28  오전 07:34    <DIR>          data
+2026-01-15  오후 09:18                22 debug_output.txt
+2026-01-15  오후 09:18               196 debug_test.bat
+2026-01-15  오후 08:17    <DIR>          docs
+2026-01-15  오후 09:17               283 experiment_runner.bat
+2025-12-28  오후 01:11    <DIR>          ms-word
+2026-01-15  오후 07:50    <DIR>          outputs
+2025-12-28  오후 12:32             6,126 README.md
+2025-12-28  오후 12:30               397 requirements.txt
+2026-01-15  오후 08:11    <DIR>          results
+2025-12-27  오후 07:08             5,790 ss_utils.py
+2025-12-28  오전 10:08    <DIR>          __pycache__
+              11 File(s)         28,895 bytes
+              12 Dir(s)  59,053,686,784 bytes free
+Python Exit Code: 0 

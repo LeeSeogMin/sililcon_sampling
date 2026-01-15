@@ -1,0 +1,58 @@
+{
+  "timestamp": "20260115_135346",
+  "configuration": {
+    "n_samples": 20,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "NORTHWHO",
+      "UNIFI",
+      "KRPROUD"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "NORTHWHO": {
+      "clova_hcx007": {
+        "js_divergence": 0.10767304178461459,
+        "distribution": {
+          "1": 0.0,
+          "2": 10.0,
+          "3": 85.0,
+          "4": 5.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "UNIFI": {
+      "clova_hcx007": {
+        "js_divergence": 0.09449627885355372,
+        "distribution": {
+          "1": 0.0,
+          "2": 35.0,
+          "3": 65.0,
+          "4": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    },
+    "KRPROUD": {
+      "clova_hcx007": {
+        "js_divergence": 0.07084874985259021,
+        "distribution": {
+          "1": 0.0,
+          "2": 80.0,
+          "3": 20.0,
+          "4": 0.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    }
+  }
+}

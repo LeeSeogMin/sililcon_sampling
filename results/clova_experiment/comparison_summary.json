@@ -1,0 +1,27 @@
+{
+  "timestamp": "20260115_144659",
+  "configuration": {
+    "n_samples": 10,
+    "temperature": 0.7,
+    "thinking": "short",
+    "variables": [
+      "CONFINAN"
+    ],
+    "clova_model": "HCX-007"
+  },
+  "variables": {
+    "CONFINAN": {
+      "clova_hcx007": {
+        "js_divergence": 0.12500460907509725,
+        "distribution": {
+          "1": 0.0,
+          "2": 40.0,
+          "3": 60.0
+        }
+      },
+      "gpt_5_2": null,
+      "delta": null,
+      "clova_better": null
+    }
+  }
+}

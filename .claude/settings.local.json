@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(taskkill:*)",
+      "Bash(killall:*)",
+      "Read(//c/Dev/silicon_sampling/**)",
+      "Bash(tasklist:*)",
+      "Bash(for:*)",
+      "Bash(do echo \"Starting CONFINAN batch $i/10 \\(n=10\\)...\")",
+      "Bash(echo:*)"
+    ]
+  }
+}
