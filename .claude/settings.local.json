@@ -32,7 +32,10 @@
       "Bash(else echo \"파일 없음\")",
       "Bash(then python -c \"import json; d=json.load\\(open\\(''results/clova_experiment_seed$seed/clova_results_partial.json''\\)\\); vars=[r[''variable''] for r in d.get\\(''results'',[]\\)]; target=[''CONFINAN'',''CONLEGIS'',''PARTYLR'',''NORTHWHO'',''UNIFI'',''KRPROUD'']; done=[v for v in vars if v in target]; missing=[v for v in target if v not in vars]; print\\(f''완료: {len\\(done\\)}개 - {done}''\\); print\\(f''미완료: {missing}''\\)\")",
       "Bash(tee:*)",
-      "Bash(xargs:*)"
+      "Bash(xargs:*)",
+      "Bash(pandoc:*)",
+      "Bash(where:*)",
+      "Bash(git checkout:*)"
     ]
   }
 }
