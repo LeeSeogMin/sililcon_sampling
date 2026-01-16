@@ -8,8 +8,8 @@ Converts response.md to Word document with optimized table widths
 import re
 from pathlib import Path
 from docx import Document
-from docx.shared import Pt, RGBColor, Inches
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.shared import Pt, RGBColor, Inches, Twips
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 from docx.table import _Cell
@@ -29,6 +29,20 @@ def set_cell_width(cell, width):
     tcW.set(qn('w:w'), str(width))
     tcW.set(qn('w:type'), 'auto')
     tcPr.append(tcW)
+
+
+def set_cell_margins(cell, top=1.0, bottom=1.0, left=1.0, right=1.0):
+    """Set cell margins in mm (converted to twips: 1mm = 56.7 twips)"""
+    tcPr = cell._element.get_or_add_tcPr()
+    tcMar = OxmlElement('w:tcMar')
+
+    for margin_name, margin_val in [('top', top), ('bottom', bottom), ('left', left), ('right', right)]:
+        margin_elm = OxmlElement(f'w:{margin_name}')
+        margin_elm.set(qn('w:w'), str(int(margin_val * 56.7)))  # mm to twips
+        margin_elm.set(qn('w:type'), 'dxa')
+        tcMar.append(margin_elm)
+
+    tcPr.append(tcMar)
 
 
 def parse_markdown(md_text):
@@ -146,14 +160,14 @@ def add_table_to_doc(doc, table_lines):
     num_cols = len(headers)
     num_rows = len(data_rows) + 1
     table = doc.add_table(rows=num_rows, cols=num_cols)
-    table.style = 'Light Grid Accent 1'
+    table.style = 'Table Grid'
 
     # Set autofit layout
     table.autofit = False
     table.allow_autofit = False
 
-    # Calculate available width (landscape: 10 inches - 1 inch margins = 9 inches)
-    available_width = Inches(9.0)
+    # Calculate available width (landscape: 11 inches - 1 inch margins = 10 inches)
+    available_width = Inches(10.0)
     col_width = available_width / num_cols
 
     # Add headers
@@ -161,6 +175,9 @@ def add_table_to_doc(doc, table_lines):
     for i, header in enumerate(headers):
         cell = header_cells[i]
         cell.width = col_width
+
+        # Set cell margins (1.0mm top/bottom/left/right)
+        set_cell_margins(cell, top=1.0, bottom=1.0, left=1.0, right=1.0)
 
         # Clear default paragraph and add formatted text
         cell.paragraphs[0].text = ''
@@ -170,6 +187,7 @@ def add_table_to_doc(doc, table_lines):
         set_cell_background(cell, 'D3D3D3')
         for paragraph in cell.paragraphs:
             paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            paragraph.paragraph_format.line_spacing = 1.15  # 115% line spacing
             for run in paragraph.runs:
                 run.bold = True
                 run.font.size = Pt(10)
@@ -181,6 +199,9 @@ def add_table_to_doc(doc, table_lines):
             cell = row_cells[col_idx]
             cell.width = col_width
 
+            # Set cell margins (1.0mm top/bottom/left/right)
+            set_cell_margins(cell, top=1.0, bottom=1.0, left=1.0, right=1.0)
+
             # Clear default paragraph and add formatted text
             cell.paragraphs[0].text = ''
             add_formatted_paragraph(cell, cell_text)
@@ -188,21 +209,22 @@ def add_table_to_doc(doc, table_lines):
             # Format cell
             for paragraph in cell.paragraphs:
                 paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                paragraph.paragraph_format.line_spacing = 1.15  # 115% line spacing
                 paragraph.word_wrap = True
                 for run in paragraph.runs:
-                    run.font.size = Pt(9)
+                    run.font.size = Pt(10)
 
-    # Set table width
+    # Set table width to 100% of page width
     tbl = table._element
     tblPr = tbl.tblPr
     if tblPr is None:
         tblPr = OxmlElement('w:tblPr')
         tbl.insert(0, tblPr)
 
-    # Add table width element
+    # Add table width element (5000 = 100% in pct type)
     tblW = OxmlElement('w:tblW')
-    tblW.set(qn('w:w'), '9000')  # 90% of page width
-    tblW.set(qn('w:type'), 'auto')
+    tblW.set(qn('w:w'), '5000')
+    tblW.set(qn('w:type'), 'pct')
     tblPr.append(tblW)
 
 
@@ -275,7 +297,7 @@ def create_word_document(md_file, output_file):
 
 
 if __name__ == '__main__':
-    md_file = r'C:\Dev\silicon_sampling\docs\response.md'
-    output_file = r'C:\Dev\silicon_sampling\docs\response.docx'
+    md_file = r'C:\Dev\silicon_sampling\docs\reply.md'
+    output_file = r'C:\Dev\silicon_sampling\docs\reply.docx'
 
     create_word_document(md_file, output_file)

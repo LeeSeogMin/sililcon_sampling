@@ -35,7 +35,9 @@
       "Bash(xargs:*)",
       "Bash(pandoc:*)",
       "Bash(where:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)"
     ]
   }
 }
